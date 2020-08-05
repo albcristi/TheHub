@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  db_service:
+    image: postgres:13
+    restart: always
+    volumes:
+      - postgres_volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: 'the_hub'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'password'
+  api_service:
+    build:
+      ./api
+    depends_on:
+      - db_service
+    command: >
+      python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./api:/api
+    ports:
+      - "8000:8000"
+    environment:
+      PHONE_NUMBER: '---'
+      ACCOUNT_SID: '---'
+      AUTH_TOKEN: '---'
+  front_end:
+    build:
+      ./frontend
+    depends_on:
+      - api_service
+    volumes:
+      - ./frontend:/front_end
+    ports:
+      - "3000:3000"
+    command: >
+      npm start
+    environment:
+      CI: "true"
+
+volumes:
+    postgres_volume:
+      external: true
