@@ -1,14 +1,11 @@
 import * as React from "react";
 import  './AboutComponent.css';
-import  axios from 'axios';
-import LogInComponent from "../log-in/LogInComponent";
 
-const BASE_URL = 'http://localhost:8000/api';
+
+
 class AboutComponent extends React.Component{
     constructor(props){
         super(props);
-        let l = LogInComponent();
-        l.tryLogIn('aaa','');
     }
 
     render() {

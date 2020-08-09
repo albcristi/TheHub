@@ -1,13 +1,14 @@
 import * as React from "react";
 import axios from 'axios';
-
+import './LogInComponentStyle.css';
 const BASE_URL = 'http://localhost:8000/api';
 
 class LogInComponent extends React.Component{
-
-    constructor(props){
+    constructor(props) {
         super(props);
     }
+
+
 
     tryLogIn(userName, userPassword){
         axios.post(`${BASE_URL}/do-log-in`,
@@ -20,32 +21,29 @@ class LogInComponent extends React.Component{
     }
 
 
+    logInClicked(user_name, password){
+
+    }
+
     render() {
-        this.tryLogIn('user1','');
 
         return (
-            <div className="base-container" ref={this.props.containerRef}>
-                <div className="header">
-                    Login
-                </div>
-                <div className="content">
-                      <div className="image">
-                      </div>
-                      <div className="form">
-                        <div className="form-group">
-                          <input type="text" name="username" placeholder="email" />
+            <div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="card">
+                                <form className="box">
+                                    <h1>Login</h1>
+                                    <p className="text-muted"> Please enter your username and password!</p> <input type="text" name="" placeholder="Username"/>
+                                    <input type="password" name="" placeholder="Password"/>
+                                    <input type="submit" name="" value="Login" href="#"/>
+                                </form>
+                            </div>
                         </div>
-                        <div className="form-group">
-                          <input type="password" name="password" placeholder="password" />
-                        </div>
-                      </div>
+                    </div>
                 </div>
-                <div className="footer">
-                  <button  style={{borderRadius: 5}} type="button" className="button">
-                    Login
-                  </button>
             </div>
-          </div>
         )
     }
 }

@@ -15,18 +15,19 @@ class MainPage extends React.Component{
 
     render() {
         return (
-            <div>
-                <div id="main-body-container" className="container">
+            <div id="main_component">
+                 <div id="main-body-container" className="container">
                     <div className="container d-flex justify-content-center">
                         <div  id="image-container-home-page" className="container">
                             <img width="500" src={require('./img3.png')} alt="..."/>
                         </div>
-                        <div style={{paddingTop: 150}} className="container">
+                        <div className="container">
                             <LogInComponent/>
                         </div>
                     </div>
                     <p  className="text-center text-info">Best place where you can organize public or private events</p>
-                </div>
+                 </div>
+
                  <Link id="about-link-home-page" to={'/about'} onClick={this.goToAboutPage} className="text-center text-info">About Us</Link>
                  <Suspense fallback={
                         <div className="d-flex justify-content-center">
@@ -39,6 +40,7 @@ class MainPage extends React.Component{
                         <Route exact path={'/about'} component={AboutPage}/>
                     </Switch>
                 </Suspense>
+
             </div>
         )
     }

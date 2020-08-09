@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import './App.css';
 import MainPage from "./welcome-page/MainPage.js";
-import {Link, Switch, Route} from "react-router-dom";
-import AboutComponent from "./about-page/AboutComponent";
+import {Route, Switch} from "react-router";
+import ProfileMainPage from "./profile-main-page/ProfileMainPage";
 
 function App() {
 
@@ -21,7 +21,20 @@ function App() {
                 </a>
             </div>
         </div>
-      <MainPage/>
+        <div id="wrapper_main_page">
+            <MainPage/>
+        </div>
+        <Suspense fallback={
+                        <div className="d-flex justify-content-center">
+                            <div className="spinner-border" role="status">
+                                <span className="sr-only">Loading...</span>
+                            </div>
+                        </div>
+        }>
+            <Switch>
+                        <Route exact path={'/profile'} component={ProfileMainPage}/>
+            </Switch>
+        </Suspense>
     </div>
   );
 }
