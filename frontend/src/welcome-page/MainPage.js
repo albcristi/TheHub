@@ -7,8 +7,13 @@ import {Link, Route, Switch} from "react-router-dom";
 const AboutPage = React.lazy(() => import('../about-page/AboutComponent'));
 
 class MainPage extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
 
     goToAboutPage (){
+
         document.getElementById("main-body-container").style.display='none';
         document.getElementById("about-link-home-page").style.display='none';
     }
