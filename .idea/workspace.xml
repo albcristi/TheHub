@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/the_hub/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/the_hub/model/posts_system/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/backend/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,34 +14,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/api/the_hub/admin.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="230">
+                  <caret line="10" column="32" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#32#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/api/the_hub/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="138">
+                  <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/api/the_hub/model/posts_system/posts_system_models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="207">
+                  <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -58,7 +82,6 @@
         <option value="$PROJECT_DIR$/api/Dockerfile" />
         <option value="$PROJECT_DIR$/frontend/.dockerignore" />
         <option value="$PROJECT_DIR$/api/backend/urls.py" />
-        <option value="$PROJECT_DIR$/api/backend/settings.py" />
         <option value="$PROJECT_DIR$/api/requirements.txt" />
         <option value="$PROJECT_DIR$/api/api_endpoints/urls.py" />
         <option value="$PROJECT_DIR$/frontend/src/App.css" />
@@ -83,6 +106,12 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/views.py" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/frontend/.env" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/api/backend/settings.py" />
+        <option value="$PROJECT_DIR$/api/the_hub/admin.py" />
+        <option value="$PROJECT_DIR$/api/the_hub/model/posts_system/models.py" />
+        <option value="$PROJECT_DIR$/api/the_hub/model/posts_system/posts_system_models.py" />
+        <option value="$PROJECT_DIR$/api/the_hub/models.py" />
       </list>
     </option>
   </component>
@@ -113,38 +142,33 @@
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="the_hub" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="the_hub" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="the_hub" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="posts_system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="about-page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="welcome-page" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,18 +211,17 @@
       <workItem from="1596622488280" duration="7039000" />
       <workItem from="1596712327448" duration="16706000" />
       <workItem from="1596800168216" duration="12824000" />
-      <workItem from="1596966717688" duration="2464000" />
+      <workItem from="1596966717688" duration="7302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47624000" />
+    <option name="totallyTimeSpent" value="52462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20604026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20604026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -212,8 +235,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.329429" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3762811" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.40556368" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -271,13 +294,6 @@
     <entry file="file://$PROJECT_DIR$/frontend/src_code/package.json" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/backend/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/backend/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -436,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api_cred.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -460,7 +469,55 @@
     <entry file="file://$PROJECT_DIR$/frontend/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
+          <caret line="6" column="26" lean-forward="true" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
           <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/backend/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/the_hub/model/posts_system/posts_system_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/the_hub/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/the_hub/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
         </state>
       </provider>
     </entry>
