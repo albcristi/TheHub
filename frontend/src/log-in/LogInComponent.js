@@ -1,11 +1,24 @@
 import * as React from "react";
+import axios from 'axios';
+
+const BASE_URL = 'http://localhost:8000/api';
 
 class LogInComponent extends React.Component{
 
     constructor(props){
         super(props);
     }
+
+    tryLogIn(userName, userPassword){
+        axios.get(BASE_URL)
+            .then((res)=>console.log(res))
+            .catch((error)=>{});
+    }
+
+
     render() {
+        this.tryLogIn('','');
+
         return (
             <div className="base-container" ref={this.props.containerRef}>
                 <div className="header">

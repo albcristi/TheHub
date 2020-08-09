@@ -1,6 +1,8 @@
 import * as React from "react";
 import  './AboutComponent.css';
+import  axios from 'axios';
 
+const BASE_URL = 'http://localhost:8000/api';
 class AboutComponent extends React.Component{
     constructor(props){
         super(props);
@@ -9,9 +11,11 @@ class AboutComponent extends React.Component{
     render() {
         document.getElementById("main-body-container").style.display='none';
         document.getElementById("about-link-home-page").style.display='none';
-
+         axios.get(BASE_URL)
+            .then((res)=>console.log(res))
+            .catch((error)=>{});
         return (
-            <div class="car-wrapper-mine">
+            <div className="car-wrapper-mine">
                 <div   id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
