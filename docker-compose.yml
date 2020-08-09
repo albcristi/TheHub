@@ -6,10 +6,12 @@ services:
     restart: always
     volumes:
       - postgres_volume:/var/lib/postgresql/data
+    env_file:
+      - db.env
     environment:
-      POSTGRES_DB: 'the_hub'
-      POSTGRES_USER: 'postgres'
-      POSTGRES_PASSWORD: 'password'
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
   api_service:
     build:
       ./api
