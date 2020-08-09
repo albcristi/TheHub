@@ -7,7 +7,7 @@ services:
     volumes:
       - postgres_volume:/var/lib/postgresql/data
     env_file:
-      - db.env
+      - db_cred.env
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
