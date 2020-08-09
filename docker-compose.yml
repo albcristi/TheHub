@@ -23,10 +23,12 @@ services:
       - ./api:/api
     ports:
       - "8000:8000"
+    env_file:
+      - api_cred.env
     environment:
-      PHONE_NUMBER: '---'
-      ACCOUNT_SID: '---'
-      AUTH_TOKEN: '---'
+      PHONE_NUMBER: ${PHONE_NUMBER}
+      ACCOUNT_SID: ${ACCOUNT_SID}
+      AUTH_TOKEN: ${AUTH_TOKEN}
   front_end:
     build:
       ./frontend
