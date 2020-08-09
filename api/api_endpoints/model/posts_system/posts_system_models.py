@@ -1,6 +1,6 @@
 from django.db import models
-from ...models import AppUsers
 
+from ...models import AppUsers
 
 '''
     A post is created by a user and 

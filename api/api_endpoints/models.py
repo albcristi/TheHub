@@ -1,3 +1,62 @@
 from django.db import models
-
+from django.utils.crypto import get_random_string
+import  datetime
 # Create your models here.
+
+
+class AppUsers(models.Model):
+    usr_id = models.AutoField(primary_key=True)
+    usr_name = models.CharField(max_length=200, unique=True)
+    usr_password = models.CharField(max_length=200)
+    usr_email = models.CharField(max_length=200)
+    phone_number = models.CharField(max_length=20)
+    birth_date = models.DateField()
+
+    @staticmethod
+    def get_user(user_name):
+        users = AppUsers.objects.filter(usr_name=user_name)
+        if users.count() == 0:
+            return None
+        return users[0]
+
+
+'''
+    In the moment a user performs a successful log in
+    a session will be created for that user, being 
+    granted a unique session token 
+'''
+
+
+class UserSession(models.Model):
+    session_id = models.AutoField(primary_key=True)
+    user = models.ForeignKey(
+        AppUsers,
+        on_delete=models.CASCADE
+    )
+    started_at = models.DateTimeField()
+    token = models.CharField(max_length=400, unique=True)
+
+    @staticmethod
+    def generate_session_token():
+        while True:
+            generated_token = get_random_string(15)
+            if UserSession.objects.filter(token=generated_token):
+                continue
+            return generated_token
+
+    @staticmethod
+    def get_user_session(user):
+        sessions = UserSession.objects.filter(user=user)
+        if sessions.count() == 0:
+            return None
+        return sessions[0]
+
+    @staticmethod
+    def create_session(user):
+        user_session = UserSession()
+        user_session.user = user
+        user_session.started_at = datetime.datetime.now()
+        user_session.token = user_session.generate_session_token()
+        session_token = user_session.token
+        user_session.save()
+        return session_token

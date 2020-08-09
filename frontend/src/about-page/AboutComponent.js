@@ -1,19 +1,20 @@
 import * as React from "react";
 import  './AboutComponent.css';
 import  axios from 'axios';
+import LogInComponent from "../log-in/LogInComponent";
 
 const BASE_URL = 'http://localhost:8000/api';
 class AboutComponent extends React.Component{
     constructor(props){
         super(props);
+        let l = LogInComponent();
+        l.tryLogIn('aaa','');
     }
 
     render() {
         document.getElementById("main-body-container").style.display='none';
         document.getElementById("about-link-home-page").style.display='none';
-         axios.get(BASE_URL)
-            .then((res)=>console.log(res))
-            .catch((error)=>{});
+
         return (
             <div className="car-wrapper-mine">
                 <div   id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">

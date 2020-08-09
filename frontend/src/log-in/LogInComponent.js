@@ -10,14 +10,18 @@ class LogInComponent extends React.Component{
     }
 
     tryLogIn(userName, userPassword){
-        axios.get(BASE_URL)
+        axios.post(`${BASE_URL}/do-log-in`,
+            {
+                user_name: userName,
+                user_password: userPassword
+            })
             .then((res)=>console.log(res))
             .catch((error)=>{});
     }
 
 
     render() {
-        this.tryLogIn('','');
+        this.tryLogIn('user1','');
 
         return (
             <div className="base-container" ref={this.props.containerRef}>
