@@ -9,8 +9,6 @@ class AboutComponent extends React.Component{
     }
 
     render() {
-        document.getElementById("main-body-container").style.display='none';
-        document.getElementById("about-link-home-page").style.display='none';
 
         return (
             <div className="car-wrapper-mine">
