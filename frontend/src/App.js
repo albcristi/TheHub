@@ -11,6 +11,10 @@ class App  extends React.Component{
    }
 
     render() {
+       console.log("APP.js"+sessionStorage.getItem('isLogged'));
+       if(sessionStorage.getItem('isLogged') !== "true") {
+           sessionStorage.setItem('isLogged', "false");
+       }
         return (
             <div className="App">
                 <div className="navbar navbar-dark bg-dark shadow-sm">

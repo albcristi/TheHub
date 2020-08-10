@@ -1,16 +1,19 @@
 import * as React from "react";
 import axios from 'axios';
 import './LogInComponentStyle.css';
+
+
 const BASE_URL = 'http://localhost:8000/api';
 
+
 class LogInComponent extends React.Component{
+
     constructor(props) {
         super(props);
+
     }
 
-
-
-    static tryLogIn(userName, userPassword, failedMessageID){
+    executeUserLogIn = (userName, userPassword, failedMessageID)=>{
         axios.post(`${BASE_URL}/do-log-in`,
             {
                 user_name: userName,
@@ -19,7 +22,7 @@ class LogInComponent extends React.Component{
             .then((response) => {
                 let logInResponse = response.data.cred_verified;
                 if(!logInResponse){
-                    document.getElementById("form-message")
+                    document.getElementById(failedMessageID)
                         .textContent="Wrong user name or/and password";
                     return;
                 }
@@ -27,36 +30,35 @@ class LogInComponent extends React.Component{
                 let sessionToken = response.data.session_token;
                 sessionStorage.setItem('user_name', userName);
                 sessionStorage.setItem('token', sessionToken);
+                sessionStorage.setItem('isLogged', 'true');
+                console.log(sessionStorage.getItem('isLogged'));
+                window.location='/profile';
 
-                /// TODO: CHECK HOW TO HIDE OTHER ELEMENTS ...
-                window.href = '/profile';
-                document.getElementById("profile_page").style.display="block";
-                document.getElementById("wrapper_main_page").style.display="none";
 
             })
             .catch((_)=>{
                  document.getElementById("form-message")
                 .textContent="User Not Registered";
             });
-    }
+    };
 
 
-    logInClicked(event){
+    logInClicked = (event)=>{
         event.preventDefault();
+        return;
         let formObject =  document.getElementById('log-in-form');
         formObject = new FormData(formObject);
         try{
             let userName = formObject.get('usr_name');
             let userPassword = formObject.get('usr_password');
-            LogInComponent.tryLogIn(userName, userPassword, "log-in-form");
+           this.executeUserLogIn(userName, userPassword, "log-in-form");
         }
         catch (e) {
             alert(e);
             document.getElementById("form-message")
                 .textContent="Log In Failed";
         }
-    }
-
+    };
 
     render() {
 
