@@ -1,7 +1,7 @@
 from rest_framework.decorators import api_view
 from django.http import JsonResponse
 from .models import AppUsers, UserSession
-import  datetime
+import datetime
 
 # Create your views here.
 from rest_framework.utils import json
