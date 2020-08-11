@@ -12,6 +12,9 @@ class AppUsers(models.Model):
     phone_number = models.CharField(max_length=20)
     birth_date = models.DateField()
 
+    def __str__(self):
+        return str(self.usr_name)
+
     @staticmethod
     def get_user(user_name):
         users = AppUsers.objects.filter(usr_name=user_name)
@@ -31,10 +34,14 @@ class UserSession(models.Model):
     session_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(
         AppUsers,
+        related_name='current_sessions',
         on_delete=models.CASCADE
     )
     started_at = models.DateTimeField()
     token = models.CharField(max_length=400, unique=True)
+
+    def __str__(self):
+        return "Started at: "+str(self.started_at)+" with token: "+str(self.token)
 
     @staticmethod
     def generate_session_token():
