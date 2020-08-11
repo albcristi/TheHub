@@ -2,7 +2,8 @@ import React, {Suspense} from 'react';
 import './App.css';
 import MainPage from "./welcome-page/MainPage.js";
 import {Route, Switch} from "react-router";
-import ProfileMainPage from "./profile-main-page/ProfileMainPage";
+import ProfileMainPageComponent from "./profile-main-page/ProfileMainPageComponent";
+
 
 class App  extends React.Component{
 
@@ -44,12 +45,10 @@ class App  extends React.Component{
                         </div>
                     }>
                         <Switch>
-                            <Route exact path={'/profile'} component={ProfileMainPage}/>
+                            <Route exact path={'/profile'} component={ProfileMainPageComponent}/>
                         </Switch>
                     </Suspense>
-                    <div id="profile_page" style={{display: "none"}}>
-                        <ProfileMainPage/>
-                    </div>
+
                 </div>
             </div>
         );

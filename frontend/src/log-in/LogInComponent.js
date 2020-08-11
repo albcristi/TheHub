@@ -21,12 +21,12 @@ class LogInComponent extends React.Component{
             })
             .then((response) => {
                 let logInResponse = response.data.cred_verified;
+                 console.log(response.data);
                 if(!logInResponse){
                     document.getElementById(failedMessageID)
                         .textContent="Wrong user name or/and password";
                     return;
                 }
-
                 let sessionToken = response.data.session_token;
                 sessionStorage.setItem('user_name', userName);
                 sessionStorage.setItem('token', sessionToken);
@@ -34,9 +34,9 @@ class LogInComponent extends React.Component{
                 console.log(sessionStorage.getItem('isLogged'));
                 window.location='/profile';
 
-
             })
-            .catch((_)=>{
+            .catch((e)=>{
+                 console.log(e);
                  document.getElementById("form-message")
                 .textContent="User Not Registered";
             });
@@ -45,13 +45,12 @@ class LogInComponent extends React.Component{
 
     logInClicked = (event)=>{
         event.preventDefault();
-        return;
         let formObject =  document.getElementById('log-in-form');
         formObject = new FormData(formObject);
         try{
             let userName = formObject.get('usr_name');
             let userPassword = formObject.get('usr_password');
-           this.executeUserLogIn(userName, userPassword, "log-in-form");
+            this.executeUserLogIn(userName, userPassword, "form-message");
         }
         catch (e) {
             alert(e);
