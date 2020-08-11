@@ -9,7 +9,7 @@ export class UserProfileCardComponent extends React.Component{
                 <div className="card mb-3 border-secondary shadow-lg" id="side_bar_card">
                     <img id="upper-image-card" src={require('./usr_profile.jpg')} className="card-img-top" alt="..."/>
                         <div className="card-body">
-                            <h5 className="card-title">Welcome, {sessionStorage.getItem('user_name')}</h5>
+                            <h5 className="card-title">Welcome, @{sessionStorage.getItem('user_name')}!</h5>
                             <p className="card-text"> What are you waiting for, start exploring! Go camping for the weekend.
                             Or maybe go for a city break with your squad!</p>
                             <div  id="profile-card-options" className="d-flex flex-column">
