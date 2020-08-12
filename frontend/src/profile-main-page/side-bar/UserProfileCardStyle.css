@@ -1,14 +1,25 @@
 
 
-#side_bar_card{
-    max-width: 540px;
-    min-height: 84vh;
+#side-bar-nav{
+    position: -webkit-sticky;
+    position: sticky;
+    display: block;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    top: 0;
+    height: 100vh;
 }
 
-#upper-image-card{
-    max-height: 30vh;
+.logo-side-bar{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 2vh;
+    opacity: 60%;
 }
 
-#profile-card-options{
-    margin-top: 30%;
+
+.logo-side-bar:hover{
+    border: 1px solid #2ecc71;
+    border-radius: 5px;
 }
+

@@ -11,13 +11,24 @@ class ProfileMainPageComponent extends React.Component{
 
         return (
             <div>
-                <div className="d-flex col">
-                    <div style={{ marginTop: "2%"}} className="d-flex justify-content-between">
-                        <div className="container" style={{marginLeft: "1%"}}>
+                <div >
+                    <div style={{position: "relative"}} className="d-flex justify-content-between">
+                        <div>
                            <UserProfileCardComponent/>
                         </div>
                         <div  className="container">
-                            <p>todo</p>
+                            <p>
+                                todo
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                                <p>seee</p>
+                            </p>
                         </div>
                     </div>
                 </div>
