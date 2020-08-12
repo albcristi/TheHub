@@ -1,6 +1,8 @@
 import * as React from "react";
 import {UserProfileCardComponent} from "./side-bar/UserProfileCardComponent";
 import {SearchBarComponent} from "./search-bar/SearchBarComponent";
+import  './UserProfilePageStyle.css';
+
 
 class ProfileMainPageComponent extends React.Component{
 
@@ -8,18 +10,17 @@ class ProfileMainPageComponent extends React.Component{
         super(props);
     }
     render() {
-
-
         return (
             <div>
                 <div>
-                    <div style={{position: "relative"}} className="d-flex justify-content-between">
-                        <div>
+                    <div style={{position: "relative"}} className="d-flex">
+
+                        <div id="left-column-profile-page">
                            <UserProfileCardComponent/>
                         </div>
-                        <div style={{paddingTop: "60px"}} className="container d-flex flex-column">
-                                <div>
-                                    <p>aaaa</p>
+                        <div id="middle-column-profile-page"  className="container d-flex flex-column">
+                                <div className="container align-left">
+                                    <p>TODO: create new post Component</p>
                                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
@@ -28,18 +29,10 @@ class ProfileMainPageComponent extends React.Component{
                                     <p>aa</p>
                                 </div>
                         </div>
-                        <div style={{display: "unset", paddingTop: "60px", overflow: "visible"}}>
-                            <div  id="right-fixed-column">
-                                <div  style={{padding: "1%"}} className="d-flex justify-content-center bg-light" id="search-bar-container">
-                                    <div>
-                                        <h4 className="text-info text-center">Explore </h4>
-                                    </div>
-                                    <div>
-                                        <SearchBarComponent/>
-                                    </div>
-                                </div>
-                            </div>
+                        <div id="right-column-profile-page">
+                                   <SearchBarComponent/>
                         </div>
+
                     </div>
                 </div>
             </div>
