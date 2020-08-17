@@ -21,18 +21,17 @@ class LogInComponent extends React.Component{
             })
             .then((response) => {
                 let logInResponse = response.data.cred_verified;
-                 console.log(response.data);
-                if(!logInResponse){
-                    document.getElementById(failedMessageID)
-                        .textContent="Wrong user name or/and password";
+                if(logInResponse){
+                    let sessionToken = response.data.token;
+                    sessionStorage.setItem('user_name', userName);
+                    sessionStorage.setItem('token', sessionToken);
+                    sessionStorage.setItem('isLogged', 'true');
+                    console.log(sessionStorage.getItem('isLogged'));
+                    window.location='/profile';
                     return;
                 }
-                let sessionToken = response.data.session_token;
-                sessionStorage.setItem('user_name', userName);
-                sessionStorage.setItem('token', sessionToken);
-                sessionStorage.setItem('isLogged', 'true');
-                console.log(sessionStorage.getItem('isLogged'));
-                window.location='/profile';
+                document.getElementById(failedMessageID)
+                        .textContent="Wrong user name or/and password";
 
             })
             .catch((e)=>{

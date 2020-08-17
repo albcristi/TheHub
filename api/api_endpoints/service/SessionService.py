@@ -1,7 +1,7 @@
 from typing import Optional
 
 from ..models import UserSession, AppUsers
-
+from datetime import datetime
 
 class SessionService:
     """"
@@ -44,5 +44,14 @@ class SessionService:
         try:
             existing_session.delete()
         except Exception:
+            return False
+        return True
+
+    def update_session_data(self, session: UserSession):
+        session.started_at = datetime.now()
+        session.save()
+
+    def token_validation(self, token: str)->bool:
+        if self.retrieve_session(token) is None:
             return False
         return True
