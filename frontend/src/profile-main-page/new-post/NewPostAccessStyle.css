@@ -1,0 +1,20 @@
+.new-post-access-card{
+    border-radius: 10px;
+}
+
+.new-post-access-card:hover{
+    background-color: #F8F8F8;
+}
+.intro-new-post-div span {
+    background-color: #F0F0F0;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 10px;
+}
+
+.intro-new-post-div span:hover{
+    background-color: #E0E0E0;
+}
+

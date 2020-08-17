@@ -2,6 +2,7 @@ import * as React from "react";
 import {UserProfileCardComponent} from "./side-bar/UserProfileCardComponent";
 import {SearchBarComponent} from "./search-bar/SearchBarComponent";
 import  './UserProfilePageStyle.css';
+import {NewPostAccessComponent} from "./new-post/NewPostAccessComponent";
 
 
 class ProfileMainPageComponent extends React.Component{
@@ -13,21 +14,17 @@ class ProfileMainPageComponent extends React.Component{
         return (
             <div>
                 <div>
-                    <div style={{position: "relative"}} className="d-flex">
+                    <div className="d-flex justify-content-between">
 
                         <div id="left-column-profile-page">
                            <UserProfileCardComponent/>
                         </div>
                         <div id="middle-column-profile-page"  className="container d-flex flex-column">
-                                <div className="container align-left">
-                                    <p>TODO: create new post Component</p>
-                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                    <p>aa</p>
-                                </div>
+
+                                   <div>
+                                       <NewPostAccessComponent/>
+                                   </div>
+
                         </div>
                         <div id="right-column-profile-page">
                                    <SearchBarComponent/>

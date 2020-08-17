@@ -1,22 +1,15 @@
 
-#right-column-profile-page{
-    padding-top: 70px;
-    position: fixed;
-    right: 5vw;
-    max-width: 35vw;
-    justify-content: left;
-    height: 100vh;
-    padding-left: 2vw;
-
+#middle-column-profile-page, #right-column-profile-page{
+    padding-top: 60px;
 }
 
-#left-column-profile-page{
-    max-width: 25vw;
+
+#right-column-profile-page, #left-column-main-page{
+    min-width: 20vw;
 }
+
 
 #middle-column-profile-page{
-    padding-top: 60px;
-    right: 65vw;
-    left: 25vw;
-    max-width: 40vw;
+    padding-left: 10vw;
+    padding-right: 5vw;
 }
