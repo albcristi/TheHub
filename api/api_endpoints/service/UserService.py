@@ -18,3 +18,11 @@ class UserService:
             return usr
         except Exception:
             return AppUsers(usr_id=-1)
+
+    def get_user_friends(self, user_name: str):
+        try:
+            usr = AppUsers.objects.get(user_name=user_name)
+            return usr.current_friendships.all()
+        except Exception:
+            return []
+

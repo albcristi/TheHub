@@ -3,7 +3,7 @@ import {UserProfileCardComponent} from "./side-bar/UserProfileCardComponent";
 import {SearchBarComponent} from "./search-bar/SearchBarComponent";
 import  './UserProfilePageStyle.css';
 import {NewPostAccessComponent} from "./new-post/NewPostAccessComponent";
-
+import axios from 'axios';
 
 class ProfileMainPageComponent extends React.Component{
 
@@ -11,6 +11,7 @@ class ProfileMainPageComponent extends React.Component{
         super(props);
     }
     render() {
+
         return (
             <div>
                 <div>

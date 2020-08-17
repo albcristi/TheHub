@@ -6,15 +6,18 @@ from ...models import AppUsers
 from django.http import JsonResponse
 
 
-@api_view(['POST'])
-def create_user_post(request):
-    form_data = json.loads(request.body.decode())
-    session_token = form_data['token']
+@api_view(['POST', 'GET'])
+def handle_posts_endpoint(request):
     session_service = SessionService()
-    if not session_service.token_validation(session_token):
-        return JsonResponse({'error_message': 'SESSION TIME OUT: '+session_token}, status=401)
     if request.method == 'POST':
+        form_data = json.loads(request.body.decode())
+        session_token = form_data['token']
+        if not session_service.token_validation(session_token):
+            return JsonResponse({'error_message': 'SESSION TIME OUT: ' + session_token}, status=401)
         return handle_post_create_user_post(request, session_service.retrieve_user_by_session_token(session_token))
+    if request.method == 'GET':
+        #todo
+        print("todo")
     return JsonResponse({'error_message': 'wrong_request'}, status=401)
 
 
@@ -34,4 +37,5 @@ def handle_post_create_user_post(request, current_user: AppUsers) ->JsonResponse
         operation_result = True
     return JsonResponse({'result': operation_result}, status=200)
 
-
+def handle_get_post_endpoint(current_user: AppUsers) -> JsonResponse:
+    return JsonResponse({'error_message': 'operation failed'}, status=401)

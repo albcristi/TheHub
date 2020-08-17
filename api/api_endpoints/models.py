@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.crypto import get_random_string
-import  datetime
+import datetime
 # Create your models here.
 
 
@@ -21,6 +21,22 @@ class AppUsers(models.Model):
         if users.count() == 0:
             return None
         return users[0]
+
+
+class FriendList(models.Model):
+    friendship_owner = models.ForeignKey(
+        AppUsers,
+        related_name='current_friendships',
+        on_delete=models.CASCADE
+    )
+    friend_with = models.ForeignKey(
+        AppUsers,
+        related_name='involved_in_friendships',
+        on_delete=models.CASCADE
+    )
+
+    def __str__(self):
+        return str(self.friendship_owner)+" is friend with "+str(self.friend_with)
 
 
 '''
