@@ -4,6 +4,7 @@ import {SearchBarComponent} from "./search-bar/SearchBarComponent";
 import  './UserProfilePageStyle.css';
 import {NewPostAccessComponent} from "./new-post/NewPostAccessComponent";
 import axios from 'axios';
+import {PostListComponent} from "./post-list/PostListComponent";
 
 class ProfileMainPageComponent extends React.Component{
 
@@ -19,12 +20,13 @@ class ProfileMainPageComponent extends React.Component{
                         <div id="left-column-profile-page">
                            <UserProfileCardComponent/>
                         </div>
-                        <div id="middle-column-profile-page"  className="container d-flex flex-column">
-
-                                   <div>
-                                       <NewPostAccessComponent/>
-                                   </div>
-
+                        <div id="middle-column-profile-page"  className="container d-flex flex-column justify-content-left">
+                               <div>
+                                   <NewPostAccessComponent/>
+                               </div>
+                               <div>
+                                    <PostListComponent/>
+                               </div>
                         </div>
                         <div id="right-column-profile-page">
                                    <SearchBarComponent/>

@@ -16,21 +16,30 @@ def handle_posts_endpoint(request):
         session_token = form_data['token']
         if not session_service.token_validation(session_token):
             return JsonResponse({'error_message': 'SESSION TIME OUT: ' + session_token}, status=401)
-        return handle_post_create_user_post(request, session_service.retrieve_user_by_session_token(session_token))
+        return handle_post_create_user_post(request,
+                                            session_service.retrieve_user_by_session_token(session_token))
     if request.method == 'GET':
-        print(request.GET['token'])
+        session_token = request.GET['token']
+        if not session_service.token_validation(session_token):
+            return JsonResponse({'error_message': 'SESSION TIME OUT: ' + session_token}, status=401)
+        no_page = request.GET['page']
+        no_per_page = request.GET['no_per']
+        return handle_get_post_endpoint(session_service.retrieve_user_by_session_token(session_token),
+                                        no_page,
+                                        no_per_page)
     return JsonResponse({'error_message': 'wrong_request'}, status=401)
 
 
-def handle_post_create_user_post(request, current_user: AppUsers) ->JsonResponse:
-    res = ""
+def handle_post_create_user_post(request, current_user: AppUsers) -> JsonResponse:
     try:
         form_data = json.loads(request.body.decode())
         post_title = form_data['post_title']
         post_text = form_data['post_text']
 
         post_service = PostService()
-        res = post_service.create_post(title=post_title,text_content=post_text, created_by=current_user)
+        res = post_service.create_post(title=post_title,
+                                       text_content=post_text,
+                                       created_by=current_user)
     except Exception as e:
         return JsonResponse({'error_message': e}, status=401)
     operation_result = False
@@ -39,10 +48,10 @@ def handle_post_create_user_post(request, current_user: AppUsers) ->JsonResponse
     return JsonResponse({'result': operation_result}, status=200)
 
 
-def handle_get_post_endpoint(request,current_user: AppUsers) -> JsonResponse:
+def handle_get_post_endpoint(current_user: AppUsers, no_page: int, no_per_page: int) -> JsonResponse:
     post_service = PostService()
     user_service = UserService()
-    posts = set(post_service.return_post_from_friends(current_user.usr_name, 1, 2))
+    posts = set(post_service.return_post_from_friends(current_user.usr_name, no_page, no_per_page))
     result = [PostSerializer(post).data for post in posts]
     for res in result:
         res['user'] = user_service.get_user(res['user']).usr_name

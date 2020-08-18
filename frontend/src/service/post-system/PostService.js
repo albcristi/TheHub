@@ -29,4 +29,12 @@ export class PostService {
             console.log(e)
         }
     }
+
+    retrieve_related_posts(page_no, no_per_page){
+        const token = sessionStorage.getItem('token');
+        return axios.
+            get(
+                `${BASE_URL_POSTs}?token=${token}&page=${page_no}&no_per=${no_per_page}`
+            );
+    }
 }
