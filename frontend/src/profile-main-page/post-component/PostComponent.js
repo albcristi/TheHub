@@ -2,6 +2,7 @@ import * as React from "react";
 import ToggleComponent from "../../ToggleComponent";
 import {LikeListComponent} from "../likes/like-list/LikeListComponent";
 import {PostService} from "../../service/post-system/PostService";
+import './PostComponentStyle.css';
 
 export class PostComponent extends React.Component{
 
@@ -82,7 +83,7 @@ export class PostComponent extends React.Component{
                                             <p className="text"> no likes</p>
                                             }
                                             { this.state.postDetails.no_likes>0 &&
-                                            <p className="text">
+                                            <p className="no-likes-text" >
                                                 {this.state.postDetails.no_likes}
                                                 {this.state.postDetails.no_likes>1 ? 'likes' : 'like'}
                                             </p>
@@ -104,7 +105,7 @@ export class PostComponent extends React.Component{
                                     in order to show available components
                                    */
                                 }
-                                <p className="text">Comments</p>
+                                <p className="comments-text">Comments</p>
                             </div>
                         </div>
                     </div>
