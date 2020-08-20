@@ -17,7 +17,7 @@ class UserService:
             usr = AppUsers.objects.get(usr_id=user_id)
             return usr
         except Exception:
-            return AppUsers(usr_id=-1)
+            None
 
     def get_user_friends(self, user_name: str):
         try:
@@ -26,3 +26,9 @@ class UserService:
         except Exception as e:
             return []
 
+    def get_user_by_user_name(self, user_name) -> Optional[AppUsers]:
+        try:
+            usr = AppUsers.objects.get(usr_name=user_name)
+            return usr
+        except Exception:
+            return None

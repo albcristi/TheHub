@@ -45,4 +45,16 @@ export class PostService {
                 `${BASE_URL_POSTs}likes/${post_id}?token=${token}`
             );
     }
+
+    giveLike(post_id, user_name){
+        const token = sessionStorage.getItem('token');
+        return axios
+            .post(
+                `${BASE_URL_POSTs}likes/${post_id}`,
+                {
+                    token: token,
+                    user_name: user_name
+                }
+            );
+    }
 }

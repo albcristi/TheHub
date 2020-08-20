@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/service/post-system/PostService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/service/post-system/PostService.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +16,39 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-list/LikeListComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="-536">
+              <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
                 <element signature="e#481#1795#0" />
                 <element signature="e#1885#2495#0" />
                 <element signature="e#2604#2969#0" />
-                <element signature="e#3121#3626#0" />
                 <element signature="e#3699#3815#0" />
                 <element signature="e#4853#4966#0" />
               </folding>
@@ -32,9 +57,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/UserService.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/service/post-system/PostService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+              <folding>
+                <element signature="n#!!block;n#create_new_post#0;n#PostService#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="405">
               <caret line="84" column="23" lean-forward="true" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
@@ -107,18 +156,18 @@
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessComponent.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/admin.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/models.py" />
-        <option value="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/serializer/post_system/post_syt_serializers.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/urls.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-component/LikeComponent.js" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" />
-        <option value="$PROJECT_DIR$/frontend/src/service/post-system/PostService.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-list/LikeListComponent.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py" />
+        <option value="$PROJECT_DIR$/frontend/src/service/post-system/PostService.js" />
+        <option value="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" />
       </list>
     </option>
   </component>
@@ -250,6 +299,15 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="profile-main-page" type="462c0819:PsiDirectoryNode" />
+              <item name="likes" type="462c0819:PsiDirectoryNode" />
+              <item name="like-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="profile-main-page" type="462c0819:PsiDirectoryNode" />
               <item name="new-post" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -348,12 +406,12 @@
       <workItem from="1597245883585" duration="5123000" />
       <workItem from="1597670804231" duration="17383000" />
       <workItem from="1597752450389" duration="16197000" />
-      <workItem from="1597916650864" duration="7557000" />
+      <workItem from="1597916650864" duration="10657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169999000" />
+    <option name="totallyTimeSpent" value="173099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,6 +424,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2758389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -381,7 +440,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.95607615" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.043923866" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -663,16 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/UserService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-115">
@@ -757,26 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-805">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/service/post-system/PostService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!block;n#create_new_post#0;n#PostService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-component/LikeComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -794,19 +823,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-list/LikeListComponent.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/service/post-system/PostService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="244">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="n#!!block;n#create_new_post#0;n#PostService#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="405">
           <caret line="84" column="23" lean-forward="true" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
@@ -816,16 +845,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="-536">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
             <element signature="e#481#1795#0" />
             <element signature="e#1885#2495#0" />
             <element signature="e#2604#2969#0" />
-            <element signature="e#3121#3626#0" />
             <element signature="e#3699#3815#0" />
             <element signature="e#4853#4966#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/UserService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-list/LikeListComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -77,7 +77,7 @@ def handle_get_post_endpoint(current_user: AppUsers, no_page: int, no_per_page: 
 '''
 
 
-@api_view(['GET'])
+@api_view(['GET', 'POST'])
 def handle_post_likes_endpoint(request, post_id: int):
     session_service = SessionService()
     if request.method == 'GET':  # retrieves the likes for a given post
@@ -93,14 +93,14 @@ def handle_post_likes_endpoint(request, post_id: int):
         try:
             form_data = json.loads(request.body.decode())
             session_token = form_data['token']
-            user_id = form_data['user_id']
+            user_name = form_data['user_name']
             session = session_service.retrieve_session(session_token)
             if session is None:
                 return JsonResponse({'error_message': 'SESSION TIME OUT: ' + session_token}, status=401)
             else:  # update session data
                 session_service.update_session_data(session)
             user_service = UserService()
-            user = user_service.get_user(user_id)
+            user = user_service.get_user_by_user_name(user_name)
             if user is None:
                 return JsonResponse({'msg': False}, status=200)
             return handle_post_method_post_likes_endpoint(post_id, user)
