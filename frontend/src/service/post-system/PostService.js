@@ -37,4 +37,12 @@ export class PostService {
                 `${BASE_URL_POSTs}?token=${token}&page=${page_no}&no_per=${no_per_page}`
             );
     }
+
+    retrieveLikes(post_id){
+        const token = sessionStorage.getItem('token');
+        return axios
+            .get(
+                `${BASE_URL_POSTs}likes/${post_id}?token=${token}`
+            );
+    }
 }

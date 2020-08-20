@@ -40,16 +40,29 @@ class PostService:
         friend_list = [friend.friend_with for friend in set(friend_list)]
         friend_list.append(usr)
         try:
-            print(str(friend_list))
             posts = Posts.objects.\
                 filter(user__in=friend_list).\
                 order_by('-post_date', '-post_id')
-            print('ss')
-            print(str(posts))
             paginator = Paginator(posts, no_per_page)
             result = paginator.page(page_no)\
                 .object_list
             return result
         except Exception as e:
-            print(e)
+            return []
+
+    def return_post_likes(self, post_id: int) -> list:
+        """
+            This method takes as a parameter the id of
+            a post and returns the list of with users that
+            like that specific post. In case the post_id is
+            not valid, the result returned will be the
+            empty list
+        """
+        try:
+            post = Posts.objects.get(post_id=post_id)
+            likes = set(post.post_likes.all())
+            user_that_likes_post = []
+            [user_that_likes_post.append(like.app_user.usr_name) for like in likes]
+            return user_that_likes_post
+        except Exception:
             return []
