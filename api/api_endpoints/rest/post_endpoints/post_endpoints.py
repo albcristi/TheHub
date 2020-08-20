@@ -80,7 +80,7 @@ def handle_get_post_endpoint(current_user: AppUsers, no_page: int, no_per_page: 
 @api_view(['GET'])
 def handle_post_likes_endpoint(request, post_id: int):
     session_service = SessionService()
-    if request.method == 'GET':
+    if request.method == 'GET':  # retrieves the likes for a given post
         session_token = request.GET['token']
         session = session_service.retrieve_session(session_token)
         if session is None:
@@ -89,9 +89,38 @@ def handle_post_likes_endpoint(request, post_id: int):
             session_service.update_session_data(session)
         return handle_get_post_likes_endpoint(post_id)
 
+    if request.method == 'POST':  # creates a like for a given post
+        try:
+            form_data = json.loads(request.body.decode())
+            session_token = form_data['token']
+            user_id = form_data['user_id']
+            session = session_service.retrieve_session(session_token)
+            if session is None:
+                return JsonResponse({'error_message': 'SESSION TIME OUT: ' + session_token}, status=401)
+            else:  # update session data
+                session_service.update_session_data(session)
+            user_service = UserService()
+            user = user_service.get_user(user_id)
+            if user is None:
+                return JsonResponse({'msg': False}, status=200)
+            return handle_post_method_post_likes_endpoint(post_id, user)
+
+        except Exception:
+            return JsonResponse({'error_message': 'BAD REQUEST'}, status=401)
+
     return JsonResponse({'error_message': 'wrong_request'}, status=401)
 
 
 def handle_get_post_likes_endpoint(post_id: int) -> JsonResponse:
     post_service = PostService()
     return JsonResponse({'likes': post_service.return_post_likes(post_id)}, status=200)
+
+
+def handle_post_method_post_likes_endpoint(post_id: int, user: AppUsers) -> JsonResponse:
+    post_service = PostService()
+    return JsonResponse({'msg': post_service.like_post(post_id, user)}, status=200)
+
+
+'''
+   end /api/posts/likes/<int:post>
+'''

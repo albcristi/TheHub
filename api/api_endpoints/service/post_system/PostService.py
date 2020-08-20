@@ -1,5 +1,5 @@
 from ...models import AppUsers
-from ...model.posts_system.posts_system_models import Posts
+from ...model.posts_system.posts_system_models import Posts, PostLikes
 from datetime import datetime
 from ..UserService import UserService
 from django.core.paginator import Paginator
@@ -66,3 +66,23 @@ class PostService:
             return user_that_likes_post
         except Exception:
             return []
+
+    def like_post(self, post_id: int, user: AppUsers) -> bool:
+        """
+            In case user did not like the post identified
+            by post_id, a like will be added to the post
+            and also a new LikePost record will be added
+        """
+        try:
+            post = Posts.objects.get(post_id=post_id)
+            if user.usr_name in self.return_post_likes(post_id):
+                return False
+            post_like = PostLikes()
+            post_like.post = post
+            post_like.app_user = user
+            post_like.save()
+            post.no_likes += 1
+            post.save()
+            return True
+        except Exception:
+            return False
