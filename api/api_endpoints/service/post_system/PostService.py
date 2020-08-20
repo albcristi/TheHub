@@ -86,3 +86,18 @@ class PostService:
             return True
         except Exception:
             return False
+
+    def retrieve_comments(self, post_id: int) -> list:
+        """
+            Returns a list with all comments corresponding
+            to the post described by the parameter post_id.
+            If post_id is not valid, then it returns an empty
+            list.
+        """
+        try:
+            post = Posts.objects.get(post_id=post_id)
+            return post.related_post.all()
+            # ! should change related_name
+            # in post_system_models.py on Comments
+        except Exception:
+            return []

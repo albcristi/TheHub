@@ -57,4 +57,11 @@ export class PostService {
                 }
             );
     }
+
+    retrieveComments(post_id){
+        const token = sessionStorage.getItem('token');
+        return axios.get(
+                        `${BASE_URL_POSTs}comments/${post_id}?token=${token}`
+                );
+    }
 }

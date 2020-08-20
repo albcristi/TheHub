@@ -3,6 +3,7 @@ import ToggleComponent from "../../ToggleComponent";
 import {LikeListComponent} from "../likes/like-list/LikeListComponent";
 import {PostService} from "../../service/post-system/PostService";
 import './PostComponentStyle.css';
+import {CommentListComponent} from "../comments/comment-list/CommentListComponent";
 
 export class PostComponent extends React.Component{
 
@@ -100,12 +101,18 @@ export class PostComponent extends React.Component{
                                 )}
                             </ToggleComponent>
                             <div style={{marginLeft: "0.5vw"}}>
-                                {/*
-                                    TODO: introduce toggle component
-                                    in order to show available components
-                                   */
-                                }
-                                <p className="comments-text">Comments</p>
+                                <ToggleComponent>
+                                     {({showContent, changeDisplayProperty}) => (
+                                         <div>
+                                            <p onClick={changeDisplayProperty} className="comments-text">Comments</p>
+                                             {!showContent &&
+                                                <div>
+                                                    <CommentListComponent post_id={this.state.postDetails.post_id}/>
+                                                </div>
+                                             }
+                                         </div>
+                                         )}
+                                </ToggleComponent>
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ from ...service.SessionService import SessionService
 from ...service.UserService import UserService
 from ...service.post_system.PostService import PostService
 from ...models import AppUsers
-from ...serializer.post_system.post_syt_serializers import PostSerializer
+from ...serializer.post_system.post_syt_serializers import PostSerializer, PostCommentSerializer
 from django.http import JsonResponse
 
 '''
@@ -15,7 +15,6 @@ from django.http import JsonResponse
 @api_view(['POST', 'GET'])
 def handle_posts_endpoint(request):
     session_service = SessionService()
-
     if request.method == 'POST':
         form_data = json.loads(request.body.decode())
         session_token = form_data['token']
@@ -104,7 +103,6 @@ def handle_post_likes_endpoint(request, post_id: int):
             if user is None:
                 return JsonResponse({'msg': False}, status=200)
             return handle_post_method_post_likes_endpoint(post_id, user)
-
         except Exception:
             return JsonResponse({'error_message': 'BAD REQUEST'}, status=401)
 
@@ -122,5 +120,40 @@ def handle_post_method_post_likes_endpoint(post_id: int, user: AppUsers) -> Json
 
 
 '''
-   end /api/posts/likes/<int:post>
+   end /api/posts/likes/<int:post_id>
 '''
+
+'''
+    /api/posts/comments/<int:post_id>
+'''
+
+
+@api_view(['GET'])
+def handle_comments_for_post(request, post_id):
+    session_service = SessionService()
+    if request.method == 'GET':  # retrieves existing comments for a post
+        session_token = request.GET['token']
+        session = session_service.retrieve_session(session_token)
+        if session is None:
+            return JsonResponse({'error_message': 'SESSION TIME OUT: ' + session_token}, status=401)
+        else:
+            session_service.update_session_data(session)
+        return handle_get_comments_for_post(post_id)
+
+    return JsonResponse({'error_message': 'BAD REQUEST'}, status=401)
+
+
+def handle_get_comments_for_post(post_id):
+    try:
+        post_service = PostService()
+        user_service = UserService()
+        comments = set(post_service.retrieve_comments(post_id))
+        comments_transformed = []
+        for comment in comments:
+            serializer = PostCommentSerializer(comment)
+            o = serializer.data
+            o['app_user'] = user_service.get_user(serializer.data['app_user']).usr_name
+            comments_transformed.append(o)
+        return JsonResponse({"comments": comments_transformed}, status=200)
+    except Exception:
+        return JsonResponse({'error_message': 'SOMETHING WENT REALLY WRONG'}, status=401)
