@@ -1,7 +1,4 @@
 import * as React from "react";
-import ToggleComponent from "../../ToggleComponent";
-
-
 
 export class PostComponent extends React.Component{
 
@@ -44,13 +41,23 @@ export class PostComponent extends React.Component{
                             </div>
                             <div style={{marginLeft: "0.5vw"}}>
                                 { postDetail.no_likes === 0 &&
-                                <p className="text-info"> no likes yet :(</p>
+                                <p className="text"> no likes</p>
                                 }
                                 { postDetail.no_likes>0 &&
-                                <p className="text-info">{postDetail.no_likes}</p>
+                                <p className="text">
+                                    {postDetail.no_likes}
+                                    {postDetail.no_likes>1 ? 'likes' : 'like'}
+                                </p>
                                 }
                             </div>
-
+                            <div style={{marginLeft: "0.5vw"}}>
+                                {/*
+                                    TODO: introduce toggle component
+                                    in order to show available components
+                                   */
+                                }
+                                <p className="text">Comments</p>
+                            </div>
                         </div>
                     </div>
                 </div>

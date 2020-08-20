@@ -17,8 +17,10 @@ export class PostListComponent extends React.Component{
         p
             .retrieve_related_posts(1,5)
             .then((res)=>{
+                let posts = res.data.result;
+                posts.sort((post1, post2) => post2.post_id - post1.post_id);
                 this.setState({pageNo: this.state.pageNo,
-                    activePosts: res.data.result,
+                    activePosts: posts,
                     isReady: true})
             })
             .catch((_)=>{});
