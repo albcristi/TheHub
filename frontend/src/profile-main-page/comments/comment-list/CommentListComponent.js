@@ -78,7 +78,7 @@ export class CommentListComponent extends React.Component{
                 }
 
                 {
-                    this.state.current_index >= this.state.comments.length &&
+                    (this.state.current_index >= this.state.comments.length && this.state.comments.length>0) &&
                         <div>
                             <small onClick={() => this.hideComments()}>Hide Comments</small>
                         </div>

@@ -69,6 +69,11 @@ export class PostComponent extends React.Component{
                     <small>Posted on {this.niceDateFormat(this.state.postDetails.post_date)} by {this.state.postDetails.user}</small>
                     <div className="card-footer" style={{borderBottomRightRadius: "10px", borderBottomLeftRadius: "10px"}}>
                         <div className="d-flex justify-content-center">
+                            {
+                                /*
+                                    Bar containing details about likes and comments.
+                                 */
+                            }
                             <div>
                                 <svg onClick={() => {this.userLikesPostAction(this.state.postDetails)}} width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-heart-fill"
                                      fill="red" xmlns="http://www.w3.org/2000/svg">
@@ -115,9 +120,26 @@ export class PostComponent extends React.Component{
                                 </ToggleComponent>
                             </div>
                         </div>
+                        <div>
+                            {
+                                /*
+                                    Adds a new comment for the current post
+                                    from the logged user
+                                 */
+                            }
+                            <span id={`new-comm${this.state.postDetails.post_id}`} style={{borderRadius: "10px"}} onKeyUp={(e)=>{this.addNewComment(e)}} className="bg-white new-comment-span" contentEditable={true}>Add new Comment</span>
+                        </div>
                     </div>
                 </div>
             </div>
         )
+    }
+
+    addNewComment(e) {
+        if(e.keyCode===13){
+            // TODO: get comment content and send it to server
+            let commentText = document.getElementById(`new-comm${this.state.postDetails.post_id}`).textContent;
+
+        }
     }
 }

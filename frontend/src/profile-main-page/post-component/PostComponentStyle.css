@@ -2,3 +2,14 @@
 .no-likes-text:hover, .comments-text:hover{
     color: #3498db;
 }
+
+.new-comment-span{
+    padding-left: 0.75vw;
+    padding-right: 0.75vw;
+    padding-top: 0.35vh;
+    padding-bottom: 0.35vh;
+}
+
+.new-comment-span:hover{
+    border: #2ecc71 1px solid;
+}
