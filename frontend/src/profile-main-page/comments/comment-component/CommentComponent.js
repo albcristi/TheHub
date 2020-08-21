@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import './CommentComponentStyle.css';
 
 export class CommentComponent extends React.Component{
 
@@ -20,8 +20,10 @@ export class CommentComponent extends React.Component{
     render(){
 
         return (
-            <div>
-                {this.state.comment.comment_text}
+            <div className="comment-container">
+                <p className="msg-user-own">@{this.state.comment.app_user}</p>
+                <hr/>
+                <p> {this.state.comment.comment_text} </p>
             </div>
         )
     }

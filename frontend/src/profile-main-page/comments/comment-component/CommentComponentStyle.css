@@ -1,0 +1,13 @@
+
+
+.msg-user-own{
+    text-align: left;
+}
+
+.comment-container{
+    border: #7f8181 1px solid;
+    padding: 0.4%;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 1vh;
+}
