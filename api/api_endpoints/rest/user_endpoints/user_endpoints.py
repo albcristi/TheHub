@@ -26,3 +26,11 @@ def operate_user_information_handle_get_request(user_id: int) -> JsonResponse:
     return JsonResponse(serializer.data, status=200)
 
 
+@api_view(['GET'])
+def handle_username_unicity(request, user_name: str) -> JsonResponse:
+    if request.method == 'GET':
+        user_service = UserService()
+        result = user_service.username_is_unique(user_name)
+        return JsonResponse({'availability': result}, status=200)
+    return JsonResponse({'err': 'BAD REQUEST'}, status=401)
+

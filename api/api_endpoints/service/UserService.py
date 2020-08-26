@@ -32,3 +32,11 @@ class UserService:
             return usr
         except Exception:
             return None
+
+    def username_is_unique(self, user_name: str) -> bool:
+        try:
+            usrs = AppUsers.objects.filter(usr_name__exact=user_name)
+            return usrs.count() == 0
+        except Exception as e:
+            print(e)
+            return False
