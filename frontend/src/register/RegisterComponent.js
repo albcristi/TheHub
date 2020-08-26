@@ -1,41 +1,33 @@
 import * as React from "react";
+import './RegisterComponentStyle.css';
 
 class RegisterComponent extends React.Component{
+
 
     constructor(props){
         super(props);
     }
 
+    registerClicked = (e) => {
+        e.preventDefault();
+    };
+
     render() {
-
+        sessionStorage.setItem('show-log-in','false');
         return (
-            <div className="base-container" ref={this.props.containerRef}>
-        <div className="header">Register</div>
-        <div className="content">
-          <div className="image">
+            <div id="reg-data">
+                            <form  id="box" className="container" onSubmit={this.registerClicked}>
+                                <h1>Almost a member...</h1>
+                                <input type="text" name="usr_email" placeholder="Email" required/>
+                                <input type="text" name="usr_name" placeholder="Username" required/>
+                                <input type="password" name="usr_password" placeholder="Password" required/>
+                                <input type="password" name="re_usr_password" placeholder="Enter password again" required/>
+                                <input type="text" name="phone-number" placeholder="Phone Number" required/>
+                                <p id="form-message" className="text-danger text-center"></p>
+                                <input type="submit" name="" value="Register"/>
+                            </form>
 
-          </div>
-          <div className="form">
-            <div className="form-group">
-              <label htmlFor="username">Username</label>
-              <input type="text" name="username" placeholder="username" />
             </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" placeholder="email" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <input type="text" name="password" placeholder="password" />
-            </div>
-          </div>
-        </div>
-        <div className="footer">
-          <button type="button" className="btn">
-            Register
-          </button>
-        </div>
-      </div>
         )
     }
 }

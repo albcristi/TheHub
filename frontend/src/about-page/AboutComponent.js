@@ -2,14 +2,13 @@ import * as React from "react";
 import  './AboutComponent.css';
 
 
-
 class AboutComponent extends React.Component{
     constructor(props){
         super(props);
     }
 
     render() {
-
+        sessionStorage.setItem('show-log-in','false');
         return (
             <div className="car-wrapper-mine">
                 <div   id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel">
