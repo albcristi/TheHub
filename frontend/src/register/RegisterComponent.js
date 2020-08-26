@@ -9,6 +9,20 @@ class RegisterComponent extends React.Component{
         super(props);
     }
 
+    // HANDLE EMAIL DATA FIELD
+    handleEmailInput(){
+        let formObject =  document.getElementById('box');
+        formObject = new FormData(formObject);
+        let typedEmail = formObject.get('usr_email');
+        let regex = new RegExp('[a-zA-Z0-9._]+@{1,1}[a-zA-Z0-9]+\.[a-zA-Z0-9]+');
+        if(!regex.test(typedEmail)){
+            window.jQuery("#email-msg").text("Invalid email format");
+            return false;
+        }
+        window.jQuery("#email-msg").text('');
+        return true;
+    }
+
     // HANDLE DATA RELATED TO USER NAME FIELD
     handleUserNameInput(){
         let formObject =  document.getElementById('box');
@@ -48,10 +62,10 @@ class RegisterComponent extends React.Component{
         }
         if(errorMessage.length > 0){
             window.jQuery("#pass-msg").text(errorMessage);
-            return;
+            return false;
         }
         window.jQuery("#pass-msg").text('');
-
+        return true;
     }
 
     // HANDLE RE-ENTERED PASSWORD
@@ -59,6 +73,14 @@ class RegisterComponent extends React.Component{
         let formObject =  document.getElementById('box');
         formObject = new FormData(formObject);
         let typedPassword = formObject.get('usr_password');
+        let reEnteredPassword = formObject.get('re_usr_password');
+        if(typedPassword !== reEnteredPassword){
+            window.jQuery("#re-pass-msg").text('Passwords must match')
+        }
+        else{
+            window.jQuery("#re-pass-msg").text('');
+        }
+        return typedPassword === reEnteredPassword;
     }
 
     registerClicked = (e) => {
@@ -71,12 +93,13 @@ class RegisterComponent extends React.Component{
             <div id="reg-data">
                             <form  id="box" className="container" onSubmit={this.registerClicked}>
                                 <h1>Almost a member...</h1>
-                                <input type="text" name="usr_email" placeholder="Email" required/>
+                                <input type="text" name="usr_email" placeholder="Email" onChange={()=>{this.handleEmailInput()}} required/>
+                                <p id="email-msg"></p>
                                 <input type="text" onChange={() => {this.handleUserNameInput()}} name="usr_name" placeholder="Username" required/>
                                 <p id="usr-name-msg" className="text-danger"></p>
                                 <input  type="password" name="usr_password" placeholder="Password" onChange={()=>{this.handelPasswordInput()}} required/>
                                 <p id="pass-msg" className="text-danger"></p>
-                                <input type="password" name="re_usr_password" placeholder="Enter password again" required/>
+                                <input type="password" name="re_usr_password" placeholder="Confirm password" onChange={()=>{this.handleReEnteredPasswordInput()}} required/>
                                 <p id="re-pass-msg" className="text-danger"></p>
                                 <input type="text" name="phone-number" placeholder="Phone Number" required/>
                                 <p id="phone-msg" className="text-danger"></p>
