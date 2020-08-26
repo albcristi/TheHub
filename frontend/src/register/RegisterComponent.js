@@ -83,6 +83,20 @@ class RegisterComponent extends React.Component{
         return typedPassword === reEnteredPassword;
     }
 
+
+    // HANDLE PHONE NUMBER
+    handlePhoneNumberInput(){
+        let formObject =  document.getElementById('box');
+        formObject = new FormData(formObject);
+        let typedPhoneNumber = formObject.get('phone-number');
+        let regex = new RegExp('^[0-9]+$');
+        let er = "";
+        if(!regex.test(typedPhoneNumber)){
+            er += 'Phone numbers contain only digits'
+        }
+        window.jQuery('#phone-msg').text(er);
+        return er.length === 0;
+    }
     registerClicked = (e) => {
         e.preventDefault();
     };
@@ -101,7 +115,7 @@ class RegisterComponent extends React.Component{
                                 <p id="pass-msg" className="text-danger"></p>
                                 <input type="password" name="re_usr_password" placeholder="Confirm password" onChange={()=>{this.handleReEnteredPasswordInput()}} required/>
                                 <p id="re-pass-msg" className="text-danger"></p>
-                                <input type="text" name="phone-number" placeholder="Phone Number" required/>
+                                <input type="text" name="phone-number" placeholder="Phone Number" onChange={()=>{this.handlePhoneNumberInput()}} required/>
                                 <p id="phone-msg" className="text-danger"></p>
                                 <input type="submit" name="" value="Register"/>
                             </form>

@@ -27,10 +27,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="246">
+              <caret line="117" column="142" selection-start-line="117" selection-start-column="142" selection-end-line="117" selection-end-column="142" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+                <element signature="n#!!block;n#handleEmailInput#0;n#RegisterComponent#0" />
                 <element signature="n#!!block;n#handleUserNameInput#0;n#RegisterComponent#0" />
                 <element signature="n#!!block;n#handelPasswordInput#0;n#RegisterComponent#0" />
                 <element signature="n#!!block;n#handleReEnteredPasswordInput#0;n#RegisterComponent#0" />
@@ -404,12 +405,12 @@
       <workItem from="1597752450389" duration="16197000" />
       <workItem from="1597916650864" duration="19964000" />
       <workItem from="1598002977509" duration="7531000" />
-      <workItem from="1598439902058" duration="15411000" />
+      <workItem from="1598439902058" duration="16498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205348000" />
+    <option name="totallyTimeSpent" value="206435000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,7 +439,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.046852123" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.043923866" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -901,10 +902,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="246">
+          <caret line="117" column="142" selection-start-line="117" selection-start-column="142" selection-end-line="117" selection-end-column="142" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+            <element signature="n#!!block;n#handleEmailInput#0;n#RegisterComponent#0" />
             <element signature="n#!!block;n#handleUserNameInput#0;n#RegisterComponent#0" />
             <element signature="n#!!block;n#handelPasswordInput#0;n#RegisterComponent#0" />
             <element signature="n#!!block;n#handleReEnteredPasswordInput#0;n#RegisterComponent#0" />
