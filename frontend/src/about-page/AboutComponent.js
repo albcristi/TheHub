@@ -33,7 +33,7 @@ class AboutComponent extends React.Component{
                                   <h1>The Hub</h1>
                                   <h3>Best place for organizing your events and trips</h3>
                                   <h3>Make it possible</h3>
-                                  <h4><a href="/">Register Now</a></h4>
+                                  <h4><a href="/register">Register Now</a></h4>
                               </div>
                         </div>
                     </div>
