@@ -9,4 +9,10 @@ export class UserService{
              `${this.BASE_URL}${userName}`
          );
      }
+
+     getVerificationCodeByWhatssApp(user_name, phone_number){
+         return axios.get(
+             `${this.BASE_URL}account?phone_number=${phone_number}&user_name=${user_name}`
+         )
+     }
 }

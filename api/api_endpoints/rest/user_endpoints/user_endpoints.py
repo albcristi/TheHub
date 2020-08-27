@@ -1,8 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.utils import json
-
-from ...service.SessionService import SessionService
 from ...service.UserService import UserService
+from ...service.PhoneMessagingService import *
 from ...serializer.serializers import AppUserSerializer
 from django.http import JsonResponse
 
@@ -34,3 +33,46 @@ def handle_username_unicity(request, user_name: str) -> JsonResponse:
         return JsonResponse({'availability': result}, status=200)
     return JsonResponse({'err': 'BAD REQUEST'}, status=401)
 
+
+'''
+    /api/user/new-account
+'''
+
+
+@api_view(['POST', 'GET'])
+def create_new_user(request) -> JsonResponse:
+    if request.method == 'GET':
+        try:
+            return handle_get_new_user_endpoint(request)
+        except Exception as e:
+            return JsonResponse({'error': e}, status=401)
+    return JsonResponse({'err': 'BAD REQUEST'}, status=401)
+
+
+def handle_get_new_user_endpoint(request) -> JsonResponse:
+    try:
+        phone_number = request.GET['phone_number']
+        user_name = request.GET['user_name']
+        access_key = send_verification_code_to_new_user(phone_number, user_name)
+        return JsonResponse({'access_key': access_key, 'failed': False})
+    except Exception as e:
+        return JsonResponse({'access_key': e, 'failed': True})
+
+
+def handle_post_new_user_endpoint(request) -> JsonResponse:
+    try:
+        user_data = json.loads(request.body.decode())
+        user_name = user_data['user_name']
+        email = user_data['email']
+        phone_number = user_data['phone_number']
+        user_password = user_data['password']
+        user_service = UserService()
+        # TODO: SAVE IN DB NEW USER
+        return JsonResponse({'failed': True})
+    except Exception as e:
+        return JsonResponse({'error': e}, status=401)
+
+
+'''
+   end /api/user/new-account
+'''

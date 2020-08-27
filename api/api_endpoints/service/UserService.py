@@ -40,3 +40,8 @@ class UserService:
         except Exception as e:
             print(e)
             return False
+
+    def create_user(self, user_name: str, user_password: str, email: str, phone_number: str) -> bool:
+        if not self.username_is_unique(user_name):
+            return False
+
