@@ -1,6 +1,8 @@
 import * as React from "react";
 import './RegisterComponentStyle.css';
 import {UserService} from "../service/UserService";
+import ToggleComponent from "../ToggleComponent";
+import {ValidationAccountComponent} from "./access-key-validation/ValidationAccountComponent";
 
 class RegisterComponent extends React.Component{
 
@@ -97,28 +99,44 @@ class RegisterComponent extends React.Component{
         window.jQuery('#phone-msg').text(er);
         return er.length === 0;
     }
-    registerClicked = (e) => {
+    registerClicked = (e, changeDisplayProperty) => {
         e.preventDefault();
+        alert('aa')
+        changeDisplayProperty();
     };
 
     render() {
         sessionStorage.setItem('show-log-in','false');
         return (
-            <div id="reg-data">
-                <form  id="box" className="container" onSubmit={this.registerClicked}>
-                    <h1>Almost a member...</h1>
-                    <input type="text" name="usr_email" placeholder="Email" onChange={()=>{this.handleEmailInput()}} required/>
-                    <p id="email-msg"></p>
-                    <input type="text" onChange={() => {this.handleUserNameInput()}} name="usr_name" placeholder="Username" required/>
-                    <p id="usr-name-msg" className="text-danger"></p>
-                    <input  type="password" name="usr_password" placeholder="Password" onChange={()=>{this.handelPasswordInput()}} required/>
-                    <p id="pass-msg" className="text-danger"></p>
-                    <input type="password" name="re_usr_password" placeholder="Confirm password" onChange={()=>{this.handleReEnteredPasswordInput()}} required/>
-                    <p id="re-pass-msg" className="text-danger"></p>
-                    <input type="text" name="phone-number" placeholder="Your Phone Number" onChange={()=>{this.handlePhoneNumberInput()}} required/>
-                    <p id="phone-msg" className="text-danger"></p>
-                    <input type="submit" name="" value="Register"/>
-                </form>
+            <div  id="reg-data">
+                <ToggleComponent>
+                    {({showContent, changeDisplayProperty}) => (
+                        <div>
+                            {showContent &&
+                                <div>
+                                    <form  id="box" className="container" onSubmit={(event) => this.registerClicked(event, changeDisplayProperty)}>
+                                        <h1>Almost a member...</h1>
+                                        <input type="text" name="usr_email" placeholder="Email" onChange={()=>{this.handleEmailInput()}} required/>
+                                        <p id="email-msg"></p>
+                                        <input type="text" onChange={() => {this.handleUserNameInput()}} name="usr_name" placeholder="Username" required/>
+                                        <p id="usr-name-msg" className="text-danger"></p>
+                                        <input  type="password" name="usr_password" placeholder="Password" onChange={()=>{this.handelPasswordInput()}} required/>
+                                        <p id="pass-msg" className="text-danger"></p>
+                                        <input type="password" name="re_usr_password" placeholder="Confirm password" onChange={()=>{this.handleReEnteredPasswordInput()}} required/>
+                                        <p id="re-pass-msg" className="text-danger"></p>
+                                        <input type="text" name="phone-number" placeholder="Your Phone Number" onChange={()=>{this.handlePhoneNumberInput()}} required/>
+                                        <p id="phone-msg" className="text-danger"></p>
+                                        <input type="submit" name="" value="Register"/>
+                                    </form>
+                                </div>}
+                            {!showContent &&
+                                <div style={{marginTop: "60px"}}>
+                                    <ValidationAccountComponent/>
+                                </div>}
+                        </div>
+
+                        )}
+                </ToggleComponent>
             </div>
         )
     }

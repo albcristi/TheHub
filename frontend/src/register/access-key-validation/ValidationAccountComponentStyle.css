@@ -1,0 +1,19 @@
+
+
+#whatsapp-verify-account-card{
+     max-width: 18em;
+     background:rgba(255,255,255,0.6);
+     backdrop-filter: blur(10px);
+}
+
+#whatsapp-verify-account-card input{
+    border-radius: 10px;
+    padding: 0.22%;
+    margin-bottom: 3px;
+}
+
+#validation-account-comp{
+    margin-top: 15vh;
+}
+
+

@@ -54,7 +54,7 @@ def handle_get_new_user_endpoint(request) -> JsonResponse:
         phone_number = request.GET['phone_number']
         user_name = request.GET['user_name']
         access_key = send_verification_code_to_new_user(phone_number, user_name)
-        return JsonResponse({'access_key': access_key, 'failed': False})
+        return JsonResponse({'access_key': access_key, 'failed': False, 'phone_number': os.environ['PHONE_NUMBER']})
     except Exception as e:
         return JsonResponse({'access_key': e, 'failed': True})
 

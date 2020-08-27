@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/service/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/service/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/register/RegisterComponentStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/register/RegisterComponentStyle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,25 +17,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="57" />
+            <state relative-caret-position="345">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
               <folding>
-                <element signature="e#0#46#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
+                <element signature="n#!!block;n#handleEmailInput#0;n#RegisterComponent#0" />
+                <element signature="n#!!block;n#handleUserNameInput#0;n#RegisterComponent#0" />
+                <element signature="n#!!block;n#handelPasswordInput#0;n#RegisterComponent#0" />
+                <element signature="n#!!block;n#handleReEnteredPasswordInput#0;n#RegisterComponent#0" />
+                <element signature="n#!!block;n#handlePhoneNumberInput#0;n#RegisterComponent#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/UserService.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="115">
+              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="44" />
               <folding>
-                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,9 +62,9 @@
       <list>
         <option value="SCSS File" />
         <option value="TypeScript File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -59,6 +74,7 @@
       <find>upco</find>
       <find>()</find>
       <find>class</find>
+      <find>regi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,8 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPage.js" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/SideBarComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/SideBarStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfileCardComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
@@ -105,8 +119,6 @@
         <option value="$PROJECT_DIR$/frontend/src/about-page/AboutComponent.css" />
         <option value="$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js" />
         <option value="$PROJECT_DIR$/frontend/src/App.js" />
-        <option value="$PROJECT_DIR$/frontend/src/register/RegisterComponentStyle.css" />
-        <option value="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/about-page/AboutComponent.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/service/phone-messaging/general-actions.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/service/phone_messaging/general.py" />
@@ -116,8 +128,12 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/phone-messaging/phone_messaging_endpoints.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" />
-        <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/service/UserService.js" />
+        <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
+        <option value="$PROJECT_DIR$/frontend/src/register/RegisterComponentStyle.css" />
+        <option value="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css" />
       </list>
     </option>
   </component>
@@ -327,6 +343,14 @@
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="access-key-validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -405,12 +429,12 @@
       <workItem from="1598002977509" duration="7531000" />
       <workItem from="1598439902058" duration="19186000" />
       <workItem from="1598462483000" duration="856000" />
-      <workItem from="1598541804118" duration="2389000" />
+      <workItem from="1598541804118" duration="8066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212368000" />
+    <option name="totallyTimeSpent" value="218045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,6 +447,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18657719" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -438,7 +463,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.2737921" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.3338214" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -487,23 +512,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/ToggleComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-46">
@@ -693,28 +701,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/about-page/img3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/register/bck-img.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponentStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/log-in/LogInComponent.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -742,21 +733,6 @@
           <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="119" column="67" selection-start-line="119" selection-start-column="67" selection-end-line="119" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="n#!!block;n#handleEmailInput#0;n#RegisterComponent#0" />
-            <element signature="n#!!block;n#handleUserNameInput#0;n#RegisterComponent#0" />
-            <element signature="n#!!block;n#handelPasswordInput#0;n#RegisterComponent#0" />
-            <element signature="n#!!block;n#handleReEnteredPasswordInput#0;n#RegisterComponent#0" />
-            <element signature="n#!!block;n#handlePhoneNumberInput#0;n#RegisterComponent#0" />
           </folding>
         </state>
       </provider>
@@ -843,33 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/PhoneMessagingService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -887,6 +836,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/PhoneMessagingService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/UserService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -894,6 +860,65 @@
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="56" column="112" selection-start-line="56" selection-start-column="112" selection-end-line="56" selection-end-column="112" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponentStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="n#!!block;n#handleEmailInput#0;n#RegisterComponent#0" />
+            <element signature="n#!!block;n#handleUserNameInput#0;n#RegisterComponent#0" />
+            <element signature="n#!!block;n#handelPasswordInput#0;n#RegisterComponent#0" />
+            <element signature="n#!!block;n#handleReEnteredPasswordInput#0;n#RegisterComponent#0" />
+            <element signature="n#!!block;n#handlePhoneNumberInput#0;n#RegisterComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>
