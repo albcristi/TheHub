@@ -1,7 +1,7 @@
 from typing import Optional
 
 from ..models import AppUsers
-
+from datetime import datetime
 
 class UserService:
     """"
@@ -44,4 +44,14 @@ class UserService:
     def create_user(self, user_name: str, user_password: str, email: str, phone_number: str) -> bool:
         if not self.username_is_unique(user_name):
             return False
-
+        try:
+            user = AppUsers()
+            user.usr_name = user_name
+            user.usr_password = user_password
+            user.usr_email = email
+            user.phone_number = phone_number
+            user.birth_date = datetime.now()
+            user.save()
+            return True
+        except Exception:
+            return False

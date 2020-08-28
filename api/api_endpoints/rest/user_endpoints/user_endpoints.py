@@ -35,12 +35,12 @@ def handle_username_unicity(request, user_name: str) -> JsonResponse:
 
 
 '''
-    /api/user/new-account
+    /api/user/account
 '''
 
 
-@api_view(['POST', 'GET'])
-def create_new_user(request) -> JsonResponse:
+@api_view(['GET'])
+def send_user_verification_code(request) -> JsonResponse:
     if request.method == 'GET':
         try:
             return handle_get_new_user_endpoint(request)
@@ -59,6 +59,25 @@ def handle_get_new_user_endpoint(request) -> JsonResponse:
         return JsonResponse({'access_key': str(e), 'failed': True})
 
 
+'''
+   end /api/user/account
+'''
+
+
+'''
+    /api/user/new-account
+'''
+
+
+@api_view(['POST'])
+def handle_new_user(request) -> JsonResponse:
+    if request.method == 'POST':
+        try:
+            return handle_post_new_user_endpoint(request)
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=401)
+
+
 def handle_post_new_user_endpoint(request) -> JsonResponse:
     try:
         user_data = json.loads(request.body.decode())
@@ -67,12 +86,12 @@ def handle_post_new_user_endpoint(request) -> JsonResponse:
         phone_number = user_data['phone_number']
         user_password = user_data['password']
         user_service = UserService()
-        # TODO: SAVE IN DB NEW USER
-        return JsonResponse({'failed': True})
+        user_service.create_user(user_name, user_password, email, phone_number)
+        return JsonResponse({'status': not user_service.username_is_unique(user_name)})
     except Exception as e:
         return JsonResponse({'error': e}, status=401)
 
 
 '''
-   end /api/user/new-account
+     end /api/user/new-account
 '''

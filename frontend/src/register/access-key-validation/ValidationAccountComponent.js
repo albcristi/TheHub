@@ -25,7 +25,7 @@ export class ValidationAccountComponent extends React.Component{
     }
 
     verifyAccessKey(){
-        console.log('aa')
+        console.log('aa');
         let typedKey = window.jQuery("#input-access-key").val();
         let realKey  = sessionStorage.getItem('access-key');
         console.log(realKey)
@@ -35,8 +35,18 @@ export class ValidationAccountComponent extends React.Component{
             return;
         }
         if(realKey === typedKey){
-            // TODO: FINISH USER ACCOUNT CREATION
-            alert('Welcome to the Hub');
+           this.userService.createNewAccount(sessionStorage.getItem('new-user-name'),
+                   sessionStorage.getItem('new-user-password'),
+                   sessionStorage.getItem('new-user-phone'),
+                   sessionStorage.getItem('new-user-email'))
+               .then((res) => {
+                   alert(res.data);
+                   console.log(res.data);
+               })
+               .catch((_) => {
+                   alert("Action Failed, try again later")
+               })
+
         }
         else{
             window.jQuery("#failure-message-verification-code-wapp").text("Keys do not match");
