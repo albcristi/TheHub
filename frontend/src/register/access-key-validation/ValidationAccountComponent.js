@@ -1,10 +1,22 @@
 import * as React from "react";
 import './ValidationAccountComponentStyle.css';
+import {UserService} from "../../service/UserService";
 
 export class ValidationAccountComponent extends React.Component{
 
+    userService = new UserService();
     constructor(props){
         super(props);
+    }
+
+    getVerificationCode(){
+        this.userService
+            .getVerificationCodeByWhatssApp(sessionStorage.getItem('new-user-name'),
+                 sessionStorage.getItem('new-user-phone'))
+            .then((res) => {
+                console.log(res.data)
+            })
+            .catch((_) => {})
     }
 
     render() {
@@ -17,7 +29,7 @@ export class ValidationAccountComponent extends React.Component{
                     <div className="card-body">
                         <hr/>
                         <p className="text-info" style={{fontSize: "15px"}}>First Step</p>
-                        <p>Add {sessionStorage.getItem('phone_number')} <br/> to your contacts</p>
+                        <p>Add <small className="text-info">+14155238886</small> <br/> to your contacts</p>
                         <hr/>
                         <p className="text-info" style={{fontSize: "15px"}}>Second Step</p>
                         <p>Send the following message on WhatsApp
@@ -25,7 +37,7 @@ export class ValidationAccountComponent extends React.Component{
                         <small>join cowboy-must</small>
                          <hr/>
                         <p className="text-info" style={{fontSize: "15px"}}>Third Step</p>
-                        <p class="verif-link">Sent Verification Code</p>
+                        <p onClick={() => {this.getVerificationCode()}} className="verif-link">Send Verification Code</p>
                         <input placeholder="Access Key"/>
                         <button className="btn btn-primary">Verify Code</button>
                     </div>

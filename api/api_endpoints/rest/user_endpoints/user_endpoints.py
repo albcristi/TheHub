@@ -45,7 +45,7 @@ def create_new_user(request) -> JsonResponse:
         try:
             return handle_get_new_user_endpoint(request)
         except Exception as e:
-            return JsonResponse({'error': e}, status=401)
+            return JsonResponse({'error': str(e)}, status=401)
     return JsonResponse({'err': 'BAD REQUEST'}, status=401)
 
 
@@ -56,7 +56,7 @@ def handle_get_new_user_endpoint(request) -> JsonResponse:
         access_key = send_verification_code_to_new_user(phone_number, user_name)
         return JsonResponse({'access_key': access_key, 'failed': False, 'phone_number': os.environ['PHONE_NUMBER']})
     except Exception as e:
-        return JsonResponse({'access_key': e, 'failed': True})
+        return JsonResponse({'access_key': str(e), 'failed': True})
 
 
 def handle_post_new_user_endpoint(request) -> JsonResponse:

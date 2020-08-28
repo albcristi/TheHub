@@ -39,10 +39,12 @@ class RegisterComponent extends React.Component{
              userService.checkUserNameUnicity(typedUserName)
                  .then((res) =>{
                      if(!res.data.availability){
+                         sessionStorage.setItem('isTaken','true');
                          window.jQuery("#usr-name-msg").text('User name already taken')
                          return;
                      }
-                     window.jQuery("#usr-name-msg").text('')
+                     window.jQuery("#usr-name-msg").text('');
+                     sessionStorage.setItem('isTaken','false');
                  })
                  .catch((_) => {})
         }
@@ -99,10 +101,27 @@ class RegisterComponent extends React.Component{
         window.jQuery('#phone-msg').text(er);
         return er.length === 0;
     }
+
     registerClicked = (e, changeDisplayProperty) => {
         e.preventDefault();
-        alert('aa')
-        changeDisplayProperty();
+        if(sessionStorage.getItem('isTaken') === 'true')
+            return;
+        if(this.handelPasswordInput() &&
+            this.handleReEnteredPasswordInput() &&
+            this.handlePhoneNumberInput() &&
+            this.handleEmailInput()) {
+            changeDisplayProperty();
+            let formObject = document.getElementById('box');
+            formObject = new FormData(formObject);
+            let typedEmail = formObject.get('usr_email');
+            let typedUserName = formObject.get('usr_name');
+            let typedPassword = formObject.get('usr_password');
+            let typedPhoneNumber = formObject.get('phone-number');
+            sessionStorage.setItem('new-user-name', typedUserName);
+            sessionStorage.setItem('new-user-password', typedPassword);
+            sessionStorage.setItem('new-user-phone', typedPhoneNumber);
+            sessionStorage.setItem('new-user-email', typedEmail);
+        }
     };
 
     render() {
