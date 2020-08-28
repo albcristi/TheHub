@@ -1,6 +1,7 @@
 import * as React from "react";
 import './ValidationAccountComponentStyle.css';
 import {UserService} from "../../service/UserService";
+import {MessageComponent} from "../../message-component/MessageComponent";
 
 export class ValidationAccountComponent extends React.Component{
 
@@ -40,11 +41,12 @@ export class ValidationAccountComponent extends React.Component{
                    sessionStorage.getItem('new-user-phone'),
                    sessionStorage.getItem('new-user-email'))
                .then((res) => {
-                   alert(res.data);
-                   console.log(res.data);
+                   if(res.data['status']){
+                       // user account creation is a success
+                   }
                })
                .catch((_) => {
-                   alert("Action Failed, try again later")
+                   window.jQuery("#val-wapp-message").appendChild("<MessageComponent messageID={'wap1'}, messageBody='aaaaa' messageTitle='ss'/>");
                })
 
         }
@@ -53,6 +55,7 @@ export class ValidationAccountComponent extends React.Component{
         }
 
     }
+
 
     render() {
         return (
@@ -76,6 +79,8 @@ export class ValidationAccountComponent extends React.Component{
                         <input id="input-access-key" className="text-center" placeholder="verification key"/>
                         <button onClick={() => {this.verifyAccessKey()}} className="btn btn-primary">Verify Code</button>
                         <p id="failure-message-verification-code-wapp" className="text-danger"></p>
+                    </div>
+                    <div id="val-wapp-message">
                     </div>
                 </div>
             </div>

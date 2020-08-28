@@ -3,6 +3,7 @@ import './RegisterComponentStyle.css';
 import {UserService} from "../service/UserService";
 import ToggleComponent from "../ToggleComponent";
 import {ValidationAccountComponent} from "./access-key-validation/ValidationAccountComponent";
+import {MessageComponent} from "../message-component/MessageComponent";
 
 class RegisterComponent extends React.Component{
 
@@ -123,6 +124,8 @@ class RegisterComponent extends React.Component{
             sessionStorage.setItem('new-user-email', typedEmail);
         }
     };
+
+
 
     render() {
         sessionStorage.setItem('show-log-in','false');
