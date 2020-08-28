@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js" afterDir="false" />
     </list>
@@ -14,36 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" selection-start-line="15" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="105" column="27" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="n#!!block;n#handleEmailInput#0;n#RegisterComponent#0" />
-                <element signature="n#!!block;n#handelPasswordInput#0;n#RegisterComponent#0" />
-                <element signature="n#!!block;n#handleReEnteredPasswordInput#0;n#RegisterComponent#0" />
-                <element signature="n#!!block;n#handlePhoneNumberInput#0;n#RegisterComponent#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="207">
+              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -125,9 +99,9 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" />
         <option value="$PROJECT_DIR$/frontend/src/service/UserService.js" />
-        <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/register/RegisterComponentStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css" />
+        <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js" />
       </list>
@@ -426,12 +400,12 @@
       <workItem from="1598439902058" duration="19186000" />
       <workItem from="1598462483000" duration="856000" />
       <workItem from="1598541804118" duration="8430000" />
-      <workItem from="1598610385411" duration="1470000" />
+      <workItem from="1598610385411" duration="3300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219879000" />
+    <option name="totallyTimeSpent" value="221709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,6 +418,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18926175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -459,7 +434,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.18740849" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.13469985" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -784,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/phone-messaging/phone_messaging_endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-991">
@@ -804,23 +772,6 @@
           <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/service/UserService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -842,16 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="56" column="112" selection-start-line="56" selection-start-column="112" selection-end-line="56" selection-end-column="112" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -866,27 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="105" column="27" selection-start-line="105" selection-start-column="27" selection-end-line="105" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="n#!!block;n#handleEmailInput#0;n#RegisterComponent#0" />
-            <element signature="n#!!block;n#handelPasswordInput#0;n#RegisterComponent#0" />
-            <element signature="n#!!block;n#handleReEnteredPasswordInput#0;n#RegisterComponent#0" />
-            <element signature="n#!!block;n#handlePhoneNumberInput#0;n#RegisterComponent#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -907,10 +827,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/phone-messaging/phone_messaging_endpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/service/UserService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/register/RegisterComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="136" column="63" selection-start-line="136" selection-start-column="63" selection-end-line="136" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="n#!!block;n#handleEmailInput#0;n#RegisterComponent#0" />
+            <element signature="n#!!block;n#handelPasswordInput#0;n#RegisterComponent#0" />
+            <element signature="n#!!block;n#handleReEnteredPasswordInput#0;n#RegisterComponent#0" />
+            <element signature="n#!!block;n#handlePhoneNumberInput#0;n#RegisterComponent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-927">
+          <caret column="46" lean-forward="true" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="207">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

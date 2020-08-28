@@ -134,7 +134,7 @@ class RegisterComponent extends React.Component{
                             {showContent &&
                                 <div>
                                     <form  id="box" className="container" onSubmit={(event) => this.registerClicked(event, changeDisplayProperty)}>
-                                        <h1>Almost a member...</h1>
+                                        <h1>Something about you</h1>
                                         <input type="text" name="usr_email" placeholder="Email" onChange={()=>{this.handleEmailInput()}} required/>
                                         <p id="email-msg"></p>
                                         <input type="text" onChange={() => {this.handleUserNameInput()}} name="usr_name" placeholder="Username" required/>
@@ -145,7 +145,7 @@ class RegisterComponent extends React.Component{
                                         <p id="re-pass-msg" className="text-danger"></p>
                                         <input type="text" name="phone-number" placeholder="Your Phone Number" onChange={()=>{this.handlePhoneNumberInput()}} required/>
                                         <p id="phone-msg" className="text-danger"></p>
-                                        <input type="submit" name="" value="Register"/>
+                                        <input type="submit" name="" value="Next Step"/>
                                     </form>
                                 </div>}
                             {!showContent &&

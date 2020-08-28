@@ -14,9 +14,34 @@ export class ValidationAccountComponent extends React.Component{
             .getVerificationCodeByWhatssApp(sessionStorage.getItem('new-user-name'),
                  sessionStorage.getItem('new-user-phone'))
             .then((res) => {
-                console.log(res.data)
+                if(res.data['failed']){
+                    sessionStorage.setItem('access-key','none');
+                }
+                else{
+                     sessionStorage.setItem('access-key',res.data['access_key']);
+                }
             })
-            .catch((_) => {})
+            .catch((_) => {alert('Make sure the introduced number is a valid one')})
+    }
+
+    verifyAccessKey(){
+        console.log('aa')
+        let typedKey = window.jQuery("#input-access-key").val();
+        let realKey  = sessionStorage.getItem('access-key');
+        console.log(realKey)
+        sessionStorage.removeItem('access-key');
+        if(realKey === 'none' || realKey === null){
+            alert('Verification not received from server');
+            return;
+        }
+        if(realKey === typedKey){
+            // TODO: FINISH USER ACCOUNT CREATION
+            alert('Welcome to the Hub');
+        }
+        else{
+            window.jQuery("#failure-message-verification-code-wapp").text("Keys do not match");
+        }
+
     }
 
     render() {
@@ -24,7 +49,7 @@ export class ValidationAccountComponent extends React.Component{
             <div id="validation-account-comp" className="d-flex justify-content-center">
                 <div  className="card" id="whatsapp-verify-account-card">
                     <div className="card-body">
-                        <h5 className="card-title">WhatsApp Validation</h5>
+                        <h5 className="card-title">WhatsApp Key Generation</h5>
                     </div>
                     <div className="card-body">
                         <hr/>
@@ -38,8 +63,9 @@ export class ValidationAccountComponent extends React.Component{
                          <hr/>
                         <p className="text-info" style={{fontSize: "15px"}}>Third Step</p>
                         <p onClick={() => {this.getVerificationCode()}} className="verif-link">Send Verification Code</p>
-                        <input placeholder="Access Key"/>
-                        <button className="btn btn-primary">Verify Code</button>
+                        <input id="input-access-key" className="text-center" placeholder="verification key"/>
+                        <button onClick={() => {this.verifyAccessKey()}} className="btn btn-primary">Verify Code</button>
+                        <p id="failure-message-verification-code-wapp" className="text-danger"></p>
                     </div>
                 </div>
             </div>
