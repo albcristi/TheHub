@@ -34,7 +34,7 @@ export class ValidationAccountComponent extends React.Component{
         let realKey  = sessionStorage.getItem('access-key');
         sessionStorage.removeItem('access-key');
         if(realKey === 'none' || realKey === null){
-            alert('Verification not received from server');
+            window.jQuery('#wapp-verification-code-missing-msg').modal('show');
             return;
         }
         if(realKey === typedKey){
@@ -46,8 +46,11 @@ export class ValidationAccountComponent extends React.Component{
                    if(res.data['status']){
                        // user account creation is a success
                    }
+                   // something went wrong
+                   window.jQuery('#wapp-account-creation-failed').modal('show');
                })
                .catch((_) => {
+                    window.jQuery('#wapp-account-creation-failed').modal('show');
                })
 
         }
@@ -90,6 +93,21 @@ export class ValidationAccountComponent extends React.Component{
                            <MessageComponent messageID={'wapp-empty-input-msg'}
                                              messageTitle={'Error'}
                                              messageBody={'Enter a verification code before submitting the result'}
+                                             bodyStyle={'text-info'}
+                                             headerStyle={'text-danger'}
+                           />
+                           <MessageComponent messageID={'wapp-verification-code-missing-msg'}
+                                             messageTitle={'Error'}
+                                             messageBody={'Verification code not received from server.' +
+                                             'Try to resend the verification code and make sure you followed' +
+                                             ' correctly the steps described above'}
+                                             bodyStyle={'text-info'}
+                                             headerStyle={'text-danger'}
+                           />
+                           <MessageComponent messageID={'wapp-account-creation-failed'}
+                                             messageTitle={'Error'}
+                                             messageBody={'Something went wrong. Account creation failed, '+
+                                             'try again later!'}
                                              bodyStyle={'text-info'}
                                              headerStyle={'text-danger'}
                            />

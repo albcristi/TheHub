@@ -151,8 +151,7 @@ class RegisterComponent extends React.Component{
                                         <input type="submit" name="" value="Next Step"/>
                                     </form>
                                 </div>}
-                            {/*TODO: add !showContent*/}
-                                {showContent &&
+                                {!showContent &&
                                     <div style={{marginTop: "60px"}}>
                                         <ValidationAccountComponent/>
                                     </div>}
