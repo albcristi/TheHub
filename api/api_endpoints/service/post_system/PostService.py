@@ -34,11 +34,8 @@ class PostService:
             posted and their ids
         """
         friend_list = self.__user_service.get_user_friends(user_name)
-        if friend_list.count() == 0:
-            return []
-        usr = friend_list[0].friendship_owner
         friend_list = [friend.friend_with for friend in set(friend_list)]
-        friend_list.append(usr)
+        friend_list.append(self.__user_service.get_user_by_user_name(user_name))
         try:
             posts = Posts.objects.\
                 filter(user__in=friend_list).\

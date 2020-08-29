@@ -45,6 +45,12 @@ export class ValidationAccountComponent extends React.Component{
                .then((res) => {
                    if(res.data['status']){
                        // user account creation is a success
+                       window.jQuery('#wapp-account-creation-success').modal('show');
+                       setTimeout(() => {
+                           sessionStorage.setItem('show-log-in', 'true');
+                           window.location = '/';
+                           },4000);
+                       return;
                    }
                    // something went wrong
                    window.jQuery('#wapp-account-creation-failed').modal('show');
@@ -110,6 +116,12 @@ export class ValidationAccountComponent extends React.Component{
                                              'try again later!'}
                                              bodyStyle={'text-info'}
                                              headerStyle={'text-danger'}
+                           />
+                           <MessageComponent messageID={'wapp-account-creation-success'}
+                                             messageTitle={'Welcome to the Hub!'}
+                                             messageBody={'You will be redirected to the log in page.'}
+                                             bodyStyle={'text-info'}
+                                             headerStyle={'text-success'}
                            />
                 </div>
             </div>

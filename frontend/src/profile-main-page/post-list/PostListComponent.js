@@ -6,13 +6,17 @@ import {PostService} from "../../service/post-system/PostService";
 export class PostListComponent extends React.Component{
 
     state = {
-        pageNo: 1,
+        pageNo: 0,
         activePosts: [],
         isReady: false
     };
 
     constructor(props) {
         super(props);
+
+    }
+
+    componentWillMount() {
         const p = new PostService();
         p
             .retrieve_related_posts(1,5)
