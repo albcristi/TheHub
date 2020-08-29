@@ -26,10 +26,12 @@ export class ValidationAccountComponent extends React.Component{
     }
 
     verifyAccessKey(){
-        console.log('aa');
         let typedKey = window.jQuery("#input-access-key").val();
+        if(typedKey === ''){
+            window.jQuery("#wapp-empty-input-msg").modal('show');
+            return;
+        }
         let realKey  = sessionStorage.getItem('access-key');
-        console.log(realKey)
         sessionStorage.removeItem('access-key');
         if(realKey === 'none' || realKey === null){
             alert('Verification not received from server');
@@ -46,7 +48,6 @@ export class ValidationAccountComponent extends React.Component{
                    }
                })
                .catch((_) => {
-                   window.jQuery("#val-wapp-message").appendChild("<MessageComponent messageID={'wap1'}, messageBody='aaaaa' messageTitle='ss'/>");
                })
 
         }
@@ -59,29 +60,39 @@ export class ValidationAccountComponent extends React.Component{
 
     render() {
         return (
-            <div id="validation-account-comp" className="d-flex justify-content-center">
-                <div  className="card" id="whatsapp-verify-account-card">
-                    <div className="card-body">
-                        <h5 className="card-title">WhatsApp Key Generation</h5>
+            <div>
+                    <div id="validation-account-comp" className="d-flex justify-content-center">
+                        <div  className="card" id="whatsapp-verify-account-card">
+                            <div className="card-body">
+                                <h5 className="card-title">WhatsApp Key Generation</h5>
+                            </div>
+                            <div className="card-body">
+                                <hr/>
+                                <p className="text-info" style={{fontSize: "15px"}}>First Step</p>
+                                <p>Add <small className="text-info">+14155238886</small> <br/> to your contacts</p>
+                                <hr/>
+                                <p className="text-info" style={{fontSize: "15px"}}>Second Step</p>
+                                <p>Send the following message on WhatsApp
+                                </p>
+                                <small>join cowboy-must</small>
+                                 <hr/>
+                                <p className="text-info" style={{fontSize: "15px"}}>Third Step</p>
+                                <p onClick={() => {this.getVerificationCode()}} className="verif-link">Send Verification Code</p>
+                                <input id="input-access-key" className="text-center" placeholder="verification key"/>
+                                <button onClick={() => {this.verifyAccessKey()}} className="btn btn-primary">Verify Code</button>
+                                <p id="failure-message-verification-code-wapp" className="text-danger"></p>
+                            </div>
+                            <div id="val-wapp-message">
+                            </div>
+                        </div>
                     </div>
-                    <div className="card-body">
-                        <hr/>
-                        <p className="text-info" style={{fontSize: "15px"}}>First Step</p>
-                        <p>Add <small className="text-info">+14155238886</small> <br/> to your contacts</p>
-                        <hr/>
-                        <p className="text-info" style={{fontSize: "15px"}}>Second Step</p>
-                        <p>Send the following message on WhatsApp
-                        </p>
-                        <small>join cowboy-must</small>
-                         <hr/>
-                        <p className="text-info" style={{fontSize: "15px"}}>Third Step</p>
-                        <p onClick={() => {this.getVerificationCode()}} className="verif-link">Send Verification Code</p>
-                        <input id="input-access-key" className="text-center" placeholder="verification key"/>
-                        <button onClick={() => {this.verifyAccessKey()}} className="btn btn-primary">Verify Code</button>
-                        <p id="failure-message-verification-code-wapp" className="text-danger"></p>
-                    </div>
-                    <div id="val-wapp-message">
-                    </div>
+                <div id="warning-modals-wapp-verification">
+                           <MessageComponent messageID={'wapp-empty-input-msg'}
+                                             messageTitle={'Error'}
+                                             messageBody={'Enter a verification code before submitting the result'}
+                                             bodyStyle={'text-info'}
+                                             headerStyle={'text-danger'}
+                           />
                 </div>
             </div>
         );
