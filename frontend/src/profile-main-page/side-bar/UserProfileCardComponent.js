@@ -1,7 +1,19 @@
 import * as React from "react";
 import './UserProfileCardStyle.css';
+import {UserService} from "../../service/UserService";
 
 export class UserProfileCardComponent extends React.Component{
+
+    doLogOut(){
+        let userService = new UserService();
+        userService.logOutUser()
+            .then((_) => {
+                sessionStorage.setItem('isLogged', 'false');
+                window.location='/';
+            })
+            .catch((_) =>{})
+    }
+
 
     render() {
         return (
@@ -68,7 +80,7 @@ export class UserProfileCardComponent extends React.Component{
                                                 <path d="M8 9c0 .552.224 1 .5 1s.5-.448.5-1-.224-1-.5-1-.5.448-.5 1z"/>
                                             </svg>
                                         </div>
-                                        <a href="#">Log Out</a>
+                                        <a onClick={this.doLogOut} href="#">Log Out</a>
                                     </div>
                             </div>
 

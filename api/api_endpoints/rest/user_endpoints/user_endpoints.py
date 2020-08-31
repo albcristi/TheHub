@@ -1,6 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.utils import json
 from ...service.UserService import UserService
+from ...service.SessionService import SessionService
 from ...service.PhoneMessagingService import *
 from ...serializer.serializers import AppUserSerializer
 from django.http import JsonResponse
@@ -95,3 +96,25 @@ def handle_post_new_user_endpoint(request) -> JsonResponse:
 '''
      end /api/user/new-account
 '''
+
+
+'''
+    /api/user/log-out
+'''
+
+
+@api_view(['POST'])
+def log_out_request(request) -> JsonResponse:
+    if request.method == 'POST':
+        try:
+            user_data = json.loads(request.body.decode())
+            session_token = user_data['token']
+            session_service = SessionService()
+            if session_service.token_validation(token=session_token) is None:
+                JsonResponse({'error': 'Session Timeout'}, status=401)
+            res = session_service.terminate_session(session_token)
+            return JsonResponse({'msg': res}, status=200)
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=401)
+    return JsonResponse({'error': 'Wrong request'}, status=401)
+

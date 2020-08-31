@@ -30,4 +30,13 @@ export class UserService{
              }
          )
      }
+
+     logOutUser(){
+        return axios.post(
+            `${this.BASE_URL}log-out`,
+            {
+                token: sessionStorage.getItem('token')
+            }
+        )
+     }
 }
