@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/service/SessionService.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/service/SessionService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/service/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/service/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,23 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-53">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+            <state relative-caret-position="230">
+              <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -43,24 +27,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
+        <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
+            <state relative-caret-position="1978">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessStyle.css" />
         <option value="$PROJECT_DIR$/api/api_endpoints/views.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessComponent.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/admin.py" />
@@ -125,7 +96,6 @@
         <option value="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/comments/comment-component/CommentComponentStyle.css" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/frontend/src/log-in/LogInComponent.js" />
@@ -145,6 +115,8 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/service/UserService.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListStyle.css" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js" />
       </list>
     </option>
   </component>
@@ -283,6 +255,14 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="profile-main-page" type="462c0819:PsiDirectoryNode" />
+              <item name="post-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="profile-main-page" type="462c0819:PsiDirectoryNode" />
               <item name="side-bar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,12 +352,12 @@
       <workItem from="1598610385411" duration="7188000" />
       <workItem from="1598696097250" duration="7134000" />
       <workItem from="1598705641127" duration="5909000" />
-      <workItem from="1598873502709" duration="12288000" />
+      <workItem from="1598873502709" duration="13897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250928000" />
+    <option name="totallyTimeSpent" value="252537000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,7 +372,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2442953" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2442953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -406,7 +386,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.043923866" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.043923866" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -455,13 +435,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/about-page/AboutComponent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -596,16 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/about-page/AboutComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
@@ -699,17 +662,6 @@
         <state>
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#399#762#0" />
           </folding>
         </state>
       </provider>
@@ -843,12 +795,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py">
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        <state relative-caret-position="207">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -863,10 +815,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        <state relative-caret-position="138">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1978">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
