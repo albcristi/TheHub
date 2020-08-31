@@ -1,4 +1,18 @@
 
-#left-arrow-img-scroll:hover, #right-arrow-img-scroll:hover{
-    fill: #61dafb;
+
+@media screen and (max-width: 1000px) {
+    #img-log-in-page{
+        display: none;
+    }
+
+    #info-container-log-page{
+        margin-left: auto;
+    }
+}
+
+
+@media screen and (min-width: 1001px) {
+    #img-log-in-page{
+        display: block;
+    }
 }

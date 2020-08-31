@@ -27,16 +27,18 @@ class MainPage extends React.Component{
                                     <div id="main-body-container" className="container">
                                         <div className="container d-flex justify-content-center">
                                             <div id="image-container-home-page" className="container">
-                                                <img width="500" src={require('./img3.png')} alt="..."/>
+                                                <img id="img-log-in-page" width="500" src={require('./img3.png')} alt="..."/>
                                             </div>
-                                                <div className="container">
+                                                <div id="log-com" className="container">
                                                     <LogInComponent/>
                                                 </div>
                                         </div>
-                                        <p className="text-center text-info">Best place where you can organize public or private
-                                            events and trips</p>
                                     </div>
-                                    <div>
+                                    <div id="info-container-log-page">
+                                        <div>
+                                             <p className="text-center text-info">Best place where you can organize public or private
+                                            events and trips</p>
+                                        </div>
                                         <div>
                                             <Link id="about-link-home-page" to={'/about'} onClick={changeDisplayProperty} className="text-center text-info">About Us</Link>
                                         </div>
