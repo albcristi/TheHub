@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponentStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponentStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/service/post-system/PostService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/service/post-system/PostService.js" afterDir="false" />
-    </list>
+    <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +14,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="133" column="125" selection-start-line="133" selection-start-column="125" selection-end-line="133" selection-end-column="125" />
+              <caret line="133" column="239" selection-start-line="133" selection-start-column="239" selection-end-line="133" selection-end-column="239" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -364,12 +353,12 @@
       <workItem from="1598610385411" duration="7188000" />
       <workItem from="1598696097250" duration="7134000" />
       <workItem from="1598705641127" duration="5909000" />
-      <workItem from="1598873502709" duration="8593000" />
+      <workItem from="1598873502709" duration="8880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247233000" />
+    <option name="totallyTimeSpent" value="247520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -382,7 +371,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2442953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -398,7 +386,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.49048316" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.29721814" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -858,7 +846,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="133" column="125" selection-start-line="133" selection-start-column="125" selection-end-line="133" selection-end-column="125" />
+          <caret line="133" column="239" selection-start-line="133" selection-start-column="239" selection-end-line="133" selection-end-column="239" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
