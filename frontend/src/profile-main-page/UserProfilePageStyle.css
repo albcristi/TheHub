@@ -1,21 +1,37 @@
 
-@media screen and (max-width: 1100px){
- #left-column-profile-page{
-    width: 40px;
+@media screen and (max-width: 1200px) {
+    #left-column-profile-page {
+        min-width: 50px;
+    }
 
-}}
+    .user-name-side-bar{
+        display: none;
+    }
 
-
-#middle-column-profile-page {
-    padding-top: 100px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    #profile-card-options{
+        padding-top: 100px;
+    }
+    #middle-column-profile-page {
+        padding-top: 100px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 }
 
-#left-column-profile-page{
-    min-width: 40px;
-    width: auto;
-}
 
+@media screen and (min-width: 1201px) {
+
+    #middle-column-profile-page {
+        padding-top: 100px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    #left-column-profile-page {
+        min-width: 40px;
+        width: auto;
+    }
+
+}
 
 

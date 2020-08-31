@@ -7,7 +7,7 @@ export class UserProfileCardComponent extends React.Component{
         return (
             <div style={{display: "unset", height: "auto"}} className="profileSideBarCard">
                 <div id="side-bar-nav" className="bg-light">
-                    <div className="sidebar-heading"><strong><h2 className="text-center text-primary">@{sessionStorage.getItem('user_name')}</h2></strong></div>
+                    <div className="sidebar-heading"><strong><h2 className="text-center text-primary user-name-side-bar">@{sessionStorage.getItem('user_name')}</h2></strong></div>
                     <div className="list-group list-group-flush">
                             <div  id="profile-card-options" className="d-flex flex-column">
                                     <div className="logo-side-bar">

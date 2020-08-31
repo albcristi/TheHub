@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="" />
+    <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,10 +15,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js">
+        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="133" column="239" selection-start-line="133" selection-start-column="239" selection-end-line="133" selection-end-column="239" />
+            <state relative-caret-position="340">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="9" column="119" selection-start-line="9" selection-start-column="119" selection-end-line="9" selection-end-column="119" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -90,17 +103,17 @@
         <option value="$PROJECT_DIR$/frontend/src/service/UserService.js" />
         <option value="$PROJECT_DIR$/frontend/src/log-in/LogInComponent.js" />
         <option value="$PROJECT_DIR$/frontend/.env" />
-        <option value="$PROJECT_DIR$/frontend/src/App.js" />
         <option value="$PROJECT_DIR$/frontend/src/index.css" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardStyle.css" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponentStyle.css" />
         <option value="$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py" />
         <option value="$PROJECT_DIR$/frontend/src/service/post-system/PostService.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/post_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/App.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css" />
       </list>
     </option>
   </component>
@@ -353,12 +366,12 @@
       <workItem from="1598610385411" duration="7188000" />
       <workItem from="1598696097250" duration="7134000" />
       <workItem from="1598705641127" duration="5909000" />
-      <workItem from="1598873502709" duration="8880000" />
+      <workItem from="1598873502709" duration="9722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247520000" />
+    <option name="totallyTimeSpent" value="248362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,16 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/comments/comment-list/CommentListComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -694,16 +697,6 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26660.35623/sidebar-09/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="27" column="98" selection-start-line="27" selection-start-column="98" selection-end-line="27" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -737,27 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -850,6 +826,43 @@
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="32" column="123" selection-start-line="32" selection-start-column="123" selection-end-line="32" selection-end-column="123" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="119" selection-start-line="9" selection-start-column="119" selection-end-line="9" selection-end-column="119" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/UserProfilePageStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
