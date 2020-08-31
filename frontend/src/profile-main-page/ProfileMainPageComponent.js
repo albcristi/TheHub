@@ -13,7 +13,7 @@ class ProfileMainPageComponent extends React.Component{
     }
     render() {
         return (
-            <div>
+            <div id="profile-page-container">
                 <div>
                     <div className="d-flex">
                         <div role="navigation" id="left-column-profile-page">

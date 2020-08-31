@@ -4,15 +4,19 @@ import {LikeListComponent} from "../likes/like-list/LikeListComponent";
 import {PostService} from "../../service/post-system/PostService";
 import './PostComponentStyle.css';
 import {CommentListComponent} from "../comments/comment-list/CommentListComponent";
+import {MessageComponent} from "../../message-component/MessageComponent";
 
 export class PostComponent extends React.Component{
-
+    static uniqueID = 1;
+    componentID;
     state = {
-        postDetails: null
+        postDetails: null,
     };
 
     constructor(props){
         super(props);
+        PostComponent.uniqueID += 1;
+        this.componentID = PostComponent.uniqueID;
     }
 
     niceDateFormat(date){
@@ -22,11 +26,11 @@ export class PostComponent extends React.Component{
         return `${year_month_day} ${hour}:${minutes}`;
     }
 
-    componentWillMount() {
+    componentWillMount(){
         const {postDetail} = this.props;
         this.setState(
             {
-                postDetails: postDetail
+                postDetails: postDetail,
             }
         )
     }
@@ -45,7 +49,7 @@ export class PostComponent extends React.Component{
                        let newPostDetails = this.state.postDetails;
                        newPostDetails.no_likes += 1;
                        this.setState({
-                           postDetails: newPostDetails
+                           postDetails: newPostDetails,
                        })
 
                     }
@@ -127,19 +131,29 @@ export class PostComponent extends React.Component{
                                     from the logged user
                                  */
                             }
-                            <span id={`new-comm${this.state.postDetails.post_id}`} style={{borderRadius: "10px"}} onKeyUp={(e)=>{this.addNewComment(e)}} className="bg-white new-comment-span" contentEditable={true}>Add new Comment</span>
+                            <span id={`new-comm${this.state.postDetails.post_id}`} style={{borderRadius: "10px"}} onKeyUp={(e)=>{this.addNewComment(e)}} contentEditable={true} className=" new-comment-span" >Write your comment and hit enter</span>
                         </div>
                     </div>
                 </div>
+
             </div>
+
         )
     }
 
     addNewComment(e) {
-        if(e.keyCode===13){
-            // TODO: get comment content and send it to server
+        if(e.keyCode===13){ // enter has been pressed
             let commentText = document.getElementById(`new-comm${this.state.postDetails.post_id}`).textContent;
+            let postService = new PostService();
+            postService.addNewComment(this.state.postDetails.post_id, commentText)
+                .then((res) => {
+                       window.jQuery(`new-comm${this.state.postDetails.post_id}`).text('Add new Comment');
+                    }
 
+                )
+                .catch((err) => {
+                     window.jQuery(`new-comm${this.state.postDetails.post_id}`).text('Add new Comment');
+                })
         }
     }
 }

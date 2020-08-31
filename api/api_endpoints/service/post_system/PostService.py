@@ -1,5 +1,5 @@
 from ...models import AppUsers
-from ...model.posts_system.posts_system_models import Posts, PostLikes
+from ...model.posts_system.posts_system_models import Posts, PostLikes, PostComments
 from datetime import datetime
 from ..UserService import UserService
 from django.core.paginator import Paginator
@@ -98,3 +98,16 @@ class PostService:
             # in post_system_models.py on Comments
         except Exception:
             return []
+
+    def add_comment(self, post_id, user: AppUsers, comment_text: str) -> bool:
+        try:
+            post = Posts.objects.get(post_id=post_id)
+            new_comment = PostComments()
+            new_comment.no_likes = 0
+            new_comment.app_user = user
+            new_comment.post = post
+            new_comment.comment_text = comment_text
+            new_comment.comment_date = datetime.now()
+            new_comment.save()
+        except Exception:
+            return False

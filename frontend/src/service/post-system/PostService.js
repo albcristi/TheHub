@@ -65,4 +65,15 @@ export class PostService {
                         `${BASE_URL_POSTs}comments/${post_id}?token=${token}`
                 );
     }
+
+    addNewComment(post_id, comment_text){
+        const token = sessionStorage.getItem('token');
+        return axios.post(
+            `${BASE_URL_POSTs}comments/${post_id}`,
+            {
+                token: token,
+                comment_text: comment_text
+            }
+        );
+    }
 }

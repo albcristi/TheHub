@@ -8,8 +8,14 @@
     padding-right: 0.75vw;
     padding-top: 0.35vh;
     padding-bottom: 0.35vh;
+
 }
 
 .new-comment-span:hover{
     border: #2ecc71 1px solid;
+}
+
+.card{
+     background:rgba(255,255,255,0.6);
+     backdrop-filter: blur(5px);
 }
