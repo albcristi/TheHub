@@ -1,14 +1,22 @@
 
-#middle-column-profile-page, #right-column-profile-page{
+@media screen and (max-width: 1100px){
+ #left-column-profile-page{
+    width: 50vw;
+
+}
+
+
+}
+#middle-column-profile-page {
     padding-top: 60px;
-}
-
-
-#right-column-profile-page, #left-column-main-page{
-    min-width: 20vw;
-}
-
-#middle-column-profile-page{
-    padding-left: 10vw;
+    padding-left: 5vw;
     padding-right: 5vw;
 }
+
+#left-column-profile-page{
+    min-width: 20vw;
+    width: auto;
+}
+
+
+

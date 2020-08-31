@@ -38,6 +38,8 @@ services:
       npm start
     environment:
       CI: "true"
+      HOST_URL: "${HOST_URL}"
+      PORT_API: "${PORT_API}"
 
 volumes:
     postgres_volume:

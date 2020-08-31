@@ -3,15 +3,17 @@ import axios from 'axios';
 import './LogInComponentStyle.css';
 
 
-const BASE_URL = 'http://localhost:8000/api';
+const HOST = process.env.REACT_APP_HOST_URL;
+const PORT = process.env.REACT_APP_PORT_API;
+const BASE_URL = `${HOST}:${PORT}/api`;
 
 
 class LogInComponent extends React.Component{
 
     constructor(props) {
         super(props);
-
     }
+
 
     executeUserLogIn = (userName, userPassword, failedMessageID)=>{
         axios.post(`${BASE_URL}/do-log-in`,

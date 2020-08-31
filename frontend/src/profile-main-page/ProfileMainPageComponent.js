@@ -15,12 +15,11 @@ class ProfileMainPageComponent extends React.Component{
         return (
             <div>
                 <div>
-                    <div className="d-flex justify-content-between">
-
-                        <div id="left-column-profile-page">
+                    <div className="d-flex">
+                        <div role="navigation" id="left-column-profile-page">
                            <UserProfileCardComponent/>
                         </div>
-                        <div id="middle-column-profile-page"  className="container d-flex flex-column justify-content-left">
+                        <div role="main" id="middle-column-profile-page"  className="container d-flex flex-column justify-content-left">
                                <div>
                                    <NewPostAccessComponent/>
                                </div>
@@ -28,10 +27,6 @@ class ProfileMainPageComponent extends React.Component{
                                     <PostListComponent/>
                                </div>
                         </div>
-                        <div id="right-column-profile-page">
-                                   <SearchBarComponent/>
-                        </div>
-
                     </div>
                 </div>
             </div>

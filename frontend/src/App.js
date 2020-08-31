@@ -27,7 +27,7 @@ class App  extends React.Component{
             <div className="App">
                 <div id="upper-nav-bar" className="navbar fixed-top k17-header navbar-dark bg-dark shadow-sm">
                     <div className="container d-flex justify-content-between">
-                        <a onClick={() => this.showLogIn()} href="http://localhost:3000" className="navbar-brand d-flex align-items-center">
+                        <a onClick={() => this.showLogIn()} href="/" className="navbar-brand d-flex align-items-center">
                             <svg id="log-svg-elem-nav-bar" width="1em" height="1em" viewBox="0 0 16 16"
                                  className="bi bi-heart" fill="red"
                                  xmlns="http://www.w3.org/2000/svg">

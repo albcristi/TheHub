@@ -1,6 +1,7 @@
 import axios from 'axios';
-
-const BASE_URL_POSTs = 'http://localhost:8000/api/posts/';
+const HOST = process.env.REACT_APP_HOST_URL;
+const PORT = process.env.REACT_APP_PORT_API;
+const BASE_URL_POSTs =  `${HOST}:${PORT}/api/posts/`;
 
 export class PostService {
     constructor(){}

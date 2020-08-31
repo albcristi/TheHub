@@ -1,8 +1,10 @@
 import axios from "axios";
 
+const HOST = process.env.REACT_APP_HOST_URL;
+const PORT = process.env.REACT_APP_PORT_API;
 
 export class UserService{
-     BASE_URL = 'http://localhost:8000/api/user/';
+     BASE_URL = `${HOST}:${PORT}/api/user/`;
 
      checkUserNameUnicity(userName){
          return axios.get(

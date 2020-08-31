@@ -16,7 +16,7 @@ export class PostListComponent extends React.Component{
 
     }
 
-    componentWillMount() {
+    componentDidMount() {
         const p = new PostService();
         p
             .retrieve_related_posts(1,5)
@@ -28,7 +28,9 @@ export class PostListComponent extends React.Component{
                     isReady: true})
             })
             .catch((_)=>{});
+
     }
+
 
     render() {
 
