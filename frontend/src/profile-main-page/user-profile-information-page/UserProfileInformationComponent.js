@@ -1,14 +1,17 @@
 import * as React from "react";
 import {UserService} from "../../service/UserService";
-
+import './UserProfileInformationStyle.css';
 
 export class UserProfileInformationComponent extends React.Component{
     state = {
         userName: "",
         email: "",
         birthday: "",
-        profile_picture_url: ""
+        profilePicture: "",
+        phone: ""
     };
+
+    toHost = `${process.env.REACT_APP_HOST_URL}:${process.env.REACT_APP_PORT_API}`;
 
     userService = new UserService();
 
@@ -20,15 +23,45 @@ export class UserProfileInformationComponent extends React.Component{
         const {userName} = this.props;
         this.userService.getUserProfileInformation(userName)
             .then(res => {
-                console.log(res.data);
+                if(res.data['usr_name'] === ''){
+                    alert('Something went wrong, data was not received from server');
+                    return;
+                }
+                this.setState({
+                    userName: res.data['usr_name'],
+                    email: res.data['usr_email'],
+                    birthday: res.data['birth_day'],
+                    profilePicture: res.data['profile_picture'],
+                    phone: res.data['phone_number']
+                })
             })
             .catch((_) => {})
     }
 
     render() {
         return (
-            <div>
-
+            <div className="d-flex flex-column bd-highlight">
+                <div id={`user-info-profile-&${this.state.userName}`}>
+                    <div className="card" >
+                            <div className="card-body">
+                                <div className="user-profile-info-pic-and-name">
+                                    <div className="d-flex justify-content-center">
+                                        <div>
+                                            { !(this.state.profilePicture === null) &&
+                                                <img className="profile-pic" src={this.toHost+this.state.profilePicture} alt="..."/>
+                                            }
+                                             { (this.state.profilePicture === null) &&
+                                                <img className="profile-pic" src={require('./no-profile-pic.png')} alt="..."/>
+                                            }
+                                        </div>
+                                        <div>
+                                            <h4 className="text-info">@{this.state.userName}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
         )
     }

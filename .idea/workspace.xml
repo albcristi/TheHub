@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/serializer/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/serializer/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/service/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/service/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationStyle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="115">
+              <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -50,8 +47,8 @@
         <option value="SCSS File" />
         <option value="TypeScript File" />
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -70,7 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-list/LikeListComponent.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/urls.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/comments/comment-component/CommentComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/comments/comment-list/CommentListComponent.js" />
@@ -95,7 +91,6 @@
         <option value="$PROJECT_DIR$/frontend/src/log-in/LogInComponent.js" />
         <option value="$PROJECT_DIR$/frontend/.env" />
         <option value="$PROJECT_DIR$/frontend/src/index.css" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponentStyle.css" />
         <option value="$PROJECT_DIR$/api/api_endpoints/service/post_system/PostService.py" />
@@ -118,8 +113,10 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/serializer/serializers.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/service/UserService.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js" />
       </list>
     </option>
@@ -231,13 +228,6 @@
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="log-in" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="message-component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,6 +244,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="profile-main-page" type="462c0819:PsiDirectoryNode" />
               <item name="side-bar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="profile-main-page" type="462c0819:PsiDirectoryNode" />
+              <item name="user-profile-information-page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
@@ -344,12 +342,12 @@
       <workItem from="1598696097250" duration="7134000" />
       <workItem from="1598705641127" duration="5909000" />
       <workItem from="1598873502709" duration="16545000" />
-      <workItem from="1598959667313" duration="6661000" />
+      <workItem from="1598959667313" duration="9356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261846000" />
+    <option name="totallyTimeSpent" value="264541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,7 +360,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21677852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -378,7 +375,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.29282576" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.25768667" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -427,16 +424,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/phone-messaging/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/PhoneMessagingService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -664,16 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/UserService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
@@ -772,16 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/backend/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="e#305#311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/backend/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
@@ -844,20 +811,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="107">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1181">
+          <caret line="38" column="67" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/backend/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="e#305#311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/service/UserService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="4" />
           <folding>
             <element signature="n#!!block;n#checkUserNameUnicity#0;n#UserService#0" />
             <element signature="n#!!block;n#getVerificationCodeByWhatssApp#0;n#UserService#0" />
@@ -869,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="115">
+          <caret line="50" column="81" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="81" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

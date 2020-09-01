@@ -5,6 +5,7 @@ import  './UserProfilePageStyle.css';
 import {NewPostAccessComponent} from "./new-post/NewPostAccessComponent";
 import axios from 'axios';
 import {PostListComponent} from "./post-list/PostListComponent";
+import {UserProfileInformationComponent} from "./user-profile-information-page/UserProfileInformationComponent";
 
 class ProfileMainPageComponent extends React.Component{
 
@@ -23,9 +24,13 @@ class ProfileMainPageComponent extends React.Component{
                                <div>
                                    <NewPostAccessComponent/>
                                </div>
+                            <div>
+                                <UserProfileInformationComponent userName={'cristi'}/>
+                            </div>
                                <div>
                                     <PostListComponent/>
                                </div>
+
                         </div>
                     </div>
                 </div>
