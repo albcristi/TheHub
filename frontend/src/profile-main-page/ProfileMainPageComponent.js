@@ -21,12 +21,9 @@ class ProfileMainPageComponent extends React.Component{
                            <UserProfileCardComponent/>
                         </div>
                         <div role="main" id="middle-column-profile-page"  className="container d-flex flex-column justify-content-left">
-                               <div>
+                            <div>
                                    <NewPostAccessComponent/>
                                </div>
-                            <div>
-                                <UserProfileInformationComponent userName={'cristi'}/>
-                            </div>
                                <div>
                                     <PostListComponent/>
                                </div>

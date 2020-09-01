@@ -5,6 +5,7 @@ import {Route, Switch} from "react-router";
 import ProfileMainPageComponent from "./profile-main-page/ProfileMainPageComponent";
 import ToggleComponent from "./ToggleComponent";
 import {SearchBarComponent} from "./profile-main-page/search-bar/SearchBarComponent";
+import {UserProfileInformationComponent} from "./profile-main-page/user-profile-information-page/UserProfileInformationComponent";
 
 
 class App  extends React.Component{
@@ -61,6 +62,11 @@ class App  extends React.Component{
                     }>
                         <Switch>
                             <Route exact path={'/profile'} component={ProfileMainPageComponent}/>
+                            <Route exact path={'/profile-info'} render={
+                                (props) => (
+                                    <UserProfileInformationComponent userName={sessionStorage.getItem('user_name')}/>
+                                )
+                            }/>
                         </Switch>
                     </Suspense>
 

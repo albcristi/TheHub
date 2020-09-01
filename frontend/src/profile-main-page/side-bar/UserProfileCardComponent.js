@@ -36,7 +36,7 @@ export class UserProfileCardComponent extends React.Component{
                                             </svg>
                                         </div>
                                         <div>
-                                            <a href="#">Profile</a>
+                                            <a href="/profile-info">Profile</a>
                                         </div>
                                     </div>
                                     <div className="logo-side-bar">

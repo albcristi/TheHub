@@ -41,25 +41,25 @@ export class UserProfileInformationComponent extends React.Component{
     render() {
         return (
             <div className="d-flex flex-column bd-highlight">
-                <div id={`user-info-profile-&${this.state.userName}`}>
-                    <div className="card" >
-                            <div className="card-body">
-                                <div className="user-profile-info-pic-and-name">
-                                    <div className="d-flex justify-content-center">
-                                        <div>
-                                            { !(this.state.profilePicture === null) &&
-                                                <img className="profile-pic" src={this.toHost+this.state.profilePicture} alt="..."/>
-                                            }
-                                             { (this.state.profilePicture === null) &&
-                                                <img className="profile-pic" src={require('./no-profile-pic.png')} alt="..."/>
-                                            }
-                                        </div>
-                                        <div>
-                                            <h4 className="text-info">@{this.state.userName}</h4>
-                                        </div>
-                                    </div>
-                                </div>
+                <div className="user-info-profile" id={`user-info-profile-&${this.state.userName}`}>
+                    <div className="user-profile-info-pic-and-name">
+                        <div className="d-flex flex-column">
+                            <div className="profile-image-container">
+                                { !(this.state.profilePicture === null) &&
+                                    <img className="profile-pic" src={this.toHost+this.state.profilePicture} alt="..."/>
+                                }
+                                 { (this.state.profilePicture === null) &&
+                                    <img className="profile-pic" src={require('./no-profile-pic.png')} alt="..."/>
+                                }
                             </div>
+                            <div className="container">
+                                 <strong>
+                                     <h2 className="text-secondary strong">@{this.state.userName}</h2>
+                                 </strong>
+                                <hr/>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

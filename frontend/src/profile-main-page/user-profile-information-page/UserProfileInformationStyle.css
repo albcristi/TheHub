@@ -1,10 +1,23 @@
 
-.profile-pic{
-    width: 70px;
-    height: 50px;
-    border-radius: 100%;
-}
+    .profile-pic {
+        margin-top: 100px;
+        width: 200px;
+        height: 170px;
+        border-radius: 100%;
+    }
 
-.profile-pic:hover{
-    border: #2ecc71 1PX SOLID;
-}
+    .profile-pic:hover {
+        border: #2ecc71 1PX SOLID;
+    }
+
+
+    .profile-image-container {
+        margin-left: 20vw;
+        margin-right: 20vw;
+        height: 250px;
+        background-image: linear-gradient(to bottom, #292b2c, whitesmoke);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-bottom: 50px;
+    }
+
