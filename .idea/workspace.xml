@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/welcome-page/MainPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/welcome-page/MainPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_endpoints/model/posts_system/posts_system_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/model/posts_system/posts_system_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_endpoints/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,45 +17,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
+        <entry file="file://$PROJECT_DIR$/api/backend/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+            <state relative-caret-position="257">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/log-in/LogInComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="67" column="53" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#305#311#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css">
+        <entry file="file://$PROJECT_DIR$/api/api_endpoints/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="276">
+              <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/backend/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -85,11 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/api_endpoints/admin.py" />
-        <option value="$PROJECT_DIR$/api/api_endpoints/models.py" />
-        <option value="$PROJECT_DIR$/api/api_endpoints/serializer/post_system/post_syt_serializers.py" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-component/LikeComponent.js" />
-        <option value="$PROJECT_DIR$/frontend/public/index.html" />
         <option value="$PROJECT_DIR$/frontend/Dockerfile" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/likes/like-list/LikeListComponent.js" />
@@ -130,27 +119,30 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/service/UserService.js" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js" />
         <option value="$PROJECT_DIR$/frontend/src/welcome-page/MainPage.css" />
-        <option value="$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
+        <option value="$PROJECT_DIR$/api/api_endpoints/model/posts_system/posts_system_models.py" />
+        <option value="$PROJECT_DIR$/api/requirements.txt" />
+        <option value="$PROJECT_DIR$/api/backend/settings.py" />
+        <option value="$PROJECT_DIR$/api/backend/urls.py" />
+        <option value="$PROJECT_DIR$/api/api_endpoints/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="457" />
+    <option name="width" value="1473" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,62 +165,42 @@
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="posts_system" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="phone-messaging" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="post_endpoints" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="user_del" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-              <item name="user_endpoints" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="post_system" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
@@ -310,6 +282,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,12 +344,13 @@
       <workItem from="1598610385411" duration="7188000" />
       <workItem from="1598696097250" duration="7134000" />
       <workItem from="1598705641127" duration="5909000" />
-      <workItem from="1598873502709" duration="16326000" />
+      <workItem from="1598873502709" duration="16545000" />
+      <workItem from="1598959667313" duration="4521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254966000" />
+    <option name="totallyTimeSpent" value="259706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,9 +362,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="366" y="0" width="1178" height="838" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2442953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28890878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -404,7 +378,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.2035139" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.3352855" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -453,23 +427,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/about-page/img3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/register/bck-img.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/phone-messaging/general-actions.py" />
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/phone_messaging/general.py" />
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -488,13 +445,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-991">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -655,15 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/posts_system/posts_system_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/post_endpoints/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -793,16 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -840,20 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="46">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -867,10 +788,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css">
+    <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="115">
+          <caret line="36" column="68" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/posts_system/posts_system_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/backend/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="e#305#311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/backend/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/User Posts Likes Comments System.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

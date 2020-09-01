@@ -4,6 +4,10 @@ import datetime
 # Create your models here.
 
 
+def user_profile_pic_location(instance, filename):
+    return "users/%s/%s" % (instance.usr_name, filename)
+
+
 class AppUsers(models.Model):
     usr_id = models.AutoField(primary_key=True)
     usr_name = models.CharField(max_length=200, unique=True)
@@ -11,6 +15,7 @@ class AppUsers(models.Model):
     usr_email = models.CharField(max_length=200)
     phone_number = models.CharField(max_length=20)
     birth_date = models.DateField()
+    profile_picture = models.ImageField(null=True, upload_to=user_profile_pic_location)
 
     def __str__(self):
         return str(self.usr_name)

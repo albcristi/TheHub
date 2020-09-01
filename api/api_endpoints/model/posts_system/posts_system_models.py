@@ -92,3 +92,4 @@ class CommentLikes(models.Model):
 
     def __str__(self):
         return "Comment "+str(self.post_comment)+" liked by "+str(self.app_user)
+
