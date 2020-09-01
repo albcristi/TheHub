@@ -150,3 +150,41 @@ def handle_get_request_profile_info(user_name: str) -> JsonResponse:
         return JsonResponse(serializer.data, status=200)
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=401)
+
+
+'''
+    end /api/user/profile-info
+'''
+
+
+''' 
+    /api/user/friends-of-<str>
+'''
+
+
+@api_view(['GET'])
+def handle_user_friendships(request, user_name: str) -> JsonResponse:
+    if request.method == 'GET':
+        try:
+            token = request.GET['token']
+            session_service = SessionService()
+            session = session_service.retrieve_session(token)
+            if session is None:
+                return JsonResponse({'error': 'Session time out'}, status=401)
+            else:
+                session_service.update_session_data(session)
+            return handle_get_request_user_friendships(user_name)
+        except Exception as e:
+            return JsonResponse({'error': str(e)})
+    return JsonResponse({'error': 'Bad request'}, status=401)
+
+
+def handle_get_request_user_friendships(user_name: str) -> JsonResponse:
+        try:
+            user_service = UserService()
+            user = user_service.get_user_by_user_name(user_name)
+            if user is None:
+                return JsonResponse({'error': 'user not found'})
+            return JsonResponse(user_service.get_user_friends(user), safe=False, status=200)
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=401)

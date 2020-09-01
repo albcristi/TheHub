@@ -63,7 +63,7 @@ export class UserProfileInformationComponent extends React.Component{
                     </div>
                     <div className="container d-flex justify-content-center">
                         <div>
-                           <h5 className="profile-info-option text-secondary active">Timeline</h5>
+                            <h5 className="profile-info-option text-secondary">Events</h5>
                         </div>
                         <div>
                             <h5 className="profile-info-option text-secondary">Account Details</h5>
@@ -76,10 +76,11 @@ export class UserProfileInformationComponent extends React.Component{
                 <div role="main" className="container">
                     {/*
                         Contains the currently shown element
-                          - Timeline
+                          - Events
                           - Account Details
                           - Friends
                     */}
+
                 </div>
             </div>
         )

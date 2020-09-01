@@ -27,6 +27,14 @@ class AppUsers(models.Model):
             return None
         return users[0]
 
+    @staticmethod
+    def get_picture(picture):
+        try:
+            url = picture.url
+            return url
+        except Exception:
+            return ""
+
 
 class FriendList(models.Model):
     friendship_owner = models.ForeignKey(
