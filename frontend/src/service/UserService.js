@@ -46,4 +46,11 @@ export class UserService{
              `${this.BASE_URL}profile-info?token=${token}&user=${userName}`
          );
      }
+
+     getFriends(userName){
+         const token = sessionStorage.getItem('token');
+         return axios.get(
+             `${this.BASE_URL}friends-of-${userName}?token=${token}`
+         );
+     }
 }

@@ -1,6 +1,7 @@
 import * as React from "react";
 import {UserService} from "../../service/UserService";
 import './UserProfileInformationStyle.css';
+import {FriendListComponent} from "../friends/friend-list/FriendListComponent";
 
 export class UserProfileInformationComponent extends React.Component{
     state = {
@@ -80,7 +81,7 @@ export class UserProfileInformationComponent extends React.Component{
                           - Account Details
                           - Friends
                     */}
-
+                    <FriendListComponent userName={sessionStorage.getItem('user_name')}/>
                 </div>
             </div>
         )
