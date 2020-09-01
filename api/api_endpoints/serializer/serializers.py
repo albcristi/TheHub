@@ -9,7 +9,8 @@ class AppUserSerializer(serializers.ModelSerializer):
                   'usr_name',
                   'usr_email',
                   'phone_number',
-                  'birth_date']
+                  'birth_date',
+                  'profile_picture']
 
 
 class UserSessionSerializer(serializers.ModelSerializer):

@@ -39,4 +39,11 @@ export class UserService{
             }
         )
      }
+
+     getUserProfileInformation(userName){
+         const token = sessionStorage.getItem('token');
+         return axios.get(
+             `${this.BASE_URL}profile-info?token=${token}&user=${userName}`
+         );
+     }
 }

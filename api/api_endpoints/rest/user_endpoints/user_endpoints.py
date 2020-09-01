@@ -118,3 +118,35 @@ def log_out_request(request) -> JsonResponse:
             return JsonResponse({'error': str(e)}, status=401)
     return JsonResponse({'error': 'Wrong request'}, status=401)
 
+
+'''
+    /api/user/profile-info
+'''
+
+
+@api_view(['GET'])
+def handle_profile_info(request) -> JsonResponse:
+    if request.method == 'GET':
+        try:
+            token = request.GET['token']
+            user_name = request.GET['user']
+            session_service = SessionService()
+            session = session_service.retrieve_session(token)
+            if session is None:
+                return JsonResponse({'error': 'Session Time Out'}, status=401)
+            else:
+                session_service.update_session_data(session)
+            return handle_get_request_profile_info(user_name)
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=401)
+    return JsonResponse({'error': 'Bad Request'}, status=401)
+
+
+def handle_get_request_profile_info(user_name: str) -> JsonResponse:
+    try:
+        user_service = UserService()
+        user = user_service.get_user_by_user_name(user_name)
+        serializer = AppUserSerializer(user)
+        return JsonResponse(serializer.data, status=200)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=401)

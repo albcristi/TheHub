@@ -1,6 +1,7 @@
 import * as React from "react";
 import './UserProfileCardStyle.css';
 import {UserService} from "../../service/UserService";
+import {UserProfileInformationComponent} from "../user-profile-information-page/UserProfileInformationComponent";
 
 export class UserProfileCardComponent extends React.Component{
 
@@ -9,6 +10,8 @@ export class UserProfileCardComponent extends React.Component{
         userService.logOutUser()
             .then((_) => {
                 sessionStorage.setItem('isLogged', 'false');
+                sessionStorage.removeItem('user_name');
+                sessionStorage.removeItem('token');
                 window.location='/';
             })
             .catch((_) =>{})
