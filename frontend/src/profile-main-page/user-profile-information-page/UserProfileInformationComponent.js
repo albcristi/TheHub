@@ -58,9 +58,28 @@ export class UserProfileInformationComponent extends React.Component{
                                  </strong>
                                 <hr/>
                             </div>
+                        </div>
 
+                    </div>
+                    <div className="container d-flex justify-content-center">
+                        <div>
+                           <h5 className="profile-info-option text-secondary active">Timeline</h5>
+                        </div>
+                        <div>
+                            <h5 className="profile-info-option text-secondary">Account Details</h5>
+                        </div>
+                        <div>
+                            <h5 className="profile-info-option text-secondary">Friends</h5>
                         </div>
                     </div>
+                </div>
+                <div role="main" className="container">
+                    {/*
+                        Contains the currently shown element
+                          - Timeline
+                          - Account Details
+                          - Friends
+                    */}
                 </div>
             </div>
         )

@@ -1,23 +1,29 @@
 
-    .profile-pic {
-        margin-top: 100px;
-        width: 200px;
-        height: 170px;
-        border-radius: 100%;
-    }
-
-    .profile-pic:hover {
-        border: #2ecc71 1PX SOLID;
-    }
+.profile-pic {
+    margin-top: 100px;
+    width: 200px;
+    height: 170px;
+    border-radius: 100%;
+}
 
 
-    .profile-image-container {
-        margin-left: 20vw;
-        margin-right: 20vw;
-        height: 250px;
-        background-image: linear-gradient(to bottom, #292b2c, whitesmoke);
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        margin-bottom: 50px;
-    }
+.profile-image-container {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    height: 250px;
+    background-image: linear-gradient(to bottom, #292b2c, whitesmoke);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.profile-info-option {
+    margin-left: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.profile-info-option:hover {
+    border-bottom: #3498db 3px solid;
+}
 
