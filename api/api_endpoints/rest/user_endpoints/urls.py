@@ -1,6 +1,7 @@
 from django.urls import path
 from .user_endpoints import *
 
+
 urlpatterns = [
     path('account', send_user_verification_code, name='new-account-access-key'),
     path('new-account', handle_new_user, name='new-account'),
