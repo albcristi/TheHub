@@ -9,7 +9,8 @@ export class UserProfileInformationComponent extends React.Component{
         email: "",
         birthday: "",
         profilePicture: "",
-        phone: ""
+        phone: "",
+        isProfileOwner: true
     };
 
     toHost = `${process.env.REACT_APP_HOST_URL}:${process.env.REACT_APP_PORT_API}`;
@@ -22,6 +23,7 @@ export class UserProfileInformationComponent extends React.Component{
 
     componentWillMount() {
         const {userName} = this.props;
+        const {isProfileOwner} = this.props;
         this.userService.getUserProfileInformation(userName)
             .then(res => {
                 if(res.data['usr_name'] === ""){
@@ -33,8 +35,9 @@ export class UserProfileInformationComponent extends React.Component{
                     email: res.data['usr_email'],
                     birthday: res.data['birth_day'],
                     profilePicture: res.data['profile_picture'],
-                    phone: res.data['phone_number']
-                })
+                    phone: res.data['phone_number'],
+                    isProfileOwner: isProfileOwner
+                });
             })
             .catch((_) => {})
     }
@@ -86,8 +89,9 @@ export class UserProfileInformationComponent extends React.Component{
                     */}
                     <div>
                         {  userName!=="" &&
-                            <FriendListComponent userName={userName}/>
+                            <FriendListComponent userName={userName} isOwnerOfProfile={this.state.isProfileOwner}/>
                         }
+
                     </div>
                 </div>
             </div>

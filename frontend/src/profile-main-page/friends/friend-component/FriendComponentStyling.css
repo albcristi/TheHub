@@ -27,6 +27,11 @@
     padding-top: 3%;
 }
 
+.friend-det-container h4:hover{
+    color: #3498db;
+}
+
+
 @media screen and (max-width: 699px){
   .friend-list-container{
       flex-direction: column;

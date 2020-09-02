@@ -64,13 +64,13 @@ class App  extends React.Component{
                             <Route exact path={'/profile'} component={ProfileMainPageComponent}/>
                             <Route exact path={'/profile-info'} render={
                                 (props) => (
-                                    <UserProfileInformationComponent userName={sessionStorage.getItem('user_name')}/>
+                                    <UserProfileInformationComponent userName={sessionStorage.getItem('user_name')} isProfileOwner={true}/>
                                 )
                             }/>
                             <Route exact path={'/profile-info/friend-page'} render={
                                 (props) => (
                                     <div>
-                                        <UserProfileInformationComponent userName={sessionStorage.getItem('friend_name')}/>
+                                        <UserProfileInformationComponent userName={sessionStorage.getItem('friend_name')} isProfileOwner={false}/>
                                     </div>
                                 )}/>
                         </Switch>

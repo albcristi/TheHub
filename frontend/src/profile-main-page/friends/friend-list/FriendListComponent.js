@@ -6,7 +6,8 @@ import {FriendComponent} from "../friend-component/FriendComponent";
 export class FriendListComponent extends React.Component{
     state = {
         userName: "",
-        friends: []
+        friends: [],
+        isOwnerOfProfile: false
     };
 
     userService = new UserService();
@@ -17,14 +18,15 @@ export class FriendListComponent extends React.Component{
 
     componentWillMount() {
         const {userName} = this.props;
+        const {isOwnerOfProfile} = this.props;
         this.userService
             .getFriends(userName)
             .then((res) => {
                 this.setState({
                     userName: userName,
-                    friends: res.data
-                })
-                console.log(res.data)
+                    friends: res.data,
+                    isOwnerOfProfile: isOwnerOfProfile
+                });
             })
             .catch((_) => {})
     }
@@ -40,7 +42,8 @@ export class FriendListComponent extends React.Component{
                                             <div key={`left-${index}`}>
                                                 {index % 2 === 0 &&
                                                 <FriendComponent userName={value.user_name}
-                                                                 profilePicture={value.profile_picture}/>
+                                                                 profilePicture={value.profile_picture}
+                                                 isProfileOwner={this.state.isOwnerOfProfile}/>
                                                 }
                                             </div>
                                     ))
@@ -54,7 +57,8 @@ export class FriendListComponent extends React.Component{
                                             <div key={`right-${index}`}>
                                                 { index%2===1 &&
                                                     <FriendComponent userName={value.user_name}
-                                                                     profilePicture={value.profile_picture}/>
+                                                                     profilePicture={value.profile_picture}
+                                                    isProfileOwner={this.state.isOwnerOfProfile}/>
                                                 }
                                             </div>
                                     ))

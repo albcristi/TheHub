@@ -4,7 +4,9 @@ import './FriendComponentStyling.css';
 export class FriendComponent extends React.Component{
     state = {
         userName: "",
-        profilePicture: ""
+        profilePicture: "",
+        friendRemoved: false,
+        ancestorIsRelationOwner: true
     };
 
     constructor(props){
@@ -16,16 +18,28 @@ export class FriendComponent extends React.Component{
     componentWillMount() {
         const {userName} = this.props;
         const {profilePicture} = this.props;
+        const {isProfileOwner} = this.props;
         this.setState({
             userName: userName,
-            profilePicture: profilePicture === "" ? "/images/users/none/no-profile-pic.png" : profilePicture
-        })
+            profilePicture: profilePicture === "" ? "/images/users/none/no-profile-pic.png" : profilePicture,
+            friendRemoved: false,
+            ancestorIsRelationOwner: isProfileOwner
+        });
     }
 
 
     goToFriendProfile(){
         sessionStorage.setItem('friend_name', this.state.userName);
         window.location = '/profile-info/friend-page';
+    }
+
+    removeFriendship(){
+        this.setState({
+            friendRemoved: true
+        });
+    }
+
+    addFriendBack(){
     }
 
     render() {
@@ -38,9 +52,20 @@ export class FriendComponent extends React.Component{
                     <div>
                         <h4 onClick={() => {this.goToFriendProfile();}}>@{this.state.userName}</h4>
                     </div>
-                    <div>
-                        <button type="button" className="btn btn-primary">Unfriend</button>
-                    </div>
+                    {this.state.ancestorIsRelationOwner &&
+                        <div>
+                            {!this.state.friendRemoved &&
+                            <button type="button" onClick={() => {
+                                this.removeFriendship()
+                            }} className="btn btn-primary">Remove</button>
+                            }
+                            {this.state.friendRemoved &&
+                            <button type="button" onClick={() => {
+                                this.addFriendBack()
+                            }} className="btn btn-primary">Add Back</button>
+                            }
+                        </div>
+                    }
                 </div>
             </div>
         )
