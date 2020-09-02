@@ -36,7 +36,7 @@ export class UserProfileInformationComponent extends React.Component{
                 this.setState({
                     userName: res.data['usr_name'],
                     email: res.data['usr_email'],
-                    birthday: res.data['birth_day'],
+                    birthday: res.data['birth_date'],
                     profilePicture: res.data['profile_picture'],
                     phone: res.data['phone_number'],
                     isProfileOwner: isProfileOwner
@@ -46,6 +46,7 @@ export class UserProfileInformationComponent extends React.Component{
     }
 
     render() {
+        console.log(this.state);
         const userName = this.state.userName;
         return (
             <div className="d-flex flex-column bd-highlight">
@@ -71,15 +72,18 @@ export class UserProfileInformationComponent extends React.Component{
                     </div>
                     <div className="container d-flex justify-content-center">
                         <div>
-                            <h5 className="profile-info-option text-secondary">Events</h5>
+                            <h5 onClick={() => {this.setState({currentlyShowing: [true,false,false]})}}
+                                className="profile-info-option text-secondary">Events</h5>
                         </div>
                         <div>
                             { userName === sessionStorage.getItem('user_name') &&
-                                <h5 className="profile-info-option text-secondary">Account Details</h5>
+                                <h5 onClick={() => {this.setState({currentlyShowing: [false,true,false]})}}
+                                    className="profile-info-option text-secondary">Account Details</h5>
                             }
                         </div>
                         <div>
-                            <h5 className="profile-info-option text-secondary">Friends</h5>
+                            <h5 onClick={() => {this.setState({currentlyShowing: [false,false,true]})}}
+                                className="profile-info-option text-secondary">Friends</h5>
                         </div>
                     </div>
                 </div>
@@ -94,7 +98,7 @@ export class UserProfileInformationComponent extends React.Component{
                         { userName!=="" && this.state.currentlyShowing[1] &&
                             <AccountDetailsComponent userName={this.state.userName}
                                                 email={this.state.email}
-                                                phone={this.state.birthday}
+                                                phone={this.state.phone}
                                                 birthday={this.state.birthday}/>
                         }
                         {  userName!=="" && this.state.currentlyShowing[2] &&
