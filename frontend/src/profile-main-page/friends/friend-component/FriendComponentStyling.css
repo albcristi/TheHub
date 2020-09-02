@@ -1,0 +1,40 @@
+
+
+.friend-component-container{
+    height: 150px;
+    width: 300px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: #7f8181 1px solid;
+    margin-bottom: 30px;
+}
+
+
+.prof-img-friend-comp{
+    height: 100px;
+    width: 80px;
+    margin-top: 30px;
+}
+
+.friend-det-container{
+    padding-top: 40px;
+}
+
+.friend-list-container{
+    background-color: whitesmoke;
+    margin-top: 3%;
+    border-radius: 10px;
+    padding-top: 3%;
+}
+
+@media screen and (max-width: 699px){
+  .friend-list-container{
+      flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .friend-list-container{
+      flex-direction: row;
+  }
+}

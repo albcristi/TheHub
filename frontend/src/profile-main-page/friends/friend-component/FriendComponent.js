@@ -1,4 +1,5 @@
 import * as React from "react";
+import './FriendComponentStyling.css';
 
 export class FriendComponent extends React.Component{
     state = {
@@ -17,14 +18,25 @@ export class FriendComponent extends React.Component{
         const {profilePicture} = this.props;
         this.setState({
             userName: userName,
-            profilePicture: profilePicture
+            profilePicture: profilePicture === "" ? "/images/users/none/no-profile-pic.png" : profilePicture
         })
     }
 
+
     render() {
         return (
-            <div>
-                {this.state.userName}
+            <div className="container friend-component-container d-flex flex-row">
+                <div className="prof-img-cont-friend-comp">
+                        <img className="prof-img-friend-comp" src={`${this.toHost}${this.state.profilePicture}`} alt=""/>
+                </div>
+                <div className="container d-flex flex-column friend-det-container">
+                    <div>
+                        <h4>@{this.state.userName}</h4>
+                    </div>
+                    <div>
+                        <button type="button" className="btn btn-primary">Unfriend</button>
+                    </div>
+                </div>
             </div>
         )
     }
