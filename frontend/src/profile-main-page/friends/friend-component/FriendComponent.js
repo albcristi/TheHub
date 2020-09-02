@@ -1,5 +1,7 @@
 import * as React from "react";
 import './FriendComponentStyling.css';
+import axios from 'axios';
+import {FriendshipService} from "../../../service/friendship-service/FriendshipService";
 
 export class FriendComponent extends React.Component{
     state = {
@@ -8,6 +10,8 @@ export class FriendComponent extends React.Component{
         friendRemoved: false,
         ancestorIsRelationOwner: true
     };
+
+    friendshipService = new FriendshipService();
 
     constructor(props){
         super(props);
@@ -34,12 +38,19 @@ export class FriendComponent extends React.Component{
     }
 
     removeFriendship(){
-        this.setState({
-            friendRemoved: true
-        });
+       this.friendshipService.removeFriendship(sessionStorage.getItem('user_name'), this.state.userName)
+           .then(res => {
+               if(res.data['result']){
+                   this.setState({
+                       friendRemoved: true
+                   })
+               }
+           })
+           .catch(_ => {})
     }
 
     addFriendBack(){
+
     }
 
     render() {

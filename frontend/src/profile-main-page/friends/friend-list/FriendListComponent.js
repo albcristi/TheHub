@@ -14,6 +14,7 @@ export class FriendListComponent extends React.Component{
 
     constructor(props){
         super(props);
+
     }
 
     componentWillMount() {
@@ -28,7 +29,7 @@ export class FriendListComponent extends React.Component{
                     isOwnerOfProfile: isOwnerOfProfile
                 });
             })
-            .catch((_) => {})
+            .catch((_) => {});
     }
     render() {
         return (

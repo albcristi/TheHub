@@ -7,7 +7,6 @@ import ToggleComponent from "./ToggleComponent";
 import {SearchBarComponent} from "./profile-main-page/search-bar/SearchBarComponent";
 import {UserProfileInformationComponent} from "./profile-main-page/user-profile-information-page/UserProfileInformationComponent";
 
-
 class App  extends React.Component{
 
    constructor(props){
