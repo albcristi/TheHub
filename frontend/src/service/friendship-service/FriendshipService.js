@@ -12,4 +12,9 @@ export class FriendshipService {
         );
     }
 
+    restoreFriendship(initiatorFriend, otherFriend){
+        return axios.post(
+            `${this.toHost}/api/relations/initiator=${initiatorFriend}/other=${otherFriend}/${sessionStorage.getItem('token')}`
+        );
+    }
 }

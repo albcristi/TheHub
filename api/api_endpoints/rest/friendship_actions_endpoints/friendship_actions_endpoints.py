@@ -30,7 +30,7 @@ def handle_post_request_handle_relationship(initiator: str, other_user: str) -> 
             return JsonResponse({'result': False}, status=200)
         friendship_service = FriendshipService()
         result = friendship_service.create_friendship(initiator, other_user)
-        return JsonResponse({'status': result}, status=200)
+        return JsonResponse({'result': result}, status=200)
     except Exception as e:
         return exception_occurred(str(e))
 

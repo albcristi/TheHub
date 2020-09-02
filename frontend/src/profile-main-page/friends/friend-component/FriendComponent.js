@@ -50,7 +50,15 @@ export class FriendComponent extends React.Component{
     }
 
     addFriendBack(){
-
+        this.friendshipService.restoreFriendship(sessionStorage.getItem('user_name'), this.state.userName)
+            .then(res => {
+                if(res.data['result']){
+                    this.setState({
+                        friendRemoved: false
+                    })
+                }
+            })
+            .catch(_ => {})
     }
 
     render() {
