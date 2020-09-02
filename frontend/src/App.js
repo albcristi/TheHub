@@ -67,6 +67,12 @@ class App  extends React.Component{
                                     <UserProfileInformationComponent userName={sessionStorage.getItem('user_name')}/>
                                 )
                             }/>
+                            <Route exact path={'/profile-info/friend-page'} render={
+                                (props) => (
+                                    <div>
+                                        <UserProfileInformationComponent userName={sessionStorage.getItem('friend_name')}/>
+                                    </div>
+                                )}/>
                         </Switch>
                     </Suspense>
 

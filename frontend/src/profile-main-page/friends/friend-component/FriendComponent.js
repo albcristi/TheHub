@@ -23,6 +23,11 @@ export class FriendComponent extends React.Component{
     }
 
 
+    goToFriendProfile(){
+        sessionStorage.setItem('friend_name', this.state.userName);
+        window.location = '/profile-info/friend-page';
+    }
+
     render() {
         return (
             <div className="container friend-component-container d-flex flex-row">
@@ -31,7 +36,7 @@ export class FriendComponent extends React.Component{
                 </div>
                 <div className="container d-flex flex-column friend-det-container">
                     <div>
-                        <h4>@{this.state.userName}</h4>
+                        <h4 onClick={() => {this.goToFriendProfile();}}>@{this.state.userName}</h4>
                     </div>
                     <div>
                         <button type="button" className="btn btn-primary">Unfriend</button>

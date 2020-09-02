@@ -17,7 +17,6 @@ export class FriendListComponent extends React.Component{
 
     componentWillMount() {
         const {userName} = this.props;
-        // TODO: GET FRIEND LIST
         this.userService
             .getFriends(userName)
             .then((res) => {
@@ -25,6 +24,7 @@ export class FriendListComponent extends React.Component{
                     userName: userName,
                     friends: res.data
                 })
+                console.log(res.data)
             })
             .catch((_) => {})
     }

@@ -24,7 +24,7 @@ export class UserProfileInformationComponent extends React.Component{
         const {userName} = this.props;
         this.userService.getUserProfileInformation(userName)
             .then(res => {
-                if(res.data['usr_name'] === ''){
+                if(res.data['usr_name'] === ""){
                     alert('Something went wrong, data was not received from server');
                     return;
                 }
@@ -40,6 +40,7 @@ export class UserProfileInformationComponent extends React.Component{
     }
 
     render() {
+        const userName = this.state.userName;
         return (
             <div className="d-flex flex-column bd-highlight">
                 <div className="user-info-profile" id={`user-info-profile-&${this.state.userName}`}>
@@ -67,7 +68,9 @@ export class UserProfileInformationComponent extends React.Component{
                             <h5 className="profile-info-option text-secondary">Events</h5>
                         </div>
                         <div>
-                            <h5 className="profile-info-option text-secondary">Account Details</h5>
+                            { userName === sessionStorage.getItem('user_name') &&
+                                <h5 className="profile-info-option text-secondary">Account Details</h5>
+                            }
                         </div>
                         <div>
                             <h5 className="profile-info-option text-secondary">Friends</h5>
@@ -82,7 +85,9 @@ export class UserProfileInformationComponent extends React.Component{
                           - Friends
                     */}
                     <div>
-                        <FriendListComponent userName={sessionStorage.getItem('user_name')}/>
+                        {  userName!=="" &&
+                            <FriendListComponent userName={userName}/>
+                        }
                     </div>
                 </div>
             </div>
