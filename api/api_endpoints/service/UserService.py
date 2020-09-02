@@ -56,10 +56,15 @@ class UserService:
         except Exception:
             return False
 
-    def get_user_friends(self, user: AppUsers):
-        relationship_list = user.current_friendships.all()
-        user_friends = [relation.friend_with for relation in relationship_list]
-        user_friends = [{'user_name': friend.usr_name, 'profile_picture': AppUsers.get_picture(friend.profile_picture)}
-                        for friend in user_friends]
-        return user_friends
+    def retrieve_user_friends(self, user: AppUsers) -> list:
+        try:
+            relationships = user.current_friendships.all()
+            if relationships.count() == 0:
+                return []
+            user_friends = [relation.friend_with for relation in relationships]
+            return [
+                {'user_name': friend.usr_name, 'profile_picture': AppUsers.get_picture(friend.profile_picture)}
+                for friend in user_friends]
+        except Exception:
+            return []
 

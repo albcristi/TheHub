@@ -50,7 +50,7 @@ export class UserService{
      getFriends(userName){
          const token = sessionStorage.getItem('token');
          return axios.get(
-             `${this.BASE_URL}friends-of-${userName}?token=${token}`
+             `${this.BASE_URL}friendships/${userName}?token=${token}`
          );
      }
 }

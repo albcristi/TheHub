@@ -1,5 +1,6 @@
 import * as React from "react";
 import {UserService} from "../../../service/UserService";
+import {FriendComponent} from "../friend-component/FriendComponent";
 
 
 export class FriendListComponent extends React.Component{
@@ -27,7 +28,6 @@ export class FriendListComponent extends React.Component{
             })
             .catch((_) => {})
     }
-
     render() {
         return (
             <div>
@@ -36,9 +36,10 @@ export class FriendListComponent extends React.Component{
                         {
                             this.state.friends
                                 .map((value, index) => (
-                                    <div key={index}>
-                                        value.user_name
-                                    </div>
+                                        <div key={index}>
+                                            <FriendComponent userName={value.user_name}
+                                                             profilePicture={value.profile_picture}/>
+                                        </div>
                                 ))
                         }
                     </div>
