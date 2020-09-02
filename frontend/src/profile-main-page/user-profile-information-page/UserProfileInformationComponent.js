@@ -3,6 +3,7 @@ import {UserService} from "../../service/UserService";
 import './UserProfileInformationStyle.css';
 import {FriendListComponent} from "../friends/friend-list/FriendListComponent";
 import axios from "axios";
+import {AccountDetailsComponent} from "./account-details/AccountDetailsComponent";
 
 export class UserProfileInformationComponent extends React.Component{
     state = {
@@ -11,7 +12,8 @@ export class UserProfileInformationComponent extends React.Component{
         birthday: "",
         profilePicture: "",
         phone: "",
-        isProfileOwner: true
+        isProfileOwner: true,
+        currentlyShowing: [false, true, false]
     };
 
     toHost = `${process.env.REACT_APP_HOST_URL}:${process.env.REACT_APP_PORT_API}`;
@@ -89,7 +91,13 @@ export class UserProfileInformationComponent extends React.Component{
                           - Friends
                     */}
                     <div>
-                        {  userName!=="" &&
+                        { userName!=="" && this.state.currentlyShowing[1] &&
+                            <AccountDetailsComponent userName={this.state.userName}
+                                                email={this.state.email}
+                                                phone={this.state.birthday}
+                                                birthday={this.state.birthday}/>
+                        }
+                        {  userName!=="" && this.state.currentlyShowing[2] &&
                             <FriendListComponent userName={userName} isOwnerOfProfile={this.state.isProfileOwner}/>
                         }
 
