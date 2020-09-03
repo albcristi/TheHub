@@ -26,7 +26,6 @@ export class AccountDetailsComponent extends React.Component{
             birthday: birthday,
             phone: phone
         })
-
     }
 
     changeDisplayInfoProperty(){
@@ -38,6 +37,12 @@ export class AccountDetailsComponent extends React.Component{
             editMode: !this.state.editMode
         })
     }
+
+    makeProfileUpdate(){
+
+    }
+
+
     render() {
         return (
             <div>
@@ -55,28 +60,51 @@ export class AccountDetailsComponent extends React.Component{
                             <h3 className="general-information" onClick={() => {this.changeDisplayInfoProperty()}}>
                                 About Me</h3>
                             {  this.state.showGeneralInfo &&
-                                <div>
+                                <div className="container general-information-container">
                                     <hr/>
                                     <h4> Date of birth</h4>
                                     { !this.state.editMode && this.state.isOwner &&
-                                        <h5 onClick={() => {this.changeEditModeProperty()}}>{this.state.birthday}</h5>
+                                        <h5  onClick={() => {this.changeEditModeProperty()}}>{this.state.birthday}</h5>
                                     }
                                      { this.state.editMode && this.state.isOwner &&
-                                        <input className="input input-account-details-comp" placeholder={this.state.birthday} id={`bd-${this.state.userName}`}/>
+                                        <input className="input input-account-details-comp"
+                                               placeholder={this.state.birthday} id={`bd-${this.state.userName}`}/>
                                     }
                                     {this.state.isOwner &&
                                         <div>
-                                        <h4>Phone Number</h4>
-                                        <h5>{this.state.phone}</h5>
+                                            <h4>Phone Number</h4>
+                                                { !this.state.editMode &&
+                                                    <h5 onClick={() => {
+                                                        this.changeEditModeProperty()
+                                                    }}>{this.state.phone}</h5>
+                                                }
+                                                {this.state.editMode &&
+                                                <input className="input input-account-details-comp"
+                                                       placeholder={this.state.phone} id={`pn-${this.state.userName}`}/>
+                                                }
+                                            <h4>Email</h4>
+                                            {!this.state.editMode &&
+                                            <div>
+                                                <h5 onClick={()=>{this.changeEditModeProperty()}}>{this.state.email}</h5>
+                                            </div>
+                                            }
+                                            {this.state.editMode &&
+                                            <div>
+                                                <input placeholder={this.state.email} className="input-account-details-comp"
+                                                    id={`em-${this.state.email}`}/>
+                                            </div>
+                                            }
                                         </div>
+
                                     }
+
                                     {this.state.editMode && this.state.isOwner &&
-                                        <div style={{marginTop:"20px"}} className="d-flex justify-content-center">
+                                        <div style={{marginTop:"20px", marginBottom: "40px"}} className="d-flex justify-content-center">
                                             <div style={{marginRight: "20px"}}>
-                                                  <button className="btn btn-secondary">Undo Changes</button>
+                                                  <button onClick={()=>{this.changeEditModeProperty()}} className="btn btn-secondary">Undo Changes</button>
                                             </div>
                                             <div>
-                                                  <button className="btn btn-success">Save Changes</button>
+                                                  <button onClick={()=>{this.makeProfileUpdate()}} className="btn btn-success">Save Changes</button>
                                             </div>
                                         </div>
                                     }

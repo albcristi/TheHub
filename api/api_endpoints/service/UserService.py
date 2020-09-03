@@ -68,3 +68,5 @@ class UserService:
         except Exception:
             return []
 
+    def update_user(self, user_name: str, phone: str, email: str, birth_date: datetime):
+        return []

@@ -11,8 +11,11 @@
     color: #3498db;
 }
 
-
 .show-less-info:hover{
+    color: #3498db;
+}
+
+.general-information-container h5:hover{
     color: #3498db;
 }
 
