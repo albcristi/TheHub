@@ -76,7 +76,7 @@ export class UserProfileInformationComponent extends React.Component{
                                 className="profile-info-option text-secondary">Events</h5>
                         </div>
                         <div>
-                            { userName === sessionStorage.getItem('user_name') &&
+                            { userName !== "" &&
                                 <h5 onClick={() => {this.setState({currentlyShowing: [false,true,false]})}}
                                     className="profile-info-option text-secondary">Account Details</h5>
                             }
