@@ -1,5 +1,6 @@
 import * as React from "react";
 import './AccountDetailsStyling.css';
+import {UserDataValidator} from "../../../data-validators/user-data-validator/UserDataValidator";
 
 export class AccountDetailsComponent extends React.Component{
     state = {
@@ -11,6 +12,8 @@ export class AccountDetailsComponent extends React.Component{
         showGeneralInfo: false,
         editMode: false
     };
+
+    userDataValidator = new UserDataValidator();
 
     constructor(props) {
         super(props);
@@ -39,9 +42,27 @@ export class AccountDetailsComponent extends React.Component{
     }
 
     makeProfileUpdate(){
-
+        // TODO: IMPLEMENT
     }
 
+    userTypingNewBirthdate(){
+        let typedBday = window.jQuery(`#bd-${this.state.userName}`).val();
+        let color = this.userDataValidator.checkBirthDate(typedBday) ? "#5cb85c" : "#d9534f";
+        window.jQuery(`#bd-${this.state.userName}`).css("background-color", color);
+    }
+
+    userTypedNewPhone(){
+        let typedPhone = window.jQuery(`#pn-${this.state.userName}`).val();
+        let color = this.userDataValidator.checkPhoneNumber(typedPhone) ? "#5cb85c" : "#d9534f";
+        window.jQuery(`#pn-${this.state.userName}`).css("background-color", color);
+    }
+
+
+    userTypedNewEmail(){
+        let typedEmail = window.jQuery(`#em-${this.state.userName}`).val();
+        let color = this.userDataValidator.checkUserEmail(typedEmail) ? "#5cb85c" : "#d9534f";
+        window.jQuery(`#em-${this.state.userName}`).css("background-color", color);
+    }
 
     render() {
         return (
@@ -68,7 +89,8 @@ export class AccountDetailsComponent extends React.Component{
                                     }
                                      { this.state.editMode && this.state.isOwner &&
                                         <input className="input input-account-details-comp"
-                                               placeholder={this.state.birthday} id={`bd-${this.state.userName}`}/>
+                                               placeholder={this.state.birthday} id={`bd-${this.state.userName}`}
+                                        onChange={() => {this.userTypingNewBirthdate()}}/>
                                     }
                                     {this.state.isOwner &&
                                         <div>
@@ -80,7 +102,8 @@ export class AccountDetailsComponent extends React.Component{
                                                 }
                                                 {this.state.editMode &&
                                                 <input className="input input-account-details-comp"
-                                                       placeholder={this.state.phone} id={`pn-${this.state.userName}`}/>
+                                                       placeholder={this.state.phone} id={`pn-${this.state.userName}`}
+                                                        onChange={()=>{this.userTypedNewPhone()}}/>
                                                 }
                                             <h4>Email</h4>
                                             {!this.state.editMode &&
@@ -91,7 +114,8 @@ export class AccountDetailsComponent extends React.Component{
                                             {this.state.editMode &&
                                             <div>
                                                 <input placeholder={this.state.email} className="input-account-details-comp"
-                                                    id={`em-${this.state.email}`}/>
+                                                    id={`em-${this.state.userName}`}
+                                                    onChange={()=>{this.userTypedNewEmail()}}/>
                                             </div>
                                             }
                                         </div>
