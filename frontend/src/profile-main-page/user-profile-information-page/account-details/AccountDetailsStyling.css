@@ -10,3 +10,14 @@
 .general-information:hover{
     color: #3498db;
 }
+
+
+.show-less-info:hover{
+    color: #3498db;
+}
+
+.input-account-details-comp{
+    text-align: center;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}

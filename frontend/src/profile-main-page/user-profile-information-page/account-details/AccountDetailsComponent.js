@@ -8,7 +8,8 @@ export class AccountDetailsComponent extends React.Component{
         birthday: "",
         phone: "",
         isOwner: false,
-        showGeneralInfo: false
+        showGeneralInfo: false,
+        editMode: false
     };
 
     constructor(props) {
@@ -28,41 +29,67 @@ export class AccountDetailsComponent extends React.Component{
 
     }
 
+    changeDisplayInfoProperty(){
+        this.setState({showGeneralInfo: !this.state.showGeneralInfo})
+    }
+
+    changeEditModeProperty(){
+        this.setState({
+            editMode: !this.state.editMode
+        })
+    }
     render() {
         return (
             <div>
                 { this.state.userName !== "" &&
                     <div className="container account-details-component-container d-flex flex-column">
                         <div className="container user-name-container">
-                            <div className="container d-flex justify-content-center">
-                                <div>
-                                    <svg width="2em" height="2em" viewBox="0 0 16 16" className="bi bi-person"
-                                         fill="blue" xmlns="http://www.w3.org/2000/svg">
-                                        <path fillRule="evenodd"
-                                              d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 className="text-secondary">User Name</h3>
-                                </div>
+                            <div>
+                                <h3 className="text-secondary">User Name</h3>
                             </div>
-                            <hr/>
                             <div>
                                     <h5 className="text-secondary">@{this.state.userName}</h5>
                             </div>
                         </div>
                         <div className="container text-secondary">
-                            <h3 className="general-information" onClick={() => {this.setState({showGeneralInfo: !this.state.showGeneralInfo})}}>
-                                General Information</h3>
+                            <h3 className="general-information" onClick={() => {this.changeDisplayInfoProperty()}}>
+                                About Me</h3>
                             {  this.state.showGeneralInfo &&
                                 <div>
                                     <hr/>
-                                    <h4> Birthday </h4>
-                                        <h5>{this.state.birthday}</h5>
+                                    <h4> Date of birth</h4>
+                                    { !this.state.editMode && this.state.isOwner &&
+                                        <h5 onClick={() => {this.changeEditModeProperty()}}>{this.state.birthday}</h5>
+                                    }
+                                     { this.state.editMode && this.state.isOwner &&
+                                        <input className="input input-account-details-comp" placeholder={this.state.birthday} id={`bd-${this.state.userName}`}/>
+                                    }
                                     {this.state.isOwner &&
                                         <div>
                                         <h4>Phone Number</h4>
                                         <h5>{this.state.phone}</h5>
+                                        </div>
+                                    }
+                                    {this.state.editMode && this.state.isOwner &&
+                                        <div style={{marginTop:"20px"}} className="d-flex justify-content-center">
+                                            <div style={{marginRight: "20px"}}>
+                                                  <button className="btn btn-secondary">Undo Changes</button>
+                                            </div>
+                                            <div>
+                                                  <button className="btn btn-success">Save Changes</button>
+                                            </div>
+                                        </div>
+                                    }
+                                    { !this.state.editMode &&
+                                        <div>
+                                            <svg onClick={() => {
+                                                this.changeDisplayInfoProperty()
+                                            }} className="bi bi-caret-up show-less-info" width="3em" height="2em"
+                                                 viewBox="0 0 16 16"
+                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fillRule="evenodd"
+                                                      d="M3.204 11L8 5.519 12.796 11H3.204zm-.753-.659l4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
+                                            </svg>
                                         </div>
                                     }
                                </div>
