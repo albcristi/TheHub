@@ -84,7 +84,9 @@ class UserService:
     def update_profile_picture(self, user_name, profile):
         try:
             user = self.get_user_by_user_name(user_name)
+            user.profile_picture.delete()
             user.profile_picture = profile
             user.save()
+            return True
         except Exception:
             return False

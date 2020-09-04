@@ -246,7 +246,7 @@ def handle_post_request_manage_profile_picture(request, user) -> JsonResponse:
     try:
         new_profile_picture_file = request.FILES['profile-image-file']
         service = UserService()
-        service.update_profile_picture(user, new_profile_picture_file)
-        return JsonResponse({'profile': ""}, status=200)
+        result = service.update_profile_picture(user, new_profile_picture_file)
+        return JsonResponse({'profile': result}, status=200)
     except Exception as e:
         return exception_occurred(str(e))
