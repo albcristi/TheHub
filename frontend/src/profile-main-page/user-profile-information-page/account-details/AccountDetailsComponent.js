@@ -8,11 +8,13 @@ export class AccountDetailsComponent extends React.Component{
         email: "",
         birthday: "",
         phone: "",
+        profilePicture: "",
         isOwner: false,
         showGeneralInfo: false,
         editMode: false
     };
 
+    toHost = `${process.env.REACT_APP_HOST_URL}:${process.env.REACT_APP_PORT_API}`;
     userDataValidator = new UserDataValidator();
 
     constructor(props) {
@@ -21,13 +23,14 @@ export class AccountDetailsComponent extends React.Component{
     }
 
     componentWillMount() {
-        const {userName, email, birthday, phone} = this.props;
+        const {userName, email, birthday, phone, profilePicture} = this.props;
         this.setState({
             isOwner: userName===sessionStorage.getItem('user_name'),
             userName: userName,
             email: email,
             birthday: birthday,
-            phone: phone
+            phone: phone,
+            profilePicture: profilePicture
         })
     }
 
@@ -36,9 +39,11 @@ export class AccountDetailsComponent extends React.Component{
     }
 
     changeEditModeProperty(){
-        this.setState({
-            editMode: !this.state.editMode
-        })
+        if(this.state.isOwner) {
+            this.setState({
+                editMode: !this.state.editMode
+            })
+        }
     }
 
     makeProfileUpdate(){
@@ -83,8 +88,12 @@ export class AccountDetailsComponent extends React.Component{
                             {  this.state.showGeneralInfo &&
                                 <div className="container general-information-container">
                                     <hr/>
+                                    <div className="container acc-det-prof-pic-cont">
+                                        <h4>Profile picture</h4>
+                                        <img src={`${this.toHost}${this.state.profilePicture}`} placeholder="profile picture" className="img-thumbnail img-prof-details"/>
+                                    </div>
                                     <h4> Date of birth</h4>
-                                    { !this.state.editMode && this.state.isOwner &&
+                                    { !this.state.editMode &&
                                         <h5  onClick={() => {this.changeEditModeProperty()}}>{this.state.birthday}</h5>
                                     }
                                      { this.state.editMode && this.state.isOwner &&

@@ -99,7 +99,8 @@ export class UserProfileInformationComponent extends React.Component{
                             <AccountDetailsComponent userName={this.state.userName}
                                                 email={this.state.email}
                                                 phone={this.state.phone}
-                                                birthday={this.state.birthday}/>
+                                                birthday={this.state.birthday}
+                                                profilePicture={this.state.profilePicture}/>
                         }
                         {  userName!=="" && this.state.currentlyShowing[2] &&
                             <FriendListComponent userName={userName} isOwnerOfProfile={this.state.isProfileOwner}/>
