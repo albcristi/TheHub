@@ -48,7 +48,7 @@ export class UserProfileCardComponent extends React.Component{
                                             </svg>
                                         </div>
                                         <div>
-                                            <a href="#">Friends</a>
+                                            <a href="/my-friends">Friends</a>
                                         </div>
                                     </div>
 

@@ -3,9 +3,9 @@ import './App.css';
 import MainPage from "./welcome-page/MainPage.js";
 import {Route, Switch} from "react-router";
 import ProfileMainPageComponent from "./profile-main-page/ProfileMainPageComponent";
-import ToggleComponent from "./ToggleComponent";
 import {SearchBarComponent} from "./profile-main-page/search-bar/SearchBarComponent";
 import {UserProfileInformationComponent} from "./profile-main-page/user-profile-information-page/UserProfileInformationComponent";
+import {FriendListComponent} from "./profile-main-page/friends/friend-list/FriendListComponent";
 
 class App  extends React.Component{
 
@@ -75,6 +75,14 @@ class App  extends React.Component{
                                         <UserProfileInformationComponent userName={sessionStorage.getItem('friend_name')} isProfileOwner={false}/>
                                     </div>
                                 )}/>
+                            <Route exact path={'/my-friends'} render={
+                                (props) => (
+                                    <div style={{marginTop: "100px"}}>
+                                        <FriendListComponent userName={sessionStorage.getItem('user_name')}
+                                                             isOwnerOfProfile={true}/>
+                                    </div>
+                                )
+                            }/>
                         </Switch>
                     </Suspense>
 
