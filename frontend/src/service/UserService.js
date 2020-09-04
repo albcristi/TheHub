@@ -53,4 +53,35 @@ export class UserService{
              `${this.BASE_URL}friendships/${userName}?token=${token}`
          );
      }
+
+     updateUserProfile(email, birthDate, phoneNumber){
+        return axios.post(
+            `${this.BASE_URL}manage-account`,
+            {
+                token: sessionStorage.getItem('token'),
+                email: email,
+                phone_number: phoneNumber,
+                birth_date: birthDate,
+            }
+            ,
+            {
+            }
+
+        );
+     }
+
+     updateProfilePicture(profilePicture) {
+         let form = new FormData();
+         form.append('profile-image-file', profilePicture);
+         form.append('profile-image-name', profilePicture.name);
+         form.append('token', sessionStorage.getItem('token'))
+         return axios.post(
+             `${this.BASE_URL}manage-profile-picture`,
+             form,
+             {
+                 headers: {
+                     "Content-type": "multipart/form-data",
+                 }
+             });
+     }
 }

@@ -68,5 +68,23 @@ class UserService:
         except Exception:
             return []
 
-    def update_user(self, user_name: str, phone: str, email: str, birth_date: datetime):
-        return []
+    def update_user(self, user_name: str, phone: str, email: str, birth_date: datetime) -> bool:
+        try:
+            user = self.get_user_by_user_name(user_name)
+            if user is None:
+                return False
+            user.birth_date = birth_date
+            user.phone_number = phone
+            user.usr_email = email
+            user.save()
+            return True
+        except Exception:
+            return False
+
+    def update_profile_picture(self, user_name, profile):
+        try:
+            user = self.get_user_by_user_name(user_name)
+            user.profile_picture = profile
+            user.save()
+        except Exception:
+            return False

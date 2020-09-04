@@ -4,7 +4,8 @@ from ...service.UserService import UserService
 from ...service.SessionService import SessionService
 from ...service.PhoneMessagingService import *
 from ...serializer.serializers import AppUserSerializer
-from django.http import JsonResponse
+from ..utils import *
+from django.http import HttpRequest
 
 
 @api_view(['GET'])
@@ -188,3 +189,64 @@ def handle_get_request_user_friendships(user_name: str) -> JsonResponse:
             return JsonResponse(user_service.retrieve_user_friends(user), safe=False, status=200)
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=401)
+
+
+''' .../manage-account
+'''
+
+
+@api_view(['POST'])
+def manage_account(request) -> JsonResponse:
+    try:
+        if request.method == 'POST':
+            user_data = json.loads(request.body.decode())
+            token = user_data['token']
+            session_service = SessionService()
+            current_session = session_service.retrieve_session(token)
+            if current_session is None:
+                return session_time_out()
+            else:
+                session_service.update_session_data(current_session)
+            user_name = current_session.user.usr_name
+            return handle_post_manage_account(request, user_name)
+        return bad_request()
+    except Exception as e:
+        return exception_occurred(str(e))
+
+
+def handle_post_manage_account(request, user_name: str) -> JsonResponse:
+    user_data = json.loads(request.body.decode())
+    email = user_data['email']
+    phone = user_data['phone_number']
+    birth_date = user_data['birth_date']
+    service = UserService()
+    service.update_user(user_name, phone, email, birth_date)
+    return JsonResponse({'profile': ""}, status=200)
+
+
+@api_view(['POST'])
+def manage_account_profile_picture(request: HttpRequest) -> JsonResponse:
+    try:
+        if request.method == 'POST':
+            token = request.POST['token']
+            service = SessionService()
+            active_session = service.retrieve_session(token)
+            if active_session is None:
+                return session_time_out()
+            else:
+                service.update_session_data(active_session)
+            user = active_session.user.usr_name
+            return handle_post_request_manage_profile_picture(request, user)
+        return bad_request()
+    except Exception as e:
+        return exception_occurred(str(e))
+
+
+def handle_post_request_manage_profile_picture(request, user) -> JsonResponse:
+    try:
+        new_profile_picture_file = request.FILES['profile-image-file']
+        service = UserService()
+        service.update_profile_picture(user, new_profile_picture_file)
+        return JsonResponse({'profile': ""}, status=200)
+    except Exception as e:
+        return exception_occurred(str(e))

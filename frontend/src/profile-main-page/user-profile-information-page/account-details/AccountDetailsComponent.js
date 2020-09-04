@@ -1,6 +1,7 @@
 import * as React from "react";
 import './AccountDetailsStyling.css';
 import {UserDataValidator} from "../../../data-validators/user-data-validator/UserDataValidator";
+import {UserService} from "../../../service/UserService";
 
 export class AccountDetailsComponent extends React.Component{
     state = {
@@ -11,9 +12,11 @@ export class AccountDetailsComponent extends React.Component{
         profilePicture: "",
         isOwner: false,
         showGeneralInfo: false,
-        editMode: false
+        editMode: false,
+        newProfile: ""
     };
 
+    userService = new UserService();
     toHost = `${process.env.REACT_APP_HOST_URL}:${process.env.REACT_APP_PORT_API}`;
     userDataValidator = new UserDataValidator();
 
@@ -48,13 +51,21 @@ export class AccountDetailsComponent extends React.Component{
 
     makeProfileUpdate(){
         let arrayOfFiles = document.getElementById(`pf-${this.state.userName}`).files;
-        let newProfilePicture = arrayOfFiles.length > 0 ? arrayOfFiles[0] : this.state.profilePicture;
+        let newProfilePicture = arrayOfFiles[0];
+        if(arrayOfFiles.length > 0){
+            this.userService.updateProfilePicture(newProfilePicture)
+                .then((res) => console.log(res.data))
+                .catch(_=>{})
+        }
         let newBirthday = window.jQuery(`#bd-${this.state.userName}`).val();
         newBirthday = this.userTypingNewBirthdate() ? newBirthday: this.state.birthday;
         let newPhoneNumber = window.jQuery(`#pn-${this.state.userName}`).val();
         newPhoneNumber = this.userTypedNewPhone() ? newPhoneNumber : this.state.phone;
         let newEmail = window.jQuery(`#em-${this.state.userName}`).val();
         newEmail = this.userTypedNewEmail() ? newEmail : this.state.email;
+        this.userService.updateUserProfile(newEmail, newBirthday, newPhoneNumber)
+            .then((res) => {console.log(res.data)})
+            .catch((_) => {})
 
     }
 
@@ -76,6 +87,7 @@ export class AccountDetailsComponent extends React.Component{
         let color = this.userDataValidator.checkUserEmail(typedEmail) ? "#5cb85c" : "#d9534f";
         window.jQuery(`#em-${this.state.userName}`).css("background-color", color);
     }
+
 
     render() {
         return (
@@ -145,7 +157,8 @@ export class AccountDetailsComponent extends React.Component{
                                         this.state.editMode &&
                                             <div>
                                                 <h5>Profile Image</h5>
-                                                <input className="input-new-prof-pic-acc-det" type="file" placeholder={this.state.profilePicture} id={`pf-${this.state.userName}`} />
+                                                <input className="input-new-prof-pic-acc-det" type="file" placeholder={this.state.profilePicture}
+                                                       id={`pf-${this.state.userName}`} />
                                             </div>
                                     }
 
