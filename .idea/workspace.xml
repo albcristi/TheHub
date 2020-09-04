@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/static/images/users/dani/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/api/static/images/users/dani/profile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,29 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2146">
-              <caret line="223" column="39" selection-start-line="223" selection-start-column="39" selection-end-line="223" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-                <element signature="e#2601#3118#0" />
-                <element signature="e#3264#3889#0" />
-                <element signature="e#4002#4644#0" />
-                <element signature="e#4720#5010#0" />
-                <element signature="e#5181#5766#0" />
-                <element signature="e#5850#6246#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+            <state relative-caret-position="69">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#AccountDetailsComponent#0" />
@@ -72,16 +54,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1863">
+              <caret line="102" column="89" selection-start-line="102" selection-start-column="89" selection-end-line="102" selection-end-column="89" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/service/UserService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
+            <state relative-caret-position="120">
               <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
               <folding>
                 <element signature="n#!!block;n#checkUserNameUnicity#0;n#UserService#0" />
                 <element signature="n#!!block;n#getVerificationCodeByWhatssApp#0;n#UserService#0" />
                 <element signature="n#!!block;n#createNewAccount#0;n#UserService#0" />
                 <element signature="n#!!block;n#logOutUser#0;n#UserService#0" />
-                <element signature="n#!!block;n#getUserProfileInformation#0;n#UserService#0" />
               </folding>
             </state>
           </provider>
@@ -120,6 +113,7 @@
       <find>class</find>
       <find>regi</find>
       <find>POST</find>
+      <find>handle_pro</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -517,12 +511,12 @@
       <workItem from="1598978180964" duration="1101000" />
       <workItem from="1599045344923" duration="17092000" />
       <workItem from="1599132450550" duration="9174000" />
-      <workItem from="1599214432744" duration="16430000" />
+      <workItem from="1599214432744" duration="16981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316764000" />
+    <option name="totallyTimeSpent" value="317315000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -535,7 +529,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22147651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -551,7 +544,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.13909224" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.36310396" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -955,16 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="102" column="89" selection-start-line="102" selection-start-column="89" selection-end-line="102" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsStyling.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
@@ -999,16 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/UserService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="733">
@@ -1019,40 +992,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/service/UserService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!block;n#checkUserNameUnicity#0;n#UserService#0" />
-            <element signature="n#!!block;n#getVerificationCodeByWhatssApp#0;n#UserService#0" />
-            <element signature="n#!!block;n#createNewAccount#0;n#UserService#0" />
-            <element signature="n#!!block;n#logOutUser#0;n#UserService#0" />
-            <element signature="n#!!block;n#getUserProfileInformation#0;n#UserService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2146">
-          <caret line="223" column="39" selection-start-line="223" selection-start-column="39" selection-end-line="223" selection-end-column="39" />
+        <state relative-caret-position="168">
+          <caret line="128" column="14" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="14" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
             <element signature="e#2601#3118#0" />
             <element signature="e#3264#3889#0" />
             <element signature="e#4002#4644#0" />
-            <element signature="e#4720#5010#0" />
             <element signature="e#5181#5766#0" />
             <element signature="e#5850#6246#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/service/UserService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!block;n#checkUserNameUnicity#0;n#UserService#0" />
+            <element signature="n#!!block;n#getVerificationCodeByWhatssApp#0;n#UserService#0" />
+            <element signature="n#!!block;n#createNewAccount#0;n#UserService#0" />
+            <element signature="n#!!block;n#logOutUser#0;n#UserService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="102" column="89" selection-start-line="102" selection-start-column="89" selection-end-line="102" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        <state relative-caret-position="69">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#AccountDetailsComponent#0" />

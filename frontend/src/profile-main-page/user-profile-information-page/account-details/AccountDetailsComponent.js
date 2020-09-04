@@ -48,12 +48,23 @@ export class AccountDetailsComponent extends React.Component{
         }
     }
 
+
     makeProfileUpdate(){
         let arrayOfFiles = document.getElementById(`pf-${this.state.userName}`).files;
         let newProfilePicture = arrayOfFiles[0];
         if(arrayOfFiles.length > 0){
             this.userService.updateProfilePicture(newProfilePicture)
-                .then((res) => {})
+                .then((res) => {
+                    if(res.data){
+                        this.userService.getUserProfileInformation(this.state.userName)
+                            .then((res) => {
+                                this.setState({
+                                    profilePicture: res.data['profile_picture']
+                                })
+                            })
+                            .catch(_=>{})
+                    }
+                })
                 .catch(_=>{})
         }
         let newBirthday = window.jQuery(`#bd-${this.state.userName}`).val();
@@ -120,7 +131,7 @@ export class AccountDetailsComponent extends React.Component{
                                     {!this.state.editMode &&
                                     <div className="container acc-det-prof-pic-cont">
                                         <h4>Profile picture</h4>
-                                        <img src={`${this.toHost}${this.state.profilePicture}`}
+                                        <img src={`${this.toHost}${this.state.profilePicture}`} alt="..."
                                              placeholder="profile picture" className="img-thumbnail img-prof-details"/>
                                     </div>
                                     }
