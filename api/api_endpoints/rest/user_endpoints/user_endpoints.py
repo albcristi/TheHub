@@ -220,8 +220,8 @@ def handle_post_manage_account(request, user_name: str) -> JsonResponse:
     phone = user_data['phone_number']
     birth_date = user_data['birth_date']
     service = UserService()
-    service.update_user(user_name, phone, email, birth_date)
-    return JsonResponse({'profile': ""}, status=200)
+    res = service.update_user(user_name, phone, email, birth_date)
+    return JsonResponse({'profile': res}, status=200)
 
 
 @api_view(['POST'])

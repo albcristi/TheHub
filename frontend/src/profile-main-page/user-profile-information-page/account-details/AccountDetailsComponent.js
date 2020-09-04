@@ -13,7 +13,6 @@ export class AccountDetailsComponent extends React.Component{
         isOwner: false,
         showGeneralInfo: false,
         editMode: false,
-        newProfile: ""
     };
 
     userService = new UserService();
@@ -54,19 +53,29 @@ export class AccountDetailsComponent extends React.Component{
         let newProfilePicture = arrayOfFiles[0];
         if(arrayOfFiles.length > 0){
             this.userService.updateProfilePicture(newProfilePicture)
-                .then((res) => console.log(res.data))
+                .then((res) => {})
                 .catch(_=>{})
         }
         let newBirthday = window.jQuery(`#bd-${this.state.userName}`).val();
-        newBirthday = this.userTypingNewBirthdate() ? newBirthday: this.state.birthday;
+        newBirthday = this.userDataValidator.checkBirthDate(newBirthday)? newBirthday: this.state.birthday;
         let newPhoneNumber = window.jQuery(`#pn-${this.state.userName}`).val();
-        newPhoneNumber = this.userTypedNewPhone() ? newPhoneNumber : this.state.phone;
+        newPhoneNumber = this.userDataValidator.checkPhoneNumber(newPhoneNumber)? newPhoneNumber : this.state.phone;
         let newEmail = window.jQuery(`#em-${this.state.userName}`).val();
-        newEmail = this.userTypedNewEmail() ? newEmail : this.state.email;
+        newEmail = this.userDataValidator.checkUserEmail(newEmail) ? newEmail : this.state.email;
         this.userService.updateUserProfile(newEmail, newBirthday, newPhoneNumber)
-            .then((res) => {console.log(res.data)})
-            .catch((_) => {})
-
+            .then((res) => {
+                if(res.data){
+                    this.setState({
+                        email: newEmail,
+                        phone: newPhoneNumber,
+                        birthday: newBirthday
+                    })
+                }
+            })
+            .catch((_) => {});
+        this.setState({
+            editMode: !this.state.editMode,
+        })
     }
 
     userTypingNewBirthdate(){
