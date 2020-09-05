@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/api_endpoints/model/notification_system/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api_endpoints/model/notification_system/notification_system_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
+            <state relative-caret-position="1058">
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -25,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
+            <state relative-caret-position="105">
+              <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -37,14 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/notification_system/notification_system_models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -52,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="105" column="113" lean-forward="true" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="113" />
+            <state relative-caret-position="2300">
+              <caret line="105" column="113" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="113" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -91,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/message-component/MessageComponentStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponentStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/register/RegisterComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/register/access-key-validation/ValidationAccountComponent.js" />
@@ -120,7 +117,6 @@
         <option value="$PROJECT_DIR$/api/backend/urls.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/serializer/serializers.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js" />
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationStyle.css" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/TimelineComponent/TimelineComponent.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/models.py" />
@@ -141,20 +137,23 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/service/UserService.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/App.js" />
+        <option value="$PROJECT_DIR$/api/api_endpoints/model/notification_system/notification_system_models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +171,29 @@
               <item name="TheHub" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="notification_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TheHub" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="api_endpoints" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="posts_system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TheHub" type="b2602c69:ProjectViewProjectNode" />
@@ -436,7 +458,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -507,12 +528,13 @@
       <workItem from="1598978180964" duration="1101000" />
       <workItem from="1599045344923" duration="17092000" />
       <workItem from="1599132450550" duration="9174000" />
-      <workItem from="1599214432744" duration="18379000" />
+      <workItem from="1599214432744" duration="18716000" />
+      <workItem from="1599307165675" duration="508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318713000" />
+    <option name="totallyTimeSpent" value="319558000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -527,7 +549,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22147651" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22483222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -541,7 +563,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.14934114" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.2898975" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -590,13 +612,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponentStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/comments/comment-component/CommentComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -750,16 +765,6 @@
           <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/posts_system/posts_system_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2162">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1008,16 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/ProfileMainPageComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -1028,10 +1023,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="105" column="113" lean-forward="true" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="113" />
+        <state relative-caret-position="2300">
+          <caret line="105" column="113" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="113" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -1040,11 +1045,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="81" column="83" selection-start-line="81" selection-start-column="83" selection-end-line="81" selection-end-column="83" />
+        <state relative-caret-position="105">
+          <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/posts_system/posts_system_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/notification_system/notification_system_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
