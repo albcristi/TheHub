@@ -13,3 +13,4 @@ class PendingFriendship(models.Model):
         related_name="pending_friendships",
         on_delete=models.CASCADE
     )
+    validation_token = models.CharField(default="", max_length=6)

@@ -1,5 +1,9 @@
 from ...models import AppUsers
 from ...models import FriendList
+from ...model.friendship_models_system.friendship_models import PendingFriendship
+from ...service.PhoneMessagingService import PhoneMessagingSystem
+from django.utils.crypto import get_random_string
+
 
 class FriendshipService:
     """
@@ -9,6 +13,11 @@ class FriendshipService:
             - become friends
             - remove their friendship
     """
+    def __init__(self):
+        self.__message_service = PhoneMessagingSystem()
+
+    def __generate_token(self, length=5):
+        return get_random_string(length)
 
     def remove_friendship(self, initiator_friend: AppUsers, other_friend: AppUsers) -> bool:
         try:
@@ -34,3 +43,24 @@ class FriendshipService:
             return True
         except Exception:
             return False
+
+    def accept_new_friendship(self, initiator: AppUsers, other_friend: AppUsers) -> bool:
+        res = self.create_friendship(initiator, other_friend)
+        message = "Hello, @"+other_friend.usr_name+"! We have good news, @"+initiator.usr_name+" has "+\
+            "accepted your friendship request! TheHub Team"
+        self.__message_service.send_new_message(other_friend.phone_number, message)
+        return res
+
+    def send_friendship_request(self, initiator: AppUsers, other_friend: AppUsers):
+        try:
+            new_pending_friendship = PendingFriendship()
+            new_pending_friendship.friendship_initiator = initiator
+            new_pending_friendship.requested_friend = other_friend
+            new_pending_friendship.validation_token = self.__generate_token()
+            new_pending_friendship.save()
+            message = "Hello, @"+other_friend.usr_name+"! The following user @"+initiator.usr_name +\
+                " sent you a friendship request!"
+            self.__message_service.send_new_message(other_friend.phone_number, message)
+            return True
+        except Exception:
+           return False
