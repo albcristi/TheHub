@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from ...service.friendship_service.FriendshipService import *
 from ...service.UserService import UserService
 from ...service.SessionService import SessionService
+from ...serializer.serializers import AppUserSerializer
 from ..utils import *
 
 
@@ -62,7 +63,7 @@ def handle_pending_friendships(request, initiator: str, other_user: str, token: 
                 return session_time_out()
             else:
                 service.update_session_data(active_session)
-
+            return handle_post_request_handle_relationship(initiator, other_user)
         return bad_request()
     except Exception as e:
         return exception_occurred(str(e))
@@ -80,3 +81,30 @@ def handle_post_request_handling_pending_friendships(initiator: str, other_user:
         return JsonResponse({'result': result}, status=200)
     except Exception:
         return JsonResponse({'result': False}, status=200)
+
+
+@api_view(['GET'])
+def handle_user_pending_friendships(request, user: str, token: str) -> JsonResponse:
+    try:
+        if request.method == 'GET':
+            service = SessionService()
+            print(user)
+            session = service.retrieve_session(token)
+            if session is None:
+                return session_time_out()
+            else:
+                service.update_session_data(session)
+            return handle_get_request_pending_friendships_of_user(user)
+        return bad_request()
+    except Exception as e:
+        return exception_occurred(str(e))
+
+
+def handle_get_request_pending_friendships_of_user(user: str) -> JsonResponse:
+    try:
+        service = FriendshipService()
+        pending_friends = service.get_pending_friendships(user)
+        pending_friends = [AppUserSerializer(pend).data for pend in pending_friends]
+        return JsonResponse(pending_friends, safe=False, status=200)
+    except Exception as e:
+        return exception_occurred(str(e))

@@ -5,5 +5,6 @@ urlpatterns = [
     path('initiator=<str:initiator>/other=<str:other_user>/<str:token>', handle_relationship,
          name='relationship-handler'),
     path('pending-friendships/<str:initiator>/other<str:other_user>/<str:token>', handle_pending_friendships,
-         name='pending-relationship-handler')
+         name='pending-relationship-handler'),
+    path('pending-friendships/<str:user>/<str:token>', handle_user_pending_friendships, name='user-manage-new-friends')
 ]

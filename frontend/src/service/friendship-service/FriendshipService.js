@@ -17,4 +17,11 @@ export class FriendshipService {
             `${this.toHost}/api/relations/initiator=${initiatorFriend}/other=${otherFriend}/${sessionStorage.getItem('token')}`
         );
     }
+
+
+    retrieverPendingFriends(userName){
+        return axios.get(
+            `${this.toHost}/api/relations/pending-friendships/${userName}/${sessionStorage.getItem('token')}`
+        );
+    }
 }

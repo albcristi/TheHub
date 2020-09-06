@@ -2,6 +2,7 @@ from ...models import AppUsers
 from ...models import FriendList
 from ...model.friendship_models_system.friendship_models import PendingFriendship
 from ...service.PhoneMessagingService import PhoneMessagingSystem
+from ...service.UserService import UserService
 from django.utils.crypto import get_random_string
 
 
@@ -15,6 +16,7 @@ class FriendshipService:
     """
     def __init__(self):
         self.__message_service = PhoneMessagingSystem()
+        self.__user_service = UserService()
 
     def __generate_token(self, length=5):
         return get_random_string(length)
@@ -64,3 +66,14 @@ class FriendshipService:
             return True
         except Exception:
            return False
+
+    def get_pending_friendships(self, user_name: str) -> list:
+        try:
+            user = self.__user_service.get_user_by_user_name(user_name)
+            if user is None:
+                return []
+            pending_friendships = user.pending_friendships.all()
+            pending_friends = [pending.friendship_initiator for pending in pending_friendships]
+            return pending_friends
+        except Exception:
+            return []

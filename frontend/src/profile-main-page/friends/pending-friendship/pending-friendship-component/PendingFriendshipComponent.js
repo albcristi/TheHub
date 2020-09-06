@@ -21,16 +21,25 @@ export class PendingFriendshipComponent extends React.Component{
         this.setState({
             waitingUser: waitingUser,
             userName: userName,
-            profileImage: profileImage === "" ? this.noProfile : profileImage
+            profileImage: profileImage
         })
+    }
+
+    acceptFriendRequest(){
+
+    }
+
+    denyFriendRequest(){
+
     }
 
     render() {
         return (
             <div>
+
                 <div className="container pend-friend-component-container d-flex flex-row">
                     <div className="prof-img-cont-pend-friend-comp">
-                            <img className="prof-img-pend-friend-comp" src={`${this.toHost}${this.state.profilePicture}`} alt=""/>
+                            <img className="prof-img-pend-friend-comp" src={`${this.toHost}${this.state.profileImage}`} alt=""/>
                     </div>
                     <div className="container d-flex flex-column pend-friend-det-container">
                         <div>
@@ -39,13 +48,13 @@ export class PendingFriendshipComponent extends React.Component{
                             <div>
                                 {!this.state.isSolved &&
                                 <div>
-                                    <button type="button" onClick={() => {
+                                    <button style={{marginRight: "5px"}} type="button" onClick={() => {
+                                        this.denyFriendRequest()
+                                    }} className="btn btn-secondary">Decline</button>
 
-                                    }} className="btn btn-primary">Decline</button>
-
                                     <button type="button" onClick={() => {
-                                        this.addFriendBack()
-                                    }} className="btn btn-primary">Accept</button>
+                                        this.acceptFriendRequest()
+                                    }} className="btn btn-success">Accept</button>
                                 </div>
                                 }
                                 {this.state.isSolved &&

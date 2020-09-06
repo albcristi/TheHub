@@ -1,5 +1,6 @@
 import * as React from "react";
 import {PendingFriendshipComponent} from "../pending-friendship-component/PendingFriendshipComponent";
+import {FriendshipService} from "../../../../service/friendship-service/FriendshipService";
 
 export class ListPendingFriendshipsComponent extends React.Component{
     constructor(props){
@@ -8,15 +9,26 @@ export class ListPendingFriendshipsComponent extends React.Component{
 
     state = {
         userName: "",
-        pendingFriendships: []
+        pendingFriendships: [],
+        isMinimized: false
     };
+
+    friendshipService = new FriendshipService();
 
     componentWillMount() {
         const {userName} = this.props;
-        this.setState({
-            userName: userName
-        })
+        this.friendshipService.retrieverPendingFriends(userName)
+            .then(res => {
+                console.log(res.data)
+                this.setState({
+                    userName: userName,
+                    pendingFriendships: res.data
+                })
+            })
+            .catch(_ => {})
     }
+
+
 
     render() {
 
@@ -34,6 +46,9 @@ export class ListPendingFriendshipsComponent extends React.Component{
                                             <div key={`left-${index}`}>
                                                 {index % 2 === 0 &&
                                                     <div>
+                                                        <PendingFriendshipComponent waitingUser={this.state.userName}
+                                                            userName={value.usr_name}
+                                                            profileImage={value.profile_picture}/>
                                                     </div>
                                                 }
                                             </div>
@@ -43,11 +58,14 @@ export class ListPendingFriendshipsComponent extends React.Component{
 
                         <div className="container d-flex flex-column right-container">
                              {
-                                this.state.friends
+                                this.state.pendingFriendships
                                     .map((value, index) => (
                                             <div key={`right-${index}`}>
                                                 { index%2===1 &&
                                                     <div>
+                                                        <PendingFriendshipComponent waitingUser={this.state.userName}
+                                                            userName={value.usr_name}
+                                                            profileImage={value.profile_picture}/>
                                                     </div>
                                                 }
                                             </div>
