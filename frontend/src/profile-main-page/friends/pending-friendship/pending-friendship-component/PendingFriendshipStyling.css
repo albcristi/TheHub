@@ -1,0 +1,45 @@
+
+
+.pend-friend-component-container{
+    height: 150px;
+    width: 300px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: #7f8181 1px solid;
+    margin-bottom: 30px;
+}
+
+
+.prof-img-pend-friend-comp{
+    height: 100px;
+    width: 80px;
+    margin-top: 30px;
+}
+
+.pend-friend-det-container{
+    padding-top: 40px;
+}
+
+.pend-friend-list-container{
+    background-color: whitesmoke;
+    margin-top: 3%;
+    border-radius: 10px;
+    padding-top: 3%;
+}
+
+.pend-friend-det-container h4:hover{
+    color: #3498db;
+}
+
+
+@media screen and (max-width: 699px){
+  .pend-friend-list-container{
+      flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .pend-friend-list-container{
+      flex-direction: row;
+  }
+}

@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/model/friendship_models_system/friendship_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/model/friendship_models_system/friendship_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/service/PhoneMessagingService.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/service/PhoneMessagingService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api_endpoints/service/friendship_service/FriendshipService.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/service/friendship_service/FriendshipService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipStyling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/friendship_actions_endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/friendship_actions_endpoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,25 +19,46 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/friendship_models_system/friendship_models.py">
+        <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/friendship_actions_endpoints.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+            <state relative-caret-position="1886">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/friendship_service/FriendshipService.py">
+        <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="467">
+              <caret line="58" column="77" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -46,9 +70,9 @@
       <list>
         <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="Python Script" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -69,9 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/comments/comment-component/CommentComponentStyle.css" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/frontend/src/log-in/LogInComponent.js" />
         <option value="$PROJECT_DIR$/frontend/.env" />
         <option value="$PROJECT_DIR$/frontend/src/index.css" />
@@ -101,10 +122,8 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/urls.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/utils.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-list/FriendListComponent.js" />
-        <option value="$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/urls.py" />
         <option value="$PROJECT_DIR$/frontend/src/service/friendship-service/FriendshipService.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-component/FriendComponent.js" />
-        <option value="$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/friendship_actions_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/data-validators/user-data-validator/UserDataValidator.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsStyling.css" />
@@ -114,12 +133,17 @@
         <option value="$PROJECT_DIR$/api/api_endpoints/rest/user_endpoints/user_endpoints.py" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js" />
         <option value="$PROJECT_DIR$/frontend/src/profile-main-page/side-bar/UserProfileCardComponent.js" />
-        <option value="$PROJECT_DIR$/frontend/src/App.js" />
         <option value="$PROJECT_DIR$/api/api_endpoints/model/notification_system/notification_system_models.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/admin.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/service/PhoneMessagingService.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/model/friendship_models_system/friendship_models.py" />
         <option value="$PROJECT_DIR$/api/api_endpoints/service/friendship_service/FriendshipService.py" />
+        <option value="$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/urls.py" />
+        <option value="$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/friendship_actions_endpoints.py" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipComponent.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipStyling.css" />
+        <option value="$PROJECT_DIR$/frontend/src/App.js" />
+        <option value="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js" />
       </list>
     </option>
   </component>
@@ -510,12 +534,12 @@
       <workItem from="1599132450550" duration="9174000" />
       <workItem from="1599214432744" duration="18716000" />
       <workItem from="1599307165675" duration="1132000" />
-      <workItem from="1599390409243" duration="2944000" />
+      <workItem from="1599390409243" duration="5974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323126000" />
+    <option name="totallyTimeSpent" value="326156000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,7 +568,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.17862372" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.043923866" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -593,30 +617,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/SessionService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-775">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-list/PostListStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/log-in/LogInComponentStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/welcome-page/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -733,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-component/FriendComponentStyling.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/phone-messaging/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -767,16 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-list/FriendListComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -791,36 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-component/FriendComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/friendship_actions_endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,16 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="79" column="66" selection-start-line="79" selection-start-column="66" selection-end-line="79" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/notification_system/notification_system_models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1023,13 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/PhoneMessagingService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/model/friendship_models_system/friendship_models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1040,13 +976,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/PhoneMessagingService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/api_endpoints/service/friendship_service/FriendshipService.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="605">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/friendship_actions_endpoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1886">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api_endpoints/rest/friendship_actions_endpoints/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-component/FriendComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="27" column="91" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-component/FriendComponentStyling.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="25" column="24" lean-forward="true" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipStyling.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-list/FriendListComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="68" column="17" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="68" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="58" column="77" selection-start-line="58" selection-start-column="77" selection-end-line="58" selection-end-column="77" />
         </state>
       </provider>
     </entry>

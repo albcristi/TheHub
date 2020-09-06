@@ -6,6 +6,7 @@ import ProfileMainPageComponent from "./profile-main-page/ProfileMainPageCompone
 import {SearchBarComponent} from "./profile-main-page/search-bar/SearchBarComponent";
 import {UserProfileInformationComponent} from "./profile-main-page/user-profile-information-page/UserProfileInformationComponent";
 import {FriendListComponent} from "./profile-main-page/friends/friend-list/FriendListComponent";
+import {ListPendingFriendshipsComponent} from "./profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent";
 
 class App  extends React.Component{
 
@@ -77,9 +78,18 @@ class App  extends React.Component{
                                 )}/>
                             <Route exact path={'/my-friends'} render={
                                 (props) => (
-                                    <div style={{marginTop: "100px"}}>
+                                    <div style={{marginTop: "100px"}} className="d-flex flex-column">
+                                        <div>
+                                            <ListPendingFriendshipsComponent
+                                                userName={sessionStorage.getItem("user_name")}/>
+                                        </div>
+                                        <div>
+                                            <hr/>
+                                        </div>
+                                        <div>
                                         <FriendListComponent userName={sessionStorage.getItem('user_name')}
                                                              isOwnerOfProfile={true}/>
+                                        </div>
                                     </div>
                                 )
                             }/>

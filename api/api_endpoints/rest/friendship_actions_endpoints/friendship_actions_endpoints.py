@@ -47,3 +47,36 @@ def handle_remove_request_handle_relationship(initiator: str, other_user: str) -
             return JsonResponse({'result': result}, status=200)
         except Exception as e:
             return exception_occurred(str(e))
+
+
+"""" api/pending-friendships"""
+
+
+@api_view(['POST'])
+def handle_pending_friendships(request, initiator: str, other_user: str, token: str) -> JsonResponse:
+    try:
+        if request.method == "POST":
+            service = SessionService()
+            active_session = service.retrieve_session(token)
+            if active_session is None:
+                return session_time_out()
+            else:
+                service.update_session_data(active_session)
+
+        return bad_request()
+    except Exception as e:
+        return exception_occurred(str(e))
+
+
+def handle_post_request_handling_pending_friendships(initiator: str, other_user: str) -> JsonResponse:
+    try:
+        user_service = UserService()
+        initiator = user_service.get_user_by_user_name(initiator)
+        other_user = user_service.get_user_by_user_name(other_user)
+        if initiator is None or other_user is None:
+            return JsonResponse({'result': False}, status=200)
+        friendship_service = FriendshipService()
+        result = friendship_service.send_friendship_request(initiator, other_user)
+        return JsonResponse({'result': result}, status=200)
+    except Exception:
+        return JsonResponse({'result': False}, status=200)
