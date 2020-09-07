@@ -87,6 +87,9 @@ class App  extends React.Component{
                                             <hr/>
                                         </div>
                                         <div>
+                                        <h4>Your Friends</h4>
+                                        </div>
+                                        <div>
                                         <FriendListComponent userName={sessionStorage.getItem('user_name')}
                                                              isOwnerOfProfile={true}/>
                                         </div>
