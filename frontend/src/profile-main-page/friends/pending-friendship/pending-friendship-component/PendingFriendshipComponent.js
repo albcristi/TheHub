@@ -58,7 +58,7 @@ export class PendingFriendshipComponent extends React.Component{
         return (
             <div>
 
-                <div className="container pend-friend-component-container d-flex flex-row">
+                <div className="container pend-friend-component-container shadow d-flex flex-row">
                     <div className="prof-img-cont-pend-friend-comp">
                             <img className="prof-img-pend-friend-comp" src={`${this.toHost}${this.state.profileImage}`} alt=""/>
                     </div>

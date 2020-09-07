@@ -61,7 +61,7 @@ export class PostComponent extends React.Component{
 
         return (
             <div style={{marginTop: "2vh", marginBottom: "2vh"}}>
-                <div className="card" style={{borderRadius: "10px"}}>
+                <div className="card shadow-sm" style={{borderRadius: "10px"}}>
                     <div>
                         <div className="card-title">
                            <p>"{this.state.postDetails.post_title}"</p>

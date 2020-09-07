@@ -33,7 +33,7 @@ export class NewPostAccessComponent extends React.Component{
                 <ToggleComponent>
                     {({showContent, changeDisplayProperty}) => (
                         <div>
-                            {showContent && <div className="card new-post-access-card" >
+                            {showContent && <div className="card new-post-access-card shadow" >
                                 <div className="card-body">
                                     <h5 className="card-title">Hey, @{sessionStorage.getItem("user_name")}!</h5>
                                     <div className="intro-new-post-div">
@@ -50,7 +50,7 @@ export class NewPostAccessComponent extends React.Component{
                             }
                             {! showContent && <div>
                                 <div className="container new-post-creation-container">
-                                    <div className="card">
+                                    <div className="card shadow-sm">
                                         <div className="card-body">
                                             <h5 className="card-title">
                                                 <span id="new-post-title" contentEditable={true}>

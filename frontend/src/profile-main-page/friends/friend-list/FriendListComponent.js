@@ -35,7 +35,7 @@ export class FriendListComponent extends React.Component{
         return (
             <div>
                 { this.state.friends.length > 0 &&
-                    <div className="container d-flex justify-content-center friend-list-container">
+                    <div className="container d-flex shadow p-3 mb-5  justify-content-center friend-list-container">
                         <div className="container d-flex flex-column left-container">
                             {
                                 this.state.friends

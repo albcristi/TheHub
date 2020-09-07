@@ -38,7 +38,7 @@ export class ListPendingFriendshipsComponent extends React.Component{
                     <h4>Pending friendships</h4>
                 </div>
                 { this.state.pendingFriendships.length > 0 &&
-                    <div className="container d-flex justify-content-center pend-friend-list-container">
+                    <div className="container d-flex justify-content-center shadow p-3 mb-5  pend-friend-list-container">
                         <div className="container d-flex flex-column left-container">
                             {
                                 this.state.pendingFriendships

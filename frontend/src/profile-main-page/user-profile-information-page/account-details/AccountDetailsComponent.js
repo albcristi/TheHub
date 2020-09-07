@@ -113,7 +113,7 @@ export class AccountDetailsComponent extends React.Component{
         return (
             <div>
                 { this.state.userName !== "" &&
-                    <div className="container account-details-component-container d-flex flex-column">
+                    <div className="container account-details-component-container shadow p-3 mb-5  d-flex flex-column">
                         <div className="container user-name-container">
                             <div>
                                 <h3 className="text-secondary">User Name</h3>

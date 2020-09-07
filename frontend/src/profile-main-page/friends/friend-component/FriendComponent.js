@@ -63,7 +63,7 @@ export class FriendComponent extends React.Component{
 
     render() {
         return (
-            <div className="container friend-component-container d-flex flex-row">
+            <div className="container friend-component-container shadow d-flex flex-row">
                 <div className="prof-img-cont-friend-comp">
                         <img className="prof-img-friend-comp" src={`${this.toHost}${this.state.profilePicture}`} alt=""/>
                 </div>

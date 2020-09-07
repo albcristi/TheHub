@@ -55,10 +55,10 @@ export class UserProfileInformationComponent extends React.Component{
                         <div className="d-flex flex-column">
                             <div className="profile-image-container">
                                 { !(this.state.profilePicture === null) &&
-                                    <img className="profile-pic" src={this.toHost+this.state.profilePicture} alt="..."/>
+                                    <img className="profile-pic shadow-lg" src={this.toHost+this.state.profilePicture} alt="..."/>
                                 }
                                  { (this.state.profilePicture === null) &&
-                                    <img className="profile-pic" src={require('./no-profile-pic.png')} alt="..."/>
+                                    <img className="profile-pic shadow-lg" src={require('./no-profile-pic.png')} alt="..."/>
                                 }
                             </div>
                             <div className="container">
@@ -105,7 +105,6 @@ export class UserProfileInformationComponent extends React.Component{
                         {  userName!=="" && this.state.currentlyShowing[2] &&
                             <FriendListComponent userName={userName} isOwnerOfProfile={this.state.isProfileOwner}/>
                         }
-
                     </div>
                 </div>
             </div>
