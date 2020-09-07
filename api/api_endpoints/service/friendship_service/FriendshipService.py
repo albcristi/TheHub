@@ -46,11 +46,26 @@ class FriendshipService:
         except Exception:
             return False
 
+    def remove_pending_friendship(self, initiator: AppUsers, other_friend: AppUsers):
+        try:
+            pending = initiator.sent_friendships.all()
+            print(pending)
+            pending = set(pending)
+            for request in pending:
+                if request.requested_friend == other_friend:
+                    request.delete()
+            return True
+        except Exception as e:
+            print(str(e))
+            return False
+
     def accept_new_friendship(self, initiator: AppUsers, other_friend: AppUsers) -> bool:
         res = self.create_friendship(initiator, other_friend)
-        message = "Hello, @"+other_friend.usr_name+"! We have good news, @"+initiator.usr_name+" has "+\
+
+        message = "Hello, @"+initiator.usr_name+"! We have good news, @"+other_friend.usr_name+" has " +\
             "accepted your friendship request! TheHub Team"
-        self.__message_service.send_new_message(other_friend.phone_number, message)
+        self.remove_pending_friendship(initiator, other_friend)
+        self.__message_service.send_new_message(initiator.phone_number, message)
         return res
 
     def send_friendship_request(self, initiator: AppUsers, other_friend: AppUsers):

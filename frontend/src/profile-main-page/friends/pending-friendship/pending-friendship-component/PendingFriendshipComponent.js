@@ -1,5 +1,6 @@
 import * as React from "react";
 import './PendingFriendshipStyling.css';
+import {FriendshipService} from "../../../../service/friendship-service/FriendshipService";
 
 export class PendingFriendshipComponent extends React.Component{
     constructor(props){
@@ -8,6 +9,7 @@ export class PendingFriendshipComponent extends React.Component{
 
     toHost = `${process.env.REACT_APP_HOST_URL}:${process.env.REACT_APP_PORT_API}`;
     noProfile = "/images/users/none/no-profile-pic.png";
+    friendshipService = new FriendshipService();
 
     state = {
          waitingUser: "",
@@ -21,12 +23,17 @@ export class PendingFriendshipComponent extends React.Component{
         this.setState({
             waitingUser: waitingUser,
             userName: userName,
-            profileImage: profileImage
+            profileImage: profileImage === "" ? this.noProfile : profileImage
         })
     }
 
     acceptFriendRequest(){
-
+        this.friendshipService
+            .acceptPendingFriendship(this.state.userName)
+            .then((res) => {
+                console.log(res.data)
+            })
+            .catch(_=>{})
     }
 
     denyFriendRequest(){

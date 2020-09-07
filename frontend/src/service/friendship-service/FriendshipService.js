@@ -24,4 +24,10 @@ export class FriendshipService {
             `${this.toHost}/api/relations/pending-friendships/${userName}/${sessionStorage.getItem('token')}`
         );
     }
+
+    acceptPendingFriendship(userName){
+        return axios.put(
+            `${this.toHost}/api/relations/initiator=${userName}/other=${sessionStorage.getItem('user_name')}/${sessionStorage.getItem('token')}`
+        )
+    }
 }
