@@ -30,4 +30,12 @@ export class FriendshipService {
             `${this.toHost}/api/relations/initiator=${userName}/other=${sessionStorage.getItem('user_name')}/${sessionStorage.getItem('token')}`
         )
     }
+
+    declinePendingFriendship(userName){
+        const other = sessionStorage.getItem('user_name');
+        const token = sessionStorage.getItem('token')
+        return axios.delete(
+            `${this.toHost}/api/relations/pending-friendships/${userName}/other${other}/${token}`
+        )
+    }
 }

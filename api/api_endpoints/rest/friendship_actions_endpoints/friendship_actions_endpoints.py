@@ -66,21 +66,22 @@ def handle_put_request_handling_pending_friendships(initiator: str, other_user: 
         return exception_occurred(str(e))
 
 
-
 """" api/pending-friendships"""
 
 
-@api_view(['POST'])
+@api_view(['POST', 'DELETE'])
 def handle_pending_friendships(request, initiator: str, other_user: str, token: str) -> JsonResponse:
     try:
+        service = SessionService()
+        active_session = service.retrieve_session(token)
+        if active_session is None:
+            return session_time_out()
+        else:
+            service.update_session_data(active_session)
         if request.method == "POST":
-            service = SessionService()
-            active_session = service.retrieve_session(token)
-            if active_session is None:
-                return session_time_out()
-            else:
-                service.update_session_data(active_session)
             return handle_post_request_handle_relationship(initiator, other_user)
+        if request.method == "DELETE":
+            return handle_delete_pending_friendship(initiator, other_user)
         return bad_request()
     except Exception as e:
         return exception_occurred(str(e))
@@ -98,6 +99,20 @@ def handle_post_request_handling_pending_friendships(initiator: str, other_user:
         return JsonResponse({'result': result}, status=200)
     except Exception:
         return JsonResponse({'result': False}, status=200)
+
+
+def handle_delete_pending_friendship(initiator: str, other: str) -> JsonResponse:
+    try:
+        user_service = UserService()
+        initiator = user_service.get_user_by_user_name(initiator)
+        other_user = user_service.get_user_by_user_name(other)
+        if initiator is None or other_user is None:
+            return JsonResponse({'result': False}, status=200)
+        service = FriendshipService()
+        result = service.remove_pending_friendship(initiator, other_user)
+        return JsonResponse({'result': result}, status=200)
+    except Exception as e:
+        return exception_occurred(str(e))
 
 
 @api_view(['GET'])

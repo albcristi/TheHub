@@ -15,7 +15,8 @@ export class PendingFriendshipComponent extends React.Component{
          waitingUser: "",
          userName: "",
          profileImage: "",
-         isSolved: false
+         isSolved: false,
+         solvedMessage: ""
      };
 
     componentWillMount() {
@@ -31,13 +32,26 @@ export class PendingFriendshipComponent extends React.Component{
         this.friendshipService
             .acceptPendingFriendship(this.state.userName)
             .then((res) => {
-                console.log(res.data)
+                if(res.data['result']){
+                    this.setState({
+                        isSolved: true,
+                        solvedMessage: "You are now friends"
+                    })
+                }
             })
             .catch(_=>{})
     }
 
     denyFriendRequest(){
-
+        this.friendshipService
+            .declinePendingFriendship(this.state.userName)
+            .then(res => {if(res.data['result']){
+                    this.setState({
+                        isSolved: true,
+                        solvedMessage: "You declined this request"
+                    })
+                }})
+            .catch(_=>{})
     }
 
     render() {
@@ -50,7 +64,7 @@ export class PendingFriendshipComponent extends React.Component{
                     </div>
                     <div className="container d-flex flex-column pend-friend-det-container">
                         <div>
-                            <h4 onClick={() => {this.goToFriendProfile();}}>@{this.state.userName}</h4>
+                            <h4 onClick={() => {}}>@{this.state.userName}</h4>
                         </div>
                             <div>
                                 {!this.state.isSolved &&
@@ -66,7 +80,7 @@ export class PendingFriendshipComponent extends React.Component{
                                 }
                                 {this.state.isSolved &&
                                     <div>
-                                        <h3>Request solved</h3>
+                                        <small>{this.state.solvedMessage}</small>
                                     </div>
                                 }
                             </div>
