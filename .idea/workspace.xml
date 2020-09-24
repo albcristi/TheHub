@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75fa1901-8645-404a-a4e1-54c4be261977" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-component/FriendComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-component/FriendComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-list/FriendListComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-list/FriendListComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +15,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-list/FriendListComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="805">
               <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -35,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
+            <state relative-caret-position="874">
               <caret line="40" column="92" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -47,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="1334">
               <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -59,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="1311">
               <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -71,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="1127">
               <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -83,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="2208">
               <caret line="115" column="98" selection-start-line="115" selection-start-column="98" selection-end-line="115" selection-end-column="98" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -100,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
+            <state relative-caret-position="293">
+              <caret line="57" column="73" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -203,6 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -552,7 +545,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -627,12 +619,13 @@
       <workItem from="1599307165675" duration="1132000" />
       <workItem from="1599390409243" duration="8973000" />
       <workItem from="1599478188004" duration="1019000" />
-      <workItem from="1599479310223" duration="5074000" />
+      <workItem from="1599479310223" duration="5657000" />
+      <workItem from="1599496709059" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335248000" />
+    <option name="totallyTimeSpent" value="335919000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -645,9 +638,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23489933" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -661,7 +653,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.47584188" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.33235726" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.18155198" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329429" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1093,20 +1085,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-list/FriendListComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="40" column="92" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
+        <state relative-caret-position="805">
+          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/friend-list/FriendListComponent.js">
+    <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/list-pending-friendships/ListPendingFriendshipsComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+        <state relative-caret-position="874">
+          <caret line="40" column="92" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -1115,7 +1107,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/friends/pending-friendship/pending-friendship-component/PendingFriendshipComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="1334">
           <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -1125,7 +1117,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/post-component/PostComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="1311">
           <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -1135,7 +1127,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/new-post/NewPostAccessComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="1127">
           <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -1145,7 +1137,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/account-details/AccountDetailsComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="2208">
           <caret line="115" column="98" selection-start-line="115" selection-start-column="98" selection-end-line="115" selection-end-column="98" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -1160,8 +1152,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/profile-main-page/user-profile-information-page/UserProfileInformationComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
+        <state relative-caret-position="293">
+          <caret line="57" column="73" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
