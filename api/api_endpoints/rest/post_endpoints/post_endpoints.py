@@ -1,6 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.utils import json
 from ...service.SessionService import SessionService
+from ...service.PhoneMessagingService import PhoneMessagingSystem
 from ...service.UserService import UserService
 from ...service.post_system.PostService import PostService
 from ...models import AppUsers
@@ -49,6 +50,20 @@ def handle_post_create_user_post(request, current_user: AppUsers) -> JsonRespons
         res = post_service.create_post(title=post_title,
                                        text_content=post_text,
                                        created_by=current_user)
+        friendships = current_user.current_friendships.all()
+        message_service = PhoneMessagingSystem()
+        if friendships.count() > 0:
+            friendships = set(friendships)
+            print(friendships)
+            for friendship in friendships:
+                friend = friendship.friend_with
+                phone_number = friend.phone_number
+                message = '@'+current_user.usr_name + ' just made a new post with the title: "'+post_title +\
+                          '"! Go check it out on our app :) TheHub Team '
+                try:
+                    message_service.send_new_message(phone_number, message)
+                except Exception:
+                    pass
     except Exception as e:
         return JsonResponse({'error': e}, status=401)
     operation_result = False
